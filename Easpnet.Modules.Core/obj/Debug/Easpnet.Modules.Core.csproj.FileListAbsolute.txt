@@ -1,0 +1,64 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.Core.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.Core.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.Core.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\AspNetPager.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.Controls.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.Member.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Syslog.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\xacc.propertygrid.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Local.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.Controls.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.Controls.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.Member.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.Member.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.Member.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Easpnet.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Local.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\bin\Debug\Local.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\obj\Debug\Easpnet.Modules.Core.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\obj\Debug\Easpnet.Modules.Core.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\obj\Debug\Easpnet.Modules.Core.csproj.CopyComplete
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\obj\Debug\Easpnet.Modules.Core.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Modules.Core\obj\Debug\Easpnet.Modules.Core.pdb
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.Core.dll.config
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.Core.dll
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.Core.pdb
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\AspNetPager.dll
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.Controls.dll
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.dll
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.dll
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.Member.dll
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Newtonsoft.Json.dll
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Syslog.dll
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\xacc.propertygrid.dll
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Local.dll
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.Controls.pdb
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.Controls.dll.config
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.Member.pdb
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.Member.xml
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.Member.dll.config
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.pdb
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.xml
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.Modules.dll.config
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.pdb
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.xml
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Easpnet.dll.config
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Newtonsoft.Json.pdb
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Newtonsoft.Json.xml
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Local.pdb
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\bin\Debug\Local.dll.config
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\obj\Debug\Easpnet.Modules.Core.csprojAssemblyReference.cache
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\obj\Debug\Easpnet.Modules.Core.csproj.CoreCompileInputs.cache
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\obj\Debug\Easpnet.Modules.Core.csproj.CopyComplete
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\obj\Debug\Easpnet.Modules.Core.dll
+E:\WYJ_GIT\SWSolution\Easpnet.Modules.Core\obj\Debug\Easpnet.Modules.Core.pdb

@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Easpnet.Modules.MainMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title><%=PageTitle %></title>
+    <% Response.Write("<meta name=\"keywords\" content=\""+MetaKeywords+"\" />"); %>
+    <% Response.Write("<meta name=\"description\" content=\"" + MetaDescription + "\" />"); %>
+    <base href="<%=Html.WebRootUrl %>"  />
+    <%=Styles%><%=Scripts%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>    
+</head>
+<body>
+<asp:ContentPlaceHolder ID="top_box" runat="server"></asp:ContentPlaceHolder>
+
+<div class="tbclick"></div>
+<div class="tb">
+	<div class="tbc">
+    	<div class="tbcl">
+        	<div class="tbclbg"></div>
+        </div>
+        <div class="tbcm"><span>尊敬的商户，您好！严禁一切钓鱼、色情、赌博、私彩等接入。一经核实将冻结其帐户以及在途款项，决不姑息。</span></div>
+        <div class="tbcr">
+        	<div class="tbcrbg"><a href="#"></a></div>
+        </div>
+    </div>
+</div>
+<div class="main">
+<div class="maint">	
+	<div class="wzsy"><a href="<%=Html.HrefLink("Core", "Index") %>"></a></div>
+    <div class="wzsy"><a href="<%=Html.HrefLink("MerchantCenter", "MerchantRegister") %>"></a></div>
+    <div class="wzsy"><a href="<%=Html.HrefLink("Huif", "ViewPayMethodRatioDetails") %>"></a></div>
+    <div class="logo">
+    	<div class="logot"></div>
+        <div class="logob">
+        	<div class="logobl"><img src="<%=ImageUrl("logol.png") %>"></div>
+            <div class="logobr"><img src="<%=ImageUrl("logor.png") %>"></div>
+        </div>
+    </div>
+    <div class="wzsy"><a href="<%=Html.HrefLink("GameRecharge", "GameRechargeOrderQuery") %>"></a></div>
+    <div class="wzsy"><a href="<%=Html.HrefLink("Huif", "ServiceCenter") %>"></a></div>
+    <div class="wzsy"><a href="<%=Html.HrefLink("Huif", "AboutUs") %>"></a></div>
+</div>
+<div class="content"></div>
+<div class="contentb">	
+    <asp:ContentPlaceHolder ID="left_box" runat="server"></asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="main" runat="server"></asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="right_box" runat="server"></asp:ContentPlaceHolder>
+    <div class="c"></div>
+    <div class="web_bottom">
+        <asp:ContentPlaceHolder ID="bottom_box" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    <div class="web_bc">
+    	<div class="web_bct"></div>
+        <div class="web_bcb">
+            <span><a href="<%=Html.HrefLink("Huif", "AboutUs") %>">关于我们</a></span>| 
+            <span><a href="<%=Html.HrefLink("MerchantCenter", "MerchantRegister") %>">商户加盟</a></span>| 
+            <span><a href="<%=Html.HrefLink("Huif", "ViewPayMethodRatioDetails") %>">价格佣金</a></span>| 
+            <span><a href="<%=Html.HrefLink("Huif", "ServiceCenter") %>">客服中心</a></span>| 
+            <span><a href="<%=Html.HrefLink("Huif", "SomeQuestions") %>">常见问题</a></span>| 
+            <span><a href="#">站长统计</a></span>
+        </div>      
+        <div class="web_bcb">
+            <%=Configs["site_copyright"]%>
+        </div>
+    </div>
+</div>
+</div>
+
+
+</body>
+
+</html>

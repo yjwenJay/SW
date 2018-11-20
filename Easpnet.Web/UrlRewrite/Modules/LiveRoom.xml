@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rewriter>
+    <rewrite url="~/LiveRoom/(.*)" to="~/index.aspx?page=LiveRoomShow&amp;host=$1" processing="stop"/>
+
+
+
+
+</rewriter>

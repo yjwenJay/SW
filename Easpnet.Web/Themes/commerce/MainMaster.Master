@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Easpnet.Modules.MainMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title><%=PageTitle %></title>
+    <% Response.Write("<meta name=\"keywords\" content=\""+MetaKeywords+"\" />"); %>
+    <% Response.Write("<meta name=\"description\" content=\"" + MetaDescription + "\" />"); %>
+    <base href="<%=Html.WebRootUrl %>"  />
+    <%=Styles%><%=Scripts%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>    
+</head>
+<body>
+    <div class="main">
+ 	    <div class="main_top">
+    	    <div class="main_topc">
+        	    <div class="main_topcl"></div>
+                <div class="main_topcm">
+            	    <div class="main_topwz">尊敬的商户，您好！严禁一切钓鱼、色情、赌博、私彩等接入。一经核实将冻结其帐户以及在途款项，决不姑息！</div>
+                    <div class="main_topcrr">
+                	    <div class="close"><a href="#"></a></div>
+                    </div>
+                </div>
+                <div class="main_topcr"></div>
+            </div>
+        </div>
+        
+        <div class="mainc">
+    	<div class="content">
+    	    <div class="maincc">
+        	    <div class="mainccpic">
+            	    <div class="mainccpicl"><div class="mainccpiclbg"><img src="<%=ImageUrl("logol.jpg") %>"/></div></div>
+                    <div class="mainccpicr"><div class="mainccpicrbg"><img src="<%=ImageUrl("logor.jpg") %>"/></div></div>
+                </div>
+                <div class="lxdh">
+            	    <div class="lxdht">
+                	    <div class="lxdhtl"></div>
+                        <div class="lxdhtr">服务热线：<%=Configs["site_telephone"]%></div>
+                    </div>
+                </div>
+            </div>
+                    
+            <div class="nav">
+        	    <div class="nav_t">
+            	    <div class="nav_tl"></div>
+                    <div class="nav_tm">
+                	    <div class="nav_c">
+                    	    <div class="nav_cr">
+                        	    <div class="nav_content">
+                            	    <div class="nav_contentc"><a href="<%=Html.WebRootUrl %>" <%=CurrentPage.PageName.ToLower() == "index" ? "class=\"active\"" : "" %> >网站首页</a></div>
+                                </div>
+                                <div class="nav_content">
+                            	    <div class="nav_contentc"><a href="<%=Html.HrefLink("MerchantCenter", "MerchantRegister") %>" <%=CurrentPage.PageName.ToLower() == "merchantregister" ? "class=\"active\"" : "" %>>商户加盟</a></div>
+                                </div>
+                                <div class="nav_content">
+                            	    <div class="nav_contentc"><a href="<%=Html.HrefLink("Huif", "ViewPayMethodRatioDetails") %>" <%=CurrentPage.PageName.ToLower() == "viewpaymethodratiodetails" ? "class=\"active\"" : "" %>>佣金比例</a></div>
+                                </div>
+                                <div class="nav_content">
+                            	    <div class="nav_contentc"><a href="<%=Html.HrefLink("GameRecharge", "GameRechargeOrderQuery") %>" <%=CurrentPage.PageName.ToLower() == "gamerechargeorderquery" ? "class=\"active\"" : "" %>>订单查询</a></div>
+                                </div>
+                                <div class="nav_content">
+                            	    <div class="nav_contentc"><a href="<%=Html.HrefLink("Huif", "ServiceCenter") %>" <%=CurrentPage.PageName.ToLower() == "servicecenter" ? "class=\"active\"" : "" %>>客服中心</a></div>
+                                </div>
+                                <div class="nav_content">
+                            	    <div class="nav_contentc"><a href="<%=Html.HrefLink("Huif", "AboutUs") %>" <%=CurrentPage.PageName.ToLower() == "aboutus" ? "class=\"active\"" : "" %>>关于我们</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav_tr"></div>
+                </div>
+            </div>
+        
+            <asp:ContentPlaceHolder ID="top_box" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="left_box" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="main" runat="server"></asp:ContentPlaceHolder>  
+            <div class="c"></div>      
+            <asp:ContentPlaceHolder ID="right_box" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="bottom_box" runat="server"></asp:ContentPlaceHolder>    
+                
+            <div class="bottom">
+            	<div class="bottomt">
+                	<div class="bottomtt"></div>
+                    <div class="bottomtc">
+                        <span><a href="<%=Html.HrefLink("Huif", "AboutUs") %>"> 关于我们 </a></span>|
+                        <span><a href="<%=Html.HrefLink("MerchantCenter", "MerchantRegister") %>"> 商户加盟 </a></span>|
+                        <span><a href="<%=Html.HrefLink("Huif", "ViewPayMethodRatioDetails") %>"> 价格佣金 </a></span>|
+                        <span><a href="<%=Html.HrefLink("Huif", "ServiceCenter") %>"> 客服中心 </a></span>|
+                        <span><a href="<%=Html.HrefLink("Huif", "SomeQuestions") %>"> 常见问题 </a></span>|
+                        <span><a href="javascript:void(0);"> 站长统计 </a></span>
+                    </div>
+                    <div class="bottomtc"><%=Configs["site_copyright"]%></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+</body>
+
+<!--[if lte IE 6]>
+<script type="text/javascript" src="/Themes/commerce/js/DD_belatedPNG_0.0.8a.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.nav_contentc,.nav_contentc a:hover,.nav_contentc a.active,#btn a,#btn a.activeSlide,#btn a:hover,.yhmbbg,.yzmcclbg,.yzmccrbg,.button_dllbg,.button_dllbg a:hover,.button_dlrbg,.button_dlrbg a:hover,.close');  
+</script>
+<![endif]-->
+
+</html>

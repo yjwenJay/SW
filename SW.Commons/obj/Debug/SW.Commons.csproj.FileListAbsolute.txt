@@ -1,0 +1,44 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\obj\Debug\SW.Commons.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\SW.Commons.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\SW.Commons.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\AspNetPager.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\CommonFunction.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\Donet.Modules.Member.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\log4net.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\RabbitMQ.Client.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\StackExchange.Redis.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\ThoughtWorks.QRCode.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\Syslog.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\CommonFunction.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\log4net.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\RabbitMQ.Client.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\bin\Debug\StackExchange.Redis.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\obj\Debug\SW.Commons.csproj.CopyComplete
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\obj\Debug\SW.Commons.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\obj\Debug\SW.Commons.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Commons\obj\Debug\SW.Commons.csprojAssemblyReference.cache
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\SW.Commons.dll
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\SW.Commons.pdb
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\AspNetPager.dll
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\CommonFunction.dll
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\Donet.Modules.Member.dll
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\log4net.dll
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\Newtonsoft.Json.dll
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\RabbitMQ.Client.dll
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\StackExchange.Redis.dll
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\ThoughtWorks.QRCode.dll
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\Syslog.dll
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\CommonFunction.pdb
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\log4net.xml
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\Newtonsoft.Json.pdb
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\Newtonsoft.Json.xml
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\RabbitMQ.Client.xml
+E:\WYJ_GIT\SWSolution\SW.Commons\bin\Debug\StackExchange.Redis.xml
+E:\WYJ_GIT\SWSolution\SW.Commons\obj\Debug\SW.Commons.csproj.CoreCompileInputs.cache
+E:\WYJ_GIT\SWSolution\SW.Commons\obj\Debug\SW.Commons.csproj.CopyComplete
+E:\WYJ_GIT\SWSolution\SW.Commons\obj\Debug\SW.Commons.dll
+E:\WYJ_GIT\SWSolution\SW.Commons\obj\Debug\SW.Commons.pdb
+E:\WYJ_GIT\SWSolution\SW.Commons\obj\Debug\SW.Commons.csprojAssemblyReference.cache

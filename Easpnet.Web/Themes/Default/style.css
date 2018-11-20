@@ -1,0 +1,52 @@
+﻿.c
+{
+    clear:both; width:0px; height:0px; overflow:hidden;
+}
+.cl
+{
+    clear:left; width:0px; height:0px; overflow:hidden;
+}
+.cr
+{
+    clear:right; width:0px; height:0px; overflow:hidden;
+}
+body
+{
+    font-size:12px;
+}
+*
+{
+    margin:0; padding:0; 
+}
+.l {
+    float: left;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+.mr10 {
+    margin-right: 10px;
+}
+a img
+{
+    border:none;
+}
+.red {
+    color: #FF0000;
+}
+
+.hide{
+    display:none;
+    }
+#column-right{
+   float:right;
+   }
+a{ cursor:pointer; }
+a{ color:Red; }

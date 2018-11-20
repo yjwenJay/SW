@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Easpnet.Modules.MainMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title><%=PageTitle %></title>
+    <% Response.Write("<meta name=\"keywords\" content=\""+MetaKeywords+"\" />"); %>
+    <% Response.Write("<meta name=\"description\" content=\"" + MetaDescription + "\" />"); %>
+    <%=Styles%><%=Scripts%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <%=Error.Message %>
+    <div id="main-page">  
+        <asp:ContentPlaceHolder ID="top_box" runat="server"></asp:ContentPlaceHolder>
+        <div id="<%=MainWrapperId %>" class="contentMainWrapper contentMainWrapper<%=CurrentPage.PageName %> <%=MainWrapperClass %>">
+            <asp:ContentPlaceHolder ID="left_box" runat="server"></asp:ContentPlaceHolder>
+            <div id="column-center">        
+                <asp:ContentPlaceHolder ID="main" runat="server"></asp:ContentPlaceHolder>
+            </div>                
+            <asp:ContentPlaceHolder ID="right_box" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <asp:ContentPlaceHolder ID="bottom_box" runat="server"></asp:ContentPlaceHolder>
+        <div id="footerWrapper">
+            <%=Configs["site_copyright"]%>
+        </div>            
+    </div>
+</body>
+</html>

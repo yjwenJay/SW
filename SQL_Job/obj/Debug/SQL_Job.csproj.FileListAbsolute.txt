@@ -1,0 +1,12 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SQL_Job\bin\Debug\SQL_Job.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SQL_Job\bin\Debug\SQL_Job.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SQL_Job\obj\Debug\SQL_Job.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SQL_Job\obj\Debug\SQL_Job.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SQL_Job\obj\Debug\SQL_Job.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SQL_Job\obj\Debug\SQL_Job.pdb
+E:\WYJ_GIT\SWSolution\SQL_Job\bin\Debug\SQL_Job.dll
+E:\WYJ_GIT\SWSolution\SQL_Job\bin\Debug\SQL_Job.pdb
+E:\WYJ_GIT\SWSolution\SQL_Job\obj\Debug\SQL_Job.csproj.CoreCompileInputs.cache
+E:\WYJ_GIT\SWSolution\SQL_Job\obj\Debug\SQL_Job.dll
+E:\WYJ_GIT\SWSolution\SQL_Job\obj\Debug\SQL_Job.pdb
+E:\WYJ_GIT\SWSolution\SQL_Job\obj\Debug\SQL_Job.csprojAssemblyReference.cache

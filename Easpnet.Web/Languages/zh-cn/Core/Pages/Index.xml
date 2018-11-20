@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<translations>
+  <item>
+    <from>用户名：</from>
+    <to>user name:</to>
+  </item>
+  <item>
+    <from>密码：</from>
+    <to>password:</to>
+  </item>
+</translations>

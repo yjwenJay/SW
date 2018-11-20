@@ -1,0 +1,295 @@
+﻿#contentMainWrapper
+{
+    height:350px;
+}
+.main2 {
+    margin: 50px auto 0 !important;
+    width: 960px;
+}
+.left_b {
+    background: url("images/left_bg.gif") no-repeat scroll left center transparent;
+    float: left;
+    height: 310px;
+    width: 44px;
+}
+.left_r {
+    float: right;
+    width: 268px;
+}
+.left_r .ceng1 {
+    width: 268px;
+}
+.left_r .ceng1 .top {
+    height: 7px;
+    width: 268px;
+}
+.left_r .ceng1 .bg {
+    background: url("images/left_r_b.gif") repeat-y scroll 0 0 transparent;
+    width: 268px;
+}
+.left_r .ceng1 .bg p {
+    color: #EA141C;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px 0 5px 15px;
+    text-align: left;
+    width: 243px;
+}
+.left_r .ceng1 .bg h1 {
+    color: #333333;
+    display: block;
+    height: 32px;
+    width: 268px;
+     font-size: 12px;
+    font-weight: normal;
+}
+.left_r .ceng1 .bg h1 span {
+    display: block;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    text-align: right;
+    width: 79px;
+}
+.left_r .ceng1 .bg h1 em {
+    display: block;
+    float: right;
+    height: 27px;
+    line-height: 32px;
+    padding-top: 5px;
+    width: 180px;
+}
+.left_r .ceng1 .bg h2 {
+    display: block;
+    height: 32px;
+    text-align: center;
+    width: 268px;
+}
+.input1 {
+    border: 1px solid #CCCCCC;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    width: 100px;
+}
+.input2 {
+    border: 1px solid #CCCCCC;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    width: 80px;
+}
+.left_r .ceng1 .bot {
+    height: 6px;
+    line-height: 6px;
+    width: 268px;
+}
+.left_r .ceng2 {
+    background: url("images/left_r_botbg.gif") no-repeat scroll center top transparent;
+    height: 109px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 268px;
+}
+.left_r .ceng2 p {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 20px;
+    text-align: left;
+    width: 240px;
+}
+.left_r .ceng2 h3 {
+    display: block;
+    text-align: center;
+    width: 268px;
+}
+.flashad {
+    width: 647px;
+}
+.logok {
+    height: 65px;
+    width: 647px;
+}
+.logok em {
+    display: block;
+    float: right;
+    height: 55px;
+    width: 190px;
+}
+.logok span {
+    color: #A31111;
+    display: block;
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    padding-top: 30px;
+    text-align: right;
+    width: 180px;
+}
+.left_r .ceng1 .wr {
+    color: #CC0000;
+    padding: 10px 10px 0 30px;
+}
+.col51 {
+    float: left;
+    width: 312px;
+}
+.col52 {
+    float: right;
+    width: 648px;
+}
+.register {
+    border-bottom: 1px solid #BC0000;
+    color: #222222;
+    height: 457px;
+    overflow: hidden;
+}
+.register h1 {
+    background: url("../../images/login/register.png") no-repeat scroll -219px -29px transparent;
+    border-bottom: 3px solid #BA0001;
+    color: #BC0000;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+.register .bdsina {
+    float: left;
+    height: 435px;
+    margin-right: 6px;
+    width: 400px;
+}
+.register h2 {
+    background: url("../../images/login/register.png") no-repeat scroll -219px 6px transparent;
+    border-bottom: 1px solid #D9D9D9;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 5px;
+    padding-left: 15px;
+}
+.register .bdsina_con, .register .nzreg_con {
+    border-bottom: 1px solid #D9D9D9;
+    border-top: 1px solid #F4F4F4;
+    height: 400px;
+    overflow: hidden;
+}
+.register .bdsina table {
+    display: inline;
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 50px 0 0 60px;
+}
+.register input {
+    color: #505050;
+}
+.register .input {
+    border: 1px solid #988481;
+    height: 22px;
+    width: 190px;
+}
+.register .bdsina .btn {
+    background: url("../../images/login/register.png") repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    float: left;
+    height: 37px;
+    margin-top: 10px;
+    width: 93px;
+}
+.register .line {
+    border-left: 1px solid #D5D5D5;
+    float: left;
+    height: 400px;
+    margin-top: 35px;
+    overflow: hidden;
+    width: 1px;
+}
+.register .nzreg {
+    float: right;
+    height: 435px;
+    width: 547px;
+}
+.register .nzreg table {
+    display: inline;
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 30px 0 0 47px;
+}
+.register table tr td {
+    padding-bottom: 10px;
+}
+.register .nzreg .input1 {
+    background: none repeat scroll 0 0 #FFF4EE;
+    border: 1px solid #EF675C;
+    height: 22px;
+    width: 190px;
+}
+.register .nzreg .input1_p {
+    height: 24px;
+    overflow: hidden;
+}
+.register .nzreg .nameyz {
+    background: url("../../images/login/register.png") repeat scroll 0 -45px transparent;
+    color: #633C30;
+    display: inline-block;
+    font-size: 12px;
+    height: 46px;
+    line-height: 20px;
+    padding: 5px 5px 0 27px;
+    width: 160px;
+}
+.register .input2 {
+    border: 1px solid #988481;
+    float: left;
+    height: 22px;
+    width: 117px;
+}
+.register .nzreg .yzm {
+    float: right;
+    line-height: 21px;
+}
+.register .nzreg .yzm a {
+    margin-left: 15px;
+}
+.register .nzreg .agree {
+    color: #707070;
+    font-size: 12px;
+    padding-left: 30px;
+    text-decoration: underline;
+}
+.register .nzreg .btn {
+    background: url("../../images/login/register.png") repeat scroll -99px 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    float: right;
+    height: 37px;
+    width: 93px;
+}
+.register .nzreg .namesm {
+    background: url("../../images/login/register.png") repeat scroll 0 -112px transparent;
+    display: inline-block;
+    height: 35px;
+    padding: 3px 0 0 13px;
+    width: 205px;
+}
+.register .nzreg .pt5 {
+    padding-top: 5px;
+}
+.register .bdsinate {
+    background: none repeat scroll 0 0 #F2F2F2;
+    border: 4px solid #E6E6E6;
+    clear: both;
+    color: #4A3939;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 10px;
+    padding: 0 10px;
+}

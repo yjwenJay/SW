@@ -1,0 +1,10 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.DLL\bin\Debug\SW.DLL.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.DLL\bin\Debug\SW.DLL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.DLL\obj\Debug\SW.DLL.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.DLL\obj\Debug\SW.DLL.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.DLL\obj\Debug\SW.DLL.pdb
+E:\WYJ_GIT\SWSolution\SW.DLL\bin\Debug\SW.DLL.dll
+E:\WYJ_GIT\SWSolution\SW.DLL\bin\Debug\SW.DLL.pdb
+E:\WYJ_GIT\SWSolution\SW.DLL\obj\Debug\SW.DLL.csproj.CoreCompileInputs.cache
+E:\WYJ_GIT\SWSolution\SW.DLL\obj\Debug\SW.DLL.dll
+E:\WYJ_GIT\SWSolution\SW.DLL\obj\Debug\SW.DLL.pdb

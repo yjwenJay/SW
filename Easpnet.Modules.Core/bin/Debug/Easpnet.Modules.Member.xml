@@ -1,0 +1,536 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Easpnet.Modules.Member</name>
+    </assembly>
+    <members>
+        <member name="T:Easpnet.Modules.Member.AdminContext">
+            <summary>
+            管理员上下文数据
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.AdminContext.LoginUser">
+            <summary>
+            获取或者设置当前登录的会员信息
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.AdminContext.IsLogin">
+            <summary>
+            验证是否已经登录
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.AdminContext.LoginUserId">
+            <summary>
+            获取登录用户的用户Id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.AdminContext.LoginUserName">
+            <summary>
+            获取登录用户的用户Id
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Member.AdminContext.Logout">
+            <summary>
+            退出登录，将清空所有的会员信息
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.Member.AdminPageBase">
+            <summary>
+            后台管理员页面基类
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.Member.UserType">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.Member.UserType.Normal">
+            <summary>
+            普通用户，不具备管理员用户的功能
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.Member.UserType.Employee">
+            <summary>
+            雇员用户，拥有有限的权限，由管理员用户分配
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.Member.UserType.SystemAdmin">
+            <summary>
+            管理员用户，拥有所有的权限
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.Member.UserType.WebAdmin">
+            <summary>
+            网站管理员，具备相关网站配置的功能
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.Member.UserStatus">
+            <summary>
+            用户状态
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.Member.UserStatus.Normal">
+            <summary>
+            正常
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.Member.UserStatus.Locked">
+            <summary>
+            已经锁定
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.Member.MemberContext">
+            <summary>
+            封装会员登录的相关信息
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.MemberContext.LoginUser">
+            <summary>
+            获取或者设置当前登录的会员信息
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.MemberContext.IsLogin">
+            <summary>
+            验证是否已经登录
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.MemberContext.LoginUserId">
+            <summary>
+            获取登录用户的用户Id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.MemberContext.LoginUserName">
+            <summary>
+            获取登录用户的用户Id
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Member.MemberContext.Logout">
+            <summary>
+            退出登录，将清空所有的会员信息
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.Member.MemberPageBase">
+            <summary>
+            会员中心页面基类
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.Member.Models.AdminUser">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.UserId">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.Email">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.Mobile">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.UserType">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.GroupName">
+            <summary>
+            用户分组名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.PermissionsData">
+            <summary>
+            权限数据
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.RealName">
+            <summary>
+            真实姓名
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.LoginTime">
+            <summary>
+            登陆时间
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.LoginIP">
+            <summary>
+            登陆IP
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.LastLoginTime">
+            <summary>
+            上次登陆时间
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.LastLoginIP">
+            <summary>
+            上次登陆IP
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.Permissions">
+            <summary>
+            权限列表
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.UserStatus">
+            <summary>
+            用户状态
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.MacAddress">
+            <summary>
+            绑定的物理地址
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.AdminUser.SecondPassword">
+            <summary>
+            二级密码
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.AdminUser.MakeSelfFromIDataReader(System.Data.IDataReader)">
+            <summary>
+            重写方法，构造权限数据
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.AdminUser.UpdatePermission(System.Int64,System.Collections.Generic.List{Easpnet.Modules.Member.Permission})">
+            <summary>
+            对一个用户设置权限
+            </summary>
+            <param name="uid"></param>
+            <param name="lst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.AdminUser.Register">
+            <summary>
+            用户注册
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.AdminUser.GetUserByName">
+            <summary>
+            根据用户名查找用户，若找到，则返回true，否则返回false
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.AdminUser.ExistsUser(System.String)">
+            <summary>
+            查看是否存在用户
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.AdminUser.MD5Password">
+            <summary>
+            对密码进行MD5加密
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.AdminUser.GetUserList(Easpnet.Modules.Member.UserType)">
+            <summary>
+            根据用户类型获取所有的用户
+            </summary>
+            <param name="userType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.AdminUser.UpdateUserStatus(System.Int64,Easpnet.Modules.Member.UserStatus)">
+            <summary>
+            更新用户状态
+            </summary>
+            <param name="status">状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.AdminUser.AdminLogin(System.String,System.String@)">
+            <summary>
+            用户登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Modules.Member.Models.User">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.UserId">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.Email">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.RegIp">
+            <summary>
+            注册IP
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.RegTime">
+            <summary>
+            注册时间
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.UserType">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.GroupName">
+            <summary>
+            用户分组名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.PermissionsData">
+            <summary>
+            权限数据
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.RealName">
+            <summary>
+            真实姓名
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.LoginTime">
+            <summary>
+            登陆时间
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.LoginIP">
+            <summary>
+            登陆IP
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.LastLoginTime">
+            <summary>
+            上次登陆时间
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.LastLoginIP">
+            <summary>
+            上次登陆IP
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.Permissions">
+            <summary>
+            权限列表
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.UserStatus">
+            <summary>
+            用户状态
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.MacAddress">
+            <summary>
+            绑定的物理地址
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.SecondPassword">
+            <summary>
+            二级密码
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Models.User.MerchantId">
+            <summary>
+            商户Id
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.User.MakeSelfFromIDataReader(System.Data.IDataReader)">
+            <summary>
+            重写方法，构造权限数据
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.User.UpdatePermission(System.Int64,System.Collections.Generic.List{Easpnet.Modules.Member.Permission})">
+            <summary>
+            对一个用户设置权限
+            </summary>
+            <param name="uid"></param>
+            <param name="lst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.User.Register">
+            <summary>
+            用户注册
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.User.Login">
+            <summary>
+            用户登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.User.GetUserByName">
+            <summary>
+            根据用户名查找用户，若找到，则返回true，否则返回false
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.User.ExistsUser(System.String)">
+            <summary>
+            查看是否存在用户
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.User.MD5Password">
+            <summary>
+            对密码进行MD5加密
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.User.GetUserList(Easpnet.Modules.Member.UserType)">
+            <summary>
+            根据用户类型获取所有的用户
+            </summary>
+            <param name="userType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.User.UpdateUserStatus(System.Int64,Easpnet.Modules.Member.UserStatus)">
+            <summary>
+            更新用户状态
+            </summary>
+            <param name="status">状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Models.User.AdminLogin(System.String,System.String@)">
+            <summary>
+            用户登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Modules.Member.Pages.AdminDefault">
+            <summary>
+            后台管理员默认页
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Pages.AdminEmployeeDetails.Handler">
+            <summary>
+            处理请求
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Pages.AdminEmployeeManage.Handler">
+            <summary>
+            处理数据
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.Member.Pages.AdminIndex">
+            <summary>
+            后台管理首页
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Pages.AdminModifyPassword.Handler">
+            <summary>
+            处理请求
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Pages.AdminUserPermissions.Handler">
+            <summary>
+            处理请求
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Member.Pages.AdminUserPermissions.PopulateTree(Easpnet.Modules.Models.AdminMenu)">
+            <summary>
+            构造树形控件
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Modules.Member.Permission">
+            <summary>
+            用户权限
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Permission.PermissionId">
+            <summary>
+            权限Id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Permission.Module">
+            <summary>
+            模块
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Permission.PageName">
+            <summary>
+            页面名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.Permission.Act">
+            <summary>
+            操作名称
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.Member.ValidateNumber">
+            <summary>
+            生成验证码的类
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.ValidateNumber.MaxLength">
+            <summary>
+            验证码的最大长度
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Member.ValidateNumber.MinLength">
+            <summary>
+            验证码的最小长度
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Member.ValidateNumber.CreateValidateNumber(System.Int32)">
+            <summary>
+            生成验证码
+            </summary>
+            <param name="length">指定验证码的长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.ValidateNumber.CreateValidateGraphic(System.Web.UI.Page,System.String)">
+            <summary>
+            创建验证码的图片
+            </summary>
+            <param name="containsPage">要输出到的page对象</param>
+            <param name="validateNum">验证码</param>
+        </member>
+        <member name="M:Easpnet.Modules.Member.ValidateNumber.GetImageWidth(System.Int32)">
+            <summary>
+            得到验证码图片的长度
+            </summary>
+            <param name="validateNumLength">验证码的长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Member.ValidateNumber.GetImageHeight">
+            <summary>
+            得到验证码的高度
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

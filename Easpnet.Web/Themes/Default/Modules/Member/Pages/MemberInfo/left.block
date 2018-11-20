@@ -1,0 +1,10 @@
+﻿BlockName=MemberMenu
+Module=Member
+Title=会员中心
+UseDefaultFrame=true
+
+BlockName=LatestRegisterMember
+Module=Member
+Title=新进会员
+UseDefaultFrame=true
+

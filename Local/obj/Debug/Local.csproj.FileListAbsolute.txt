@@ -1,0 +1,13 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Local\bin\Debug\Local.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Local\bin\Debug\Local.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Local\bin\Debug\Local.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Local\obj\Debug\Local.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Local\obj\Debug\Local.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Local\obj\Debug\Local.pdb
+E:\WYJ_GIT\SWSolution\Local\bin\Debug\Local.dll.config
+E:\WYJ_GIT\SWSolution\Local\bin\Debug\Local.dll
+E:\WYJ_GIT\SWSolution\Local\bin\Debug\Local.pdb
+E:\WYJ_GIT\SWSolution\Local\obj\Debug\Local.csproj.CoreCompileInputs.cache
+E:\WYJ_GIT\SWSolution\Local\obj\Debug\Local.dll
+E:\WYJ_GIT\SWSolution\Local\obj\Debug\Local.pdb
+E:\WYJ_GIT\SWSolution\Local\obj\Debug\Local.csprojAssemblyReference.cache

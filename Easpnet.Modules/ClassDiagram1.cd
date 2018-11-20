@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Easpnet.Modules.AjaxIndexPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AjaxIndexPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Easpnet.Modules.BlockBase">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEQAAAAIBAAAAAAAAAAAACAAAAAAAAAAIAAAAAFAA=</HashCode>
+      <FileName>BlockBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.BlockImport">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAEAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BlockImport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.BlockOption" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgAAAAkAAAAAAAAAAEAIAAAAAiAAAAAAA=</HashCode>
+      <FileName>BlockOption.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.ErrorMessage" Collapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAgAAAAAAABAAIAAAAAA=</HashCode>
+      <FileName>ErrorMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.Html" Collapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAiAAAAgEBQAACAAAAAAAAAAAAAgDAADAAAYQEAAgA=</HashCode>
+      <FileName>Html.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.IndexPage" Collapsed="true">
+    <Position X="17" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAoAABAGAAAAAAAQAgAACQAARAAAAAAAAAIAAUI=</HashCode>
+      <FileName>IndexPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.MainMaster" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQEQgAAAEACAQAAADAACAAgAQAAAAABBQAAhABFAAI=</HashCode>
+      <FileName>MainMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.ModelBase">
+    <Position X="5.75" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAhDAAIACAAAAAAAAABARADgEAQEQAAAEIAQAAAAY=</HashCode>
+      <FileName>ModelBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.ModuleAttribute" Collapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAACEAAAAAAAAAA=</HashCode>
+      <FileName>ModuleAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.ModuleBase" Collapsed="true">
+    <Position X="22.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModuleBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.OperateResult" Collapsed="true">
+    <Position X="17" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAgAAAAAAABAAIAAAAAA=</HashCode>
+      <FileName>OperateResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.PageBase">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAQAAAAECAAgBgBAgQIAgCCAAAAAgJAAwAgQAEAAI=</HashCode>
+      <FileName>PageBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.PageBlock" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEGAAABAAAAAAAAAAAAAIAAAAABAAAA=</HashCode>
+      <FileName>PageBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.PageBlockList" Collapsed="true">
+    <Position X="20.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PageBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.TableAttribute" Collapsed="true">
+    <Position X="22.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAQAAgAA=</HashCode>
+      <FileName>TableAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.TableFieldAttribute" Collapsed="true">
+    <Position X="17" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAgAAAAAAAIAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>TableFieldAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.ViewAttribute" Collapsed="true">
+    <Position X="18.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>ViewAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.ViewBase" Collapsed="true">
+    <Position X="20.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgDAAAACAAAAAAAAAAAQADAAAQAAAAAEIAAAAAAY=</HashCode>
+      <FileName>ViewBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.Models.AdminMenu" Collapsed="true">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAQAAAAAAAAACAAAAAAAAAkAoAACEAAAAA=</HashCode>
+      <FileName>Models\AdminMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.Models.BlockInfo" Collapsed="true">
+    <Position X="14.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAQAABAAAAAgQMGAAABAACAACAAAAEAAAAAACABAAAA=</HashCode>
+      <FileName>Models\BlockInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.Models.Config" Collapsed="true">
+    <Position X="1" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARABBAgAAAAAAAAUBAEAQAASAAEAEAgAAAAAAAIgQA=</HashCode>
+      <FileName>Models\Config.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.Models.Module" Collapsed="true">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAgAAAAAGAAAAQCAAAAAAICEAAAAABAgAA=</HashCode>
+      <FileName>Models\Module.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.Models.PageGroup" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>aAYAABAAEAAAAEQAAIEBgAGgCBIAAEIBDAkAAABABQA=</HashCode>
+      <FileName>Models\PageGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.Models.PageInfo" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>bAQCABABEAAAAEQAAIEAgAGgCDIAAEIBDAkACABAFQA=</HashCode>
+      <FileName>Models\PageInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.Models.Theme" Collapsed="true">
+    <Position X="12.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAhAAABgABAAAAAAgAAAAAAAAAAAAkAEAA=</HashCode>
+      <FileName>Models\Theme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easpnet.Modules.Views.ViewPageInfo" Collapsed="true">
+    <Position X="7.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Views\ViewPageInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Easpnet.Modules.IAjaxHandler" Collapsed="true">
+    <Position X="17" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>IAjaxHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Easpnet.Modules.InputMethod" Collapsed="true">
+    <Position X="18.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAQAIAAAAAAAAAAAAAABBAACAAAAAAQAEAAAA=</HashCode>
+      <FileName>BlockOption.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Easpnet.Modules.InputCheck" Collapsed="true">
+    <Position X="17" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>BlockOption.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

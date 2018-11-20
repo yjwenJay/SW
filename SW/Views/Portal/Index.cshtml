@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Portal/Layout.cshtml";
+    List<SW.Model.Article> meunArticles = ViewData["meunArticles"] as List<SW.Model.Article>;
+}
+ 
+    <div id="main" class="content">
+        <div class="container">
+            <article itemscope="itemscope">
+                <div class="posts-list js-posts">
+                    @for (int i = 0; i < meunArticles.Count; i++)
+                    {
+                        if (i.Equals(0))
+                        {
+                            <div class="post post-layout-list" data-aos="fade-up">
+                                <div class="status_list_item icon_kyubo">
+                                    <div class="status_user" style="background-image: url(@meunArticles[i].Image);">
+                                        <div class="status_section">
+                                            <a href="@meunArticles[i].Link" class="status_btn">@meunArticles[i].Title</a>
+                                            <p class="section_p"></p>
+                                            @*@Html.Raw(@meunArticles[i].Contents)*@
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="post post-layout-list" data-aos="fade-up">
+                                <div class="postnormal review ">
+                                    <div class="post-container review-item">
+                                        <div class="row review-item-wrapper">
+                                            <div class="col-sm-3">
+                                                <a rel="nofollow" href="#">
+                                                    <div class="review-item-img" style="background-image: url(@meunArticles[i].Image);"></div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-9 flex-xs-middle">
+                                                <div class="review-item-title">
+                                                    <a href="#" rel="bookmark">@meunArticles[i].Title</a>
+                                                </div>
+                                                <div class="review-item-creator"><b>发布日期：</b>@meunArticles[i].CreateTime</div>
+                                                <span class="review-item-info"><b>总浏览量：</b>@meunArticles[i].Click</span>
+                                            </div>
+                                        </div>
+                                        <div class="review-bg-wrapper">
+                                            <div class="bg-blur" style="background-image: url(@meunArticles[i].Image);"></div>
+                                        </div>
+                                    </div>
+                                    <div class="post-container">
+                                        <div class="entry-content">@meunArticles[i].Info</div>
+                                        <div class="post-footer">
+                                            <a class="gaz-btn primary" href="@meunArticles[i].Link">READ MORE</a>
+                                            <span class="total-comments-on-post pull-right"><a href="@meunArticles[i].Link">@meunArticles[i].Comments Comments</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    } 
+                </div>
+                <!-- post-formats end Infinite Scroll star -->
+                <!-- post-formats -->
+                <div class="pagination js-pagination">
+                    <div class="js-next pagination__load">
+                        <a href="#"><i class="iconfont">&#xe605;</i></a>
+                    </div>
+                </div>
+            </article>
+            <!-- -pagination  -->
+        </div>
+    </div>
+
+   

@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<title>jQuery Impromptu</title>
+		<meta name="Description" content="The home page of jQuery Impromptu. jQuery Impromptu is an extention to help provide a more pleasant way to spontaneously prompt a user for input." />
+		<meta name="Keywords" content="Impromptu,jQuery Impromptu,jQuery alert,javascript alert,alert,jQuery prompt,javascript prompt,prompt,jQuery confirm,javascript confirm,confirm,jQuery modal,javascript modal,modal,jQuery plugin,jQuery extension" />
+		
+		<link rel="stylesheet" media="all" type="text/css" href="css/screen.css" />
+		<link rel="stylesheet" media="all" type="text/css" href="css/examples.css" />		
+	    <script src="../jquery-1.2.6.js" type="text/javascript"></script>
+		<script type="text/javascript" src="jquery.corner.js"></script>
+		<script type="text/javascript" src="jquery-impromptu.1.5.js"></script>
+		<script type="text/javascript" src="common.js"></script>
+		
+	</head>
+	<body>
+
+
+
+		<div class="wrapper">
+			<ul class="nav">
+
+				<li><a href="http://jquery.com/" title="jQuery">jQuery</a></li>
+				<li><a href="jquery-impromptu.1.5.js" title="Download jQuery Impromptu">Download</a></li>
+				<li><a href="http://trentrichardson.com/?cat=10" title="Trent Richardson's Blog">Blog</a></li>
+			</ul>
+
+			<h1>jQuery <em>Impromptu</em></h1>
+
+			
+			<div class="block about">
+				<h3>About</h3>
+				<p>jQuery Impromptu is an extention to help provide a more pleasant way to spontaneously prompt a user for input.  More or less this is a great replacement for an alert, prompt, and confirm.  Not only does it replace these but it also allows for creating forms within these controls.  This is not intended to be a modal replacement, just a quick tool to prompt user input in a fashionable way.</p>
+				
+                <script type="text/javascript"><!--
+                google_ad_client = "pub-9796667771825772";
+                google_ad_width = 234;
+                google_ad_height = 60;
+                google_ad_format = "234x60_as";
+                google_ad_type = "text_image";
+                //2007-09-03: Impromptu
+                google_ad_channel = "2505019513";
+                google_color_border = "F0FED6";
+                google_color_bg = "FFFFFF";
+                google_color_link = "909E76";
+                google_color_text = "555555";
+                google_color_url = "C0CEA6";
+                //-->
+                </script>
+
+                <script type="text/javascript"
+                  src="../../pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script>
+                
+				<h3>Docs</h3>
+
+				<p>There are  many options with Impromptu:</p>
+
+				<code>$.prompt( msg , options )</code>
+				<h4>msg</h4>
+
+				<p>The message to be displayed in the prompt.  This may be text or html.</p>
+				<h4>options</h4>
+				<dl>
+
+					<dt>loaded</dt>
+					<dd>A function to be called when the prompt is fully loaded  <em>Default: function(){}</em></dd>
+					
+					<dt>submit</dt>
+
+					<dd>A function to be called when the prompt is submitted. <em>Default: function(){ return true; }</em></dd>
+					
+					<dt>callback</dt>
+					<dd>A function to be called when the prompt is submitted and removed. <em>Default: function(){}</em></dd>
+					
+                                        <dt>buttons</dt>
+					<dd>An object containing the text and values of each button the user may click. <em>Default: { Ok : true }</em></dd>
+
+					<dt>prefix</dt>
+					<dd>A prefix to be used for all css classes and html object id's. <em>Default: 'jqi'</em></dd>
+					
+                                        <dt>focus</dt>
+					<dd>Index of the button to focus(0,1,2..). <em>Default: 0</em></dd>
+
+                                        <dt>zIndex</dt>
+					<dd>zIndex to apply to the prompt. <em>Default: 999</em></dd>
+                                
+					<dt>opacity</dt>
+					<dd>The prefered opacity of the transparent layer placed over the container. <em>Default: 0.6</em></dd>
+					
+                                        <dt>overlayspeed</dt>
+					<dd>The prefered speed of the fadeIn and fadeOut of the overlay ("slow", "fast", number) <em>Default: "slow"</em></dd>
+					
+                                        <dt>promptspeed</dt>
+					<dd>The prefered opacity of the showing of the prompt ("slow", "fast", number) <em>Default: "fast"</em></dd>
+
+					<dt>show</dt>
+					<dd>Name of the jQuery method to animate the entrance of the prompt("show","fadeIn","slideDown"). <em>Default: "show"</em></dd>
+					
+				</dl>
+				<h4>returns</h4>
+
+				<p>returns a jQuery object of the prompt box and fade. <em>Note: This has changed to a container with everything within it, fade and prompt box.</em></p>
+
+				
+				<h3>Example CSS</h3>
+
+				<p>Below is an example of the css format that could be used with Impromptu.  You dont need to use any positioning and transparency attributes as Impromptu takes care of those for you.</p>
+				<p>Each element within your css should resemble the <em>prefix</em> option you supply to the function call.  If a prefix isn't supplied <em>jqi</em> is used.  The CSS for all examples can be found in <a href="css/examples.css" title="CSS File">examples.css</a></p>				
+				<code>
+                                        .jqiwarning .jqi{<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: #b0be96;<br />
+                                        }<br />
+                                        
+					.jqifade{<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: #ffffff;<br />
+
+					}<br />
+					div.jqi{<br />
+                    			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: #c0cEa6;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px;<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 300px;<br />
+
+					}<br />
+                    
+                    div.jqi .jqiclose{<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float: right;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin: -35px -10px 0 0;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cursor: pointer;<br />
+                    }<br />
+                    
+					div.jqi .jqicontainer{<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: #e0eEc6;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 5px;<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: #ffffff;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-weight: bold;<br />
+
+					}<br />
+
+					div.jqi .jqimessage{<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: #c0cEa6;<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px;<br />
+					}<br />
+					div.jqi .jqibuttons{<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 5px 0 0 0;<br />
+
+					}<br />
+					div.jqi button{<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 3px 10px 3px 10px;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin: 0 10px;<br />
+
+					}
+				</code>
+
+				<h3>Setting Defualts</h3>
+				<p>Setting defaults globally is optional with version 1.0.  To set any or all of the options mentioned above you may use the following syntax:</p>
+				<code>
+					$.SetImpromptuDefaults({<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix: 'myPrompt',<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;show: 'slideDown'<br />
+
+					});
+				</code>
+                        
+                                <h3>Demonstrations</h3>
+                                <ul>
+                                    <li><a href="http://trentrichardson.com/Impromptu/demos/demo1.html" title="Demo 1">Demo 1</a></li>
+                                    <li><a href="http://trentrichardson.com/Impromptu/demos/demo2.html" title="Demo 2">Demo 2</a></li>
+                                </ul>
+                
+                <h3>Donation</h3>
+                <p>Has Impromptu been helpful to you?</p>
+                <div class="donation">
+	                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+		                <input type="hidden" name="cmd" value="_s-xclick" />
+
+		                <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" name="submit" alt="Make payments with PayPal - it's fast, free and secure!" />
+
+		                <img alt="" border="0" src="../../www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+		                <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+		                " />
+	                </form>
+                </div>
+                
+				<h3>Version</h3>
+				<p>Version 1.4</p>
+
+				<p>Last updated on 3/6/2008</p>
+
+				<p><a href="http://www.apache.org/licenses/LICENSE-2.0" title="Apache License, Version 2">Apache License, Version 2</a></p>
+			</div>
+
+			<div class="block example">
+				<h3>Examples</h3>
+				
+				<p>To simply call Impromptu like you would a regular alert command:</p>
+
+				<code>$.prompt('Example 1');</code>
+
+				<div class="exlink">
+					<button onclick="$.prompt('Example 1',{ opacity:0.8 } )" title="Example 1">Example 1</button>
+				</div>
+
+				
+				<p>To add a a couple extra buttons with different values:</p>
+				<code>$.prompt('Example 2',{ buttons: { Ok: true, Cancel: false } });</code>
+
+				<div class="exlink">
+
+					<button onclick="$.prompt('Example 2',{ buttons: { Ok: true, Cancel: false } })" title="Example 2">Example 2</button>
+
+				</div>
+				
+				<p>To change the opacity of the fading overlay:</p>
+				<code>$.prompt('Example 3',{ opacity: 0.2 });</code>
+
+				<div class="exlink">
+
+					<button onclick="$.prompt('Example 3',{ opacity: 0.8 })" title="Example 3">Example 3</button>
+
+				</div>
+				
+				<p>To change the default focused button:</p>
+
+				<code>$.prompt('Example 4',{ buttons: { Ok: true, Cancel: false }, focus: 1 });</code>
+				<div class="exlink">
+					<button onclick="$.prompt('Example 4',{ buttons: { Ok: true, Cancel: false }, focus: 1 })" title="Example 4">Example 4</button>
+
+				</div>
+
+				
+				<p>To change the css name use prefix:</p>
+				<code>$.prompt('Example 5',{ prefix: 'impromptu' });</code>
+
+				<div class="exlink">
+					<button onclick="$.prompt('Example 5',{ prefix: 'impromptu' })" title="Example 5">Example 5</button>
+				</div>
+
+				
+				<p>To change the prompt show effect:</p>
+
+				<code>$.prompt('Example 6',{ show:'slideDown' });</code>
+				<div class="exlink">
+					<button onclick="$.prompt('Example 6',{ show:'slideDown' })" title="Example 6">Example 6</button>
+
+				</div>
+				
+				<p>To use your own jQuery effect:</p>
+
+				<code>
+
+					jQuery.fn.extend({<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myanimation: function(speed){<br />					
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var t = $(this);<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(t.css("display") == "none") <br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.show(speed,function(){ <br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.hide(speed,function(){ <br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.show(speed); }); });<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else <br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.hide(speed,function(){ <br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.show(speed,function(){ <br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.hide(speed); }); });<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+					});<br /><br />
+
+					$.prompt('Example 7',{ show:'myanimation' });
+				</code>
+				<div class="exlink">
+					<button onclick="$.prompt('Example 7',{ show:'myanimation' })" title="Example 7">Example 7</button>
+
+				</div>
+				
+				<p>To add a callback function:</p>
+				<code>
+					function mycallbackfunc(v,m){<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.prompt('i clicked ' + v);<br />
+					}<br />
+
+					$.prompt('Example 8',{ callback: mycallbackfunc });
+				</code>
+				<div class="exlink">
+					<button onclick="$.prompt('Example 8',{ callback: mycallbackfunc });" title="Example 8">Example 8</button>
+				</div>
+				
+				<p>The callback function has two parameters.  The first is the value of the button clicked.  The second is a jQuery object of the message when the user clicked the button.  If a form were in the prompt you could access its elements within this second parameter.</p>
+
+				<code>
+
+					var txt = 'Please enter your name:&lt;br /&gt;<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="alertName" <br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="myname" value="name here" /&gt;';<br /><br />
+					function mycallbackform(v,m){<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.prompt(v +' ' + m.children('#alertName').val());<br />
+
+					}<br /><br />
+
+					$.prompt(txt,{<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;callback: mycallbackform,<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;buttons: { Hey: 'Hello', Bye: 'Good Bye' }<br />
+					});<br />
+
+				</code>
+
+				<div class="exlink">
+
+					<button onclick="$.prompt(txt,{ callback: mycallbackform, buttons: { Hey: 'Hello', Bye: 'Good Bye' } })" title="Example 9">Example 9</button>
+				</div>
+				
+				<p>The submit function can prevent the box from closing and the callback function from being called by returning false.  This is great for validating input before closing the prompt.  You must always return true or false with this function.</p>
+				<code>
+
+					var txt = 'Try submitting an empty field:&lt;br /&gt;<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="alertName" <br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="myname" value="" /&gt;';<br /><br />
+					function mysubmitfunc(v,m){<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;an = m.children('#alertName');<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(an.val() == ""){<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;an.css("border","solid #ff0000 1px");<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return false;<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return true;<br />
+
+					}<br /><br />
+
+					$.prompt(txt,{<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;submit: mysubmitfunc,<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;buttons: { Ok:true }<br />
+
+					});<br />
+
+				</code>
+				<div class="exlink">
+
+					<button onclick="$.prompt(txt2,{ submit: mysubmitfunc, buttons: { Ok:true } })" title="Example 10">Example 10</button>
+				</div>
+				
+				<p>Impromptu plays very nicely with other jQuery extensions like the <a href="http://methvin.com/jquery/jq-corner.html" title="jQuery Corner Plugin">jQuery Corner Plugin</a></p>
+
+				<code>$.prompt('Example 11').corner();</code>
+
+				<div class="exlink">
+					<button onclick="$.prompt('Example 11').corner()" title="Example 11">Example 11</button>
+
+				</div>
+				
+				<p>Give it a complete make over! Some buttons, a different prefix, a new entrance effect and some rounded corners!  The css is in the <a href="css/examples.css" title="CSS File">CSS file</a> for this page and the slideDown effect comes in the jQuery library.</p>
+
+				<code>
+
+					$.prompt('Example 12&lt;p&gt;Save these settings?&lt;/p&gt;',{ <br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;buttons:{ Apply:1,Maybe:2,Never:3 },<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix:'colsJqi',<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;show:'slideDown'<br />
+
+					}).corner();
+				</code>
+
+				<div class="exlink">
+					<button onclick="$.prompt('Example 12<p>Save these settings?</p>',{ buttons:{ Apply:1,Maybe:2,Never:3 },prefix:'colsJqi',show:'slideDown'}).corner()" title="Example 12">Example 12</button>
+
+				</div>
+				
+				<p>A nice light brown theme.</p>
+
+				<code>
+
+					var brown_theme_text = '&lt;h3&gt;Example 13&lt;/h3&gt;'+<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'&lt;p&gt;Save these settings?&lt;/p&gt;'+<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'&lt;img src="images/help.gif" alt="help" '+<br />
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'class="helpImg" /&gt;';<br /><br />
+					$.prompt(brown_theme_text,{<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;buttons:{Ok:true,Cancel:false}, <br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix:'brownJqi'<br />
+
+					});
+				</code>
+
+				<div class="exlink">
+					<button onclick="$.prompt(brown_theme_text,{buttons:{Ok:true,Cancel:false}, prefix:'brownJqi'})" title="Example 13">Example 13</button>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+	</body>
+
+</html>
+

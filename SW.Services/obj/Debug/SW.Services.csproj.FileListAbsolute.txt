@@ -1,0 +1,7 @@
+E:\WYJ_GIT\SWSolution\SW.Services\bin\SW.Services.dll.config
+E:\WYJ_GIT\SWSolution\SW.Services\bin\SW.Services.dll
+E:\WYJ_GIT\SWSolution\SW.Services\bin\SW.Services.pdb
+E:\WYJ_GIT\SWSolution\SW.Services\obj\Debug\SW.Services.csprojAssemblyReference.cache
+E:\WYJ_GIT\SWSolution\SW.Services\obj\Debug\SW.Services.csproj.CoreCompileInputs.cache
+E:\WYJ_GIT\SWSolution\SW.Services\obj\Debug\SW.Services.dll
+E:\WYJ_GIT\SWSolution\SW.Services\obj\Debug\SW.Services.pdb

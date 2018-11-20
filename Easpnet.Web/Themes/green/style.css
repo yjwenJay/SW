@@ -1,0 +1,101 @@
+﻿body
+{
+    font-family: "Arial","宋体";
+    font-size: 12px;
+    color: #333333;
+}
+li {
+    list-style: none outside none;
+}
+.b {
+    font-weight: bold;
+}
+a {
+    color: #00569D;
+    text-decoration: none;
+}
+a:hover {
+    color:Red;
+    text-decoration: underline;
+}
+em {
+    font-style: normal;
+}
+#main-page
+{
+    width:980px;
+    margin:0 auto;
+}
+#logoWrapper
+{
+    height:68px;padding-top: 12px;
+}
+#menuWrappler {
+    background: none repeat scroll 0 0 green;
+    border-bottom: 1px solid #960000;
+    height: 30px;
+    padding-left: 5px;
+}
+#menuWrappler li {
+    float: left;
+    height: 30px;
+    list-style:none;
+}
+#menuWrappler li a {
+    color: #FFFFFF;
+    float: left;
+    font-size: 14px;
+    height: 22px;
+    padding: 8px 7px 0;
+    text-decoration: none;
+}
+#footerWrapper
+{
+    text-align:center; clear: left; border-top: 2px solid #EBE7E8; margin-top:10px; padding:10px 0px 10px 0px;
+}
+#contentMainWrapper
+{
+    margin-top:10px;
+}
+#column-left
+{
+    width:160px; float:left;
+}
+#column-center
+{
+    float:left; width: 820px;
+}
+#column-right{
+   float:right; width:260px;
+}
+
+
+.cbox02_con {
+    padding: 10px 0 10px 20px;
+}
+
+ul.alert-message{
+   border:1px solid red; 
+}
+
+ul.alert-message li{
+    margin:8px;
+}
+
+.message{
+ background: url("images/messagebg.gif") no-repeat scroll 10px 20px transparent;
+    line-height: 26px;
+    padding: 20px 20px 20px 70px;
+}
+
+.bigheadimg{
+width:100px; height:100px; border:1px solid #ccc; 
+}
+
+.smallheadimg{
+width:25px; height:25px;
+}
+
+.mediumheadimg{
+width:50px; height:50px;
+}

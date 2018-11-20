@@ -1,0 +1,136 @@
+﻿#column-center {
+    float: none;
+    width: 100%;
+}
+.loginWrapper {
+	padding:8px 0 15px;
+	margin:0 7px 0 9px;
+	background:url(/images/reg4new/bg07.jpg) repeat-x;
+}
+.loginWrapper .title {
+	margin:0 10px;
+	background:url(/images/reg4new/bg08.gif) no-repeat 0 bottom;
+	padding:0 0 15px 10px;
+}
+.loginWrapper .title p {
+	color:#666;
+}
+.loginWrapper fieldset {
+	margin:30px 40px; border: medium none;
+}
+.loginWrapper fieldset div {
+	padding:10px 0;
+}
+.loginWrapper fieldset .wrongs {
+	background:#FFF9F4 url(/images/reg4new/bg03.jpg) repeat-x;
+	width:190px;
+	width:192px\9;
+	margin-left:75px;
+	+margin-left:77px;
+	border:1px solid #EEE0DB;
+	border-top:none;
+	padding:10px 0;
+	overflow:hidden;
+	-zoom:1;
+}
+.loginWrapper fieldset .wrongs img {
+	float:left;
+	margin:4px 7px 0;
+	margin:0 7px\9;
+}
+.loginWrapper fieldset .wrongs span {
+	float:left;
+	width:155px;
+	color:#633C30;
+}
+.loginWrapper fieldset label {
+	display:inline-block;
+	width:60px;
+}
+.loginWrapper fieldset div.true {
+	background:url(/images/reg4new/bg02.gif) no-repeat 280px 14px;
+}
+.loginWrapper fieldset input.green {
+	border:1px solid #C0C060;
+	background:#EDFFE0;
+}
+.loginWrapper fieldset input {
+	border:1px solid #988481;
+	width:190px;
+	height:20px;
+	vertical-align:middle;
+	color:#666;
+	font-size:14px;
+	padding-top:2px;
+	padding-bottom:0px;
+	
+}
+.loginWrapper fieldset input.red {
+	border:1px solid #EF675C;
+	background:#FFF4EE;
+}
+.loginWrapper fieldset img {
+	vertical-align:middle;
+}
+.loginWrapper fieldset .terms {
+	padding-left:75px;
+}
+.loginWrapper fieldset .terms a{
+	color:#999;
+	text-decoration:underline;
+}
+.loginWrapper fieldset .terms a:hover{
+	color:#333;
+}
+.loginWrapper fieldset .terms input {
+	width:auto;
+	border:none;
+	margin-right:10px;
+}
+.loginWrapper .submit a {
+	display:inline-block;
+	width:93px;
+	height:37px;
+	background:url(images/join.jpg);
+	overflow:hidden;
+}
+.loginWrapper .submit a:hover {
+	background:url(images/join_hover.gif)
+}
+.loginWrapper .submit {
+	padding:0 0 30px 115px;
+}
+#code {
+	width:120px;
+}
+.tips {
+	width:211px;
+	background:url(/images/reg4new/tips3.gif);
+	font-size:14px;
+}
+.tips .center {
+	min-height:20px;
+	-height:20px;
+	position:relative;
+	padding-left:7px;
+	padding-top:4px;
+	padding-right:3px;
+	padding-bottom:8px
+	color:#000;
+}
+.tips .center .arrow {
+	position:absolute;
+	top:3px;
+	left:-9px;
+	width:10px;
+	height:15px;
+	background:url(/images/reg4new/tips4.png);
+	-background:none;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="/images/reg4new/tips4.png");
+}
+
+label{
+	font-size:14px
+}
+
+

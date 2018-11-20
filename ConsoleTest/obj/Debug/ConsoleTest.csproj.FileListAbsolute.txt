@@ -1,0 +1,2 @@
+E:\WYJ_GIT\SWSolution\ConsoleTest\obj\Debug\ConsoleTest.csprojAssemblyReference.cache
+E:\WYJ_GIT\SWSolution\ConsoleTest\obj\Debug\ConsoleTest.csproj.CoreCompileInputs.cache

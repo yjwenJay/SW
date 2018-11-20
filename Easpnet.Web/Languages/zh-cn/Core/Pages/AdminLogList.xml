@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<translations>
+  <item>
+    <from>Error</from>
+    <to>错误</to>
+  </item>
+  <item>
+    <from>Warning</from>
+    <to>警告</to>
+  </item>
+  <item>
+    <from>Null</from>
+    <to>全部</to>
+  </item>
+  <item>
+    <from>Track</from>
+    <to>跟踪</to>
+  </item>
+    <item>
+        <from>Select</from>
+        <to>查询</to>
+    </item>
+
+    <item>
+        <from>Insert</from>
+        <to>添加</to>
+    </item>
+
+    <item>
+        <from>Update</from>
+        <to>编辑</to>
+    </item>
+
+    <item>
+        <from>Delete</from>
+        <to>删除</to>
+    </item>
+
+    <item>
+        <from>NoData</from>
+        <to>无</to>
+    </item>
+
+
+</translations>

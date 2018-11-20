@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<translations>
+  <item>
+    <from>用户名：</from>
+    <to>User Name:</to>
+  </item>
+  <item>
+    <from>密码：</from>
+    <to>Password:</to>
+  </item>
+  <item>
+    <from>首页</from>
+    <to>Home</to>
+  </item>
+  <item>
+    <from>copy_right_infomation</from>
+    <to>Copyright © 2009-2010 58999.COM版权所有</to>
+  </item>
+</translations>

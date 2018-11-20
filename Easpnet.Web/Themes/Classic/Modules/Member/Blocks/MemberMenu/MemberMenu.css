@@ -1,0 +1,45 @@
+﻿.member-menu {
+    border: 3px solid #AF0007;
+    height: auto;
+    overflow: hidden;
+    width: 144px;
+}
+.member-menu li {
+    background: none repeat scroll 0 0 #F5F5F5;
+    border-bottom: 1px solid #E3E3E3;
+    border-top: 1px solid #FFFFFF;
+    cursor: pointer;
+    float: left;
+    height: 29px;
+    position: relative;
+    width: 144px;
+}
+
+.member-menu a {
+    color: #333333;
+}
+
+.member-menu li a {
+    height: 29px;
+    line-height: 29px;
+    display:inline-block;
+    width: 134px;
+    text-decoration:none;
+    padding-left:10px;
+}
+.member-menu li a:hover {
+    background: none repeat scroll 0 0 #AF0007;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.basic_user p {
+    line-height: 20px;
+    text-align: center;
+    width: 98px;
+}
+.basic_user .address {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}

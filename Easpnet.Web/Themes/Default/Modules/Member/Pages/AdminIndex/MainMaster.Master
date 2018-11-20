@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Easpnet.Modules.MainMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title><%=PageTitle %></title>
+    <% Response.Write("<meta name=\"keywords\" content=\""+MetaKeywords+"\" />"); %>
+    <% Response.Write("<meta name=\"description\" content=\"" + MetaDescription + "\" />"); %>
+    <%=Styles%>    
+    <link href="<%=Html.Url("Static/dwz/dwzthemes/default/style.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%=Html.Url("Static/dwz/dwzthemes/css/core.css") %>" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+    <link href="<%=Html.Url("Static/dwz/dwzthemes/css/ieHack.css") %>" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+    <%=Scripts%>
+    <script src="<%=Html.Url("Static/dwz/javascripts/jquery.validate.js") %>" type="text/javascript"></script>
+    <script src="<%=Html.Url("Static/dwz/javascripts/jquery.bgiframe.js") %>" type="text/javascript"></script>
+    <script src="<%=Html.Url("Static/dwz/min/dwz.min.js") %>" type="text/javascript"></script>
+    <script src="<%=Html.Url("Static/dwz/javascripts/dwz.regional.zh.js") %>" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(function(){
+	    DWZ.init("<%=Html.Url("Static/dwz/dwz.frag.xml") %>", {
+    //		loginUrl:"loginsub.html", loginTitle:"登录",	// 弹出登录对话框
+		    loginUrl:"login.html",	// 跳到登录页面
+		    debug:false,	// 调试模式 【true|false】
+		    callback:function(){
+			    initEnv();
+			    $("#themeList").theme({themeBase:"dwzthemes"});
+		    }
+	    });
+    });
+    //清理浏览器内存,只对IE起效,FF不需要
+    if ($.browser.msie) {
+	    window.setInterval("CollectGarbage();", 10000);
+    }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>     
+    <%--<div id="headerWrapper">
+        <div id="logoWrapper"><h1><a href="<%=Html.HrefLink("index", "") %>"><%=Configs["site_name"]%>后台管理</a></h1></div>
+    </div>--%>
+    <asp:ContentPlaceHolder ID="top_box" runat="server"></asp:ContentPlaceHolder>
+    <div id="<%=MainWrapperId %>" class="contentMainWrapper contentMainWrapper<%=CurrentPage.PageName %> <%=MainWrapperClass %>">
+        <asp:ContentPlaceHolder ID="left_box" runat="server"></asp:ContentPlaceHolder>
+        <div id="column-center">        
+            <asp:ContentPlaceHolder ID="main" runat="server"></asp:ContentPlaceHolder>
+        </div>                
+        <asp:ContentPlaceHolder ID="right_box" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    <asp:ContentPlaceHolder ID="bottom_box" runat="server"></asp:ContentPlaceHolder>
+</body>
+</html>

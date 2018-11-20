@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rewriter>
+    <rewrite url="~/Themes/(.*)$" to="~/Themes/$1" processing="stop" />
+    <rewrite url="~/Static/(.*)$" to="~/Static/$1" processing="stop" />
+    <rewrite url="~/ajax.ashx" to="~/ajax.ashx" processing="stop" />
+</rewriter>

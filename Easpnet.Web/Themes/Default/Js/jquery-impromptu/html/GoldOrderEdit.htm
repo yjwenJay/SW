@@ -1,0 +1,129 @@
+﻿   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>无标题页</title>
+</head>
+<body>
+   
+    <table id="table_form" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+       
+        <tr>
+            <td id="Td29" style="width: 86px; height: 14px" class="inputTdLeft">
+                Game:</td>
+            <td style="height: 14px" colspan="3" class="inputTdNormal">
+                <select id="selGame" style="width: 132px">
+                    <option selected="selected"></option>
+                </select>
+                <select id="selGameServer" style="width: 97px">
+                    <option selected="selected"></option>
+                </select>
+                <select id="selGameCamp" style="width: 95px">
+                    <option selected="selected"></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 86px; height: 2px" class="inputTdLeft">
+                Order&nbsp; Price:</td>
+            <td style="width: 122px; height: 2px" class="inputTdRight">
+                <label id="lblPrice"></label>
+                </td>
+            <td style="width: 128px; height: 2px" class="inputTdRight">
+                Transport expense:</td>
+            <td style="width: 130px; height: 2px" class="inputTdRight">
+                <label id="lblTransport"></label>
+                </td>
+        </tr>
+        <tr>
+            <td style="width: 86px" class="inputTdLeft">
+                Amount:</td>
+            <td style="width: 122px" class="inputTdRight">
+                <input id="txtCountBase" style="width: 80px" type="text" /></td>
+            <td style="width: 128px" class="inputTdRight">
+                Game ID:</td>
+            <td style="width: 130px" class="inputTdRight">
+                <input id="txtPartId" style="width: 120px" type="text" /></td>
+        </tr>
+        <tr>
+            <td style="width: 86px; " class="inputTdLeft">
+                Web Code:</td>
+            <td style="width: 122px; " class="inputTdRight">
+                <label id="lblWebSiteOrderId"></label>
+                </td>
+            <td style="width: 128px; " class="inputTdRight">
+                Ebay Name:</td>
+                
+            <td style="width: 130px; " class="inputTdRight">
+                <label id="lblEbayName"></label>
+                </td>                
+        </tr>
+        <tr>
+            <td style="width: 86px" class="inputTdLeft">
+                Ebay Code:</td>
+            <td style="width: 122px" class="inputTdRight">
+                <label id="lblEbayCode"></label>
+                </td>
+            <td style="width: 128px" class="inputTdRight">
+                User Name:</td>
+            <td style="width: 130px" class="inputTdRight">
+                <label id="lblUserName"></label>
+                </td>
+        </tr>
+        <tr>
+            <td style="width: 86px; " class="inputTdLeft">
+                Customer mail:</td>
+            <td style="width: 122px; " class="inputTdRight">
+                <label id="lblUserMail"></label>
+                </td>
+            <td style="width: 128px; " class="inputTdRight">
+                Source:</td>
+            <td style="width: 130px; " class="inputTdRight">
+                <select id="selSource">                    
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 86px; " class="inputTdLeft">
+                Phone:</td>
+            <td style="width: 122px; " class="inputTdRight">
+                <input id="txtPhone" style="width: 120px" type="text" /></td>
+            <td style="width: 128px; " class="inputTdRight">
+                &nbsp;</td>
+            <td style="width: 130px; " class="inputTdRight">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 86px; " class="inputTdLeft">
+                MSN/ICQ/Yahoo/Skype :</td>
+            <td style="" colspan="3" class="inputTdRight">
+                <textarea id="txtCustomerInfo" rows="2" style="width: 98%"></textarea></td>
+        </tr>
+        <tr>
+            <td style="width: 86px; " class="inputTdLeft">
+                Info:</td>
+            <td colspan="3" style="" class="inputTdRight">
+                <textarea id="txtNotes" rows="2" style="width: 98%"></textarea></td>
+        </tr>
+        <tr>
+            <td style="width: 86px; " class="inputTdLeft">
+                OnLineTime:</td>
+            <td style="" colspan="3" class="inputTdRight">
+                <div style="width:100%; height:72px; overflow:auto;">
+                <p style="margin:0;">
+                <label id="lblOnlineTimes"></label>
+                </p>
+                </div>
+                <li id="liAddTimes" style="display:none;">
+                    <select id="selDay"></select>&nbsp;
+                    <select id="selStart"></select>To
+                    <select id="selEnd"></select></li>
+                
+            <input id="btnAddTime" type="button" value="Add time" onclick="AddTimes()"/>
+            <input id="btnCancelAddTime" style="display:none;" type="button" value="Cancel" onclick="CancelAddTime()"/></td>
+        </tr>
+    </table>
+
+<input id="hidGameServerId" type="hidden"/>
+<input id="hidGameCampId" type="hidden" />  
+</body>
+</html>

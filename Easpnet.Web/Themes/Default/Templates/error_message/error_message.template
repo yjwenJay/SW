@@ -1,0 +1,5 @@
+﻿<script language="javascript">
+$(function(){
+    alert("{message}");
+});
+</script>

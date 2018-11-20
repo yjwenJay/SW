@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Easpnet.Modules.MainMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title><%=PageTitle %></title>
+    <% Response.Write("<meta name=\"keywords\" content=\""+MetaKeywords+"\" />"); %>
+    <% Response.Write("<meta name=\"description\" content=\"" + MetaDescription + "\" />"); %>
+    <base href="<%=Html.WebRootUrl %>"  />
+    <%=Styles%><%=Scripts%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>    
+</head>
+<body>
+    <div class="main-page">       
+        <div id="headerWrapper">
+            <div id="logoWrapper">
+                <a href="<%=Html.HrefLink("Core", "Index") %>"><img src="<%=ImageUrl("logo.png") %>" alt="<%=Configs["site_name"] %>首页" /></a>
+            </div>
+            <div id="menuWrappler">
+                <ul>
+                    <li><a href="<%=Html.HrefLink("Core", "Index") %>">首页</a><em></em></li>
+                    <li><a href="<%=Html.HrefLink("Member", "MemberIndex") %>">个人中心</a><em></em></li>
+                    <li><a href="<%=Html.HrefLink("Member", "Login") %>">登录</a><em></em></li>  
+                    <li><a href="<%=Html.HrefLink("Member", "Register") %>">注册</a><em></em></li>              
+                </ul>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="top_box" runat="server"></asp:ContentPlaceHolder>
+        <div id="<%=MainWrapperId %>" class="contentMainWrapper">
+            <asp:ContentPlaceHolder ID="left_box" runat="server"></asp:ContentPlaceHolder>
+            <div id="column-center">        
+                <asp:ContentPlaceHolder ID="main" runat="server"></asp:ContentPlaceHolder>
+            </div>                
+            <asp:ContentPlaceHolder ID="right_box" runat="server"></asp:ContentPlaceHolder>
+            <div class="c"></div>
+        </div>
+        <asp:ContentPlaceHolder ID="bottom_box" runat="server"></asp:ContentPlaceHolder>
+        <div id="footerWrapper">
+            <%=Configs["site_copyright"]%>
+        </div>            
+    </div>
+</body>
+</html>

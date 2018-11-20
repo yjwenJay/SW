@@ -1,0 +1,3595 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Easpnet</name>
+    </assembly>
+    <members>
+        <member name="M:Easpnet.Database.Insert(System.String,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            根据指定的表和列插入数据
+            </summary>
+            <param name="columns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.Insert(Easpnet.Transaction,System.String,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            根据指定的表和列插入数据
+            </summary>
+            <param name="columns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.Update(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            更新数据
+            </summary>
+            <param name="tableName">表名称</param>
+            <param name="updateColumns">待更新的列集合</param>
+            <param name="primaryKeyColumns">主键列集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.Update(Easpnet.Transaction,System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            在指定的事务中进行更新数据（根据主键列）
+            </summary>
+            <param name="trans">事务</param> 
+            <param name="tableName">表名</param>
+            <param name="updateColumns">待更新的列集合</param>
+            <param name="primaryKeyColumns">主键列集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.Update(System.String,System.Collections.Generic.List{Easpnet.TableColumn},Easpnet.Query)">
+            <summary>
+            更新数据，条件为Easpnet.Query查询结构
+            </summary>
+            <param name="tableName">表的名称</param>
+            <param name="updateColumns">要更新的字段名称</param>
+            <param name="query">更新的条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.Update(Easpnet.Transaction,System.String,System.Collections.Generic.List{Easpnet.TableColumn},Easpnet.Query)">
+            <summary>
+            在指定的事务中更新数据，条件为Easpnet.Query查询结构
+            </summary>
+            <param name="trans">事务</param> 
+            <param name="tableName">表的名称</param>
+            <param name="updateColumns">要更新的字段名称</param>
+            <param name="query">更新的条件</param>
+            <returns>返回更新的数据条数</returns>
+        </member>
+        <member name="M:Easpnet.Database.Cumulative(System.String,System.String,System.Double,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            将某个字段进行数字的累加
+            </summary>
+            <param name="tableName">表的名称</param>
+            <param name="fieldName">字段名称</param>
+            <param name="num">累加的数字，可为负数</param>
+            <param name="primaryKeyColumns">主键列</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.Cumulative(Easpnet.Transaction,System.String,System.String,System.Double,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            在指定的事务中，将某个字段进行数字的累加
+            </summary>
+            <param name="trans">事务</param> 
+            <param name="tableName">表的名称</param>
+            <param name="fieldName">字段名称</param>
+            <param name="num">累加的数字，可为负数</param>
+            <param name="primaryKeyColumns">主键列</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.Cumulative(System.String,System.String,System.Double,Easpnet.Query)">
+            <summary>
+            将某个字段进行数字的累加
+            </summary>
+            <param name="tableName">表的名称</param>
+            <param name="fieldName">字段名称</param>
+            <param name="num">累加的数字，可为负数</param>
+            <param name="query">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.Cumulative(Easpnet.Transaction,System.String,System.String,System.Double,Easpnet.Query)">
+            <summary>
+            在指定的事务中，将某个字段进行数字的累加
+            </summary>
+            <param name="trans">事务</param> 
+            <param name="tableName">表的名称</param>
+            <param name="fieldName">字段名称</param>
+            <param name="num">累加的数字，可为负数</param>
+            <param name="query">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.Delete(System.String,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            删除数据
+            </summary>
+            <param name="tableName">要删除数据的表</param>
+            <param name="primaryKeyColumns">主键列</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.Delete(Easpnet.Transaction,System.String,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            删除数据
+            </summary>
+            <param name="trans">事务</param>
+            <param name="tableName">要删除数据的表</param>
+            <param name="primaryKeyColumns">主键列</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.Delete(System.String,Easpnet.Query)">
+            <summary>
+            删除数据，反悔删除的数据条数
+            </summary>
+            <param name="tableName">要删除数据的表</param>
+            <param name="query">查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.Delete(Easpnet.Transaction,System.String,Easpnet.Query)">
+            <summary>
+            删除数据，反悔删除的数据条数
+            </summary>
+            <param name="trans">事务</param>
+            <param name="tableName">要删除数据的表</param>
+            <param name="query">查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.GetModelReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            获取模型
+            </summary>
+            <param name="primaryKeyColumns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.GetModelReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.Collections.Generic.List{Easpnet.TableColumn},Easpnet.DbLock,Easpnet.Transaction)">
+            <summary>
+            获取模型
+            </summary>
+            <param name="primaryKeyColumns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.SelectReader(System.String,System.String,System.String,System.String,Easpnet.PageParam,System.Data.IDataParameter@,System.Data.IDataParameter@)">
+            <summary>
+            执行选择操作，使用通用存储过程
+            </summary>
+            <param name="connectionString"></param>
+            <param name="condition"></param>
+            <param name="creator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.SelectReader(System.String,System.String,Easpnet.Query,System.String,Easpnet.PageParam,System.Data.IDataParameter@,System.Data.IDataParameter@)">
+            <summary>
+            执行查询操作
+            </summary>
+            <param name="tableName"></param>
+            <param name="identifier"></param>
+            <param name="query"></param>
+            <param name="page"></param>
+            <param name="count"></param>
+            <param name="total"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.SelectReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.String,Easpnet.Query,System.String,Easpnet.PageParam,System.Data.IDataParameter@,System.Data.IDataParameter@)">
+            <summary>
+            执行查询操作
+            </summary>
+            <param name="tableName"></param>
+            <param name="identifier"></param>
+            <param name="query"></param>
+            <param name="page"></param>
+            <param name="count"></param>
+            <param name="total"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.SelectReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},Easpnet.Query,System.String)">
+            <summary>
+            执行选择操作
+            </summary>
+            <param name="tableName"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.SelectReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},Easpnet.Query,System.String,Easpnet.DbLock,Easpnet.Transaction)">
+            <summary>
+            执行选择操作
+            </summary>
+            <param name="tableName"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.SelectReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},Easpnet.Query,System.String,System.Int32)">
+            <summary>
+            执行选中，值选中前count条记录
+            </summary>
+            <param name="tableName"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.SelectReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},Easpnet.Query,System.String,System.Int32,Easpnet.DbLock,Easpnet.Transaction)">
+            <summary>
+            执行选中，值选中前count条记录
+            </summary>
+            <param name="tableName"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.SelectCount(System.String,Easpnet.Query)">
+            <summary>
+            统计数量
+            </summary>
+            <param name="tableName"></param>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.SelectSum(System.String,System.String,Easpnet.Query)">
+            <summary>
+            统计总数
+            </summary>
+            <param name="tableName">表名称</param>
+            <param name="fieldName">字段名称</param>
+            <param name="condition">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.SelectTable(System.String,Easpnet.Query,System.Int32)">
+            <summary>
+            根据查询条件查询表格
+            </summary>
+            <param name="tableName">表名称</param>
+            <param name="query">查询条件</param>
+            <param name="count">选择的数量，设为小于或者等于0的数表示查询全部</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.SelectTable(System.String,Easpnet.Query,System.Int32,Easpnet.DbLock,Easpnet.Transaction)">
+            <summary>
+            根据查询条件查询表格
+            </summary>
+            <param name="tableName">表名称</param>
+            <param name="query">查询条件</param>
+            <param name="count">选择的数量，设为小于或者等于0的数表示查询全部</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.SelectMax(System.String,System.String,Easpnet.Query)">
+            <summary>
+            查询最大值
+            </summary>
+            <param name="tableName"></param>
+            <param name="fieldName"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.SelectMin(System.String,System.String,Easpnet.Query)">
+            <summary>
+            查询最小值
+            </summary>
+            <param name="tableName"></param>
+            <param name="fieldName"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.ExecuteProcedureNonQuery(Easpnet.Procedure)">
+            <summary>
+            执行不返回记录集的存储过程
+            </summary>
+            <returns>影响的行数</returns>
+        </member>
+        <member name="M:Easpnet.Database.ExecuteProcedureDataTable(Easpnet.Procedure)">
+            <summary>
+            执行存储过程，返回DataTable
+            </summary>
+            <returns>影响的行数</returns>
+        </member>
+        <member name="M:Easpnet.Database.Execute(Easpnet.Transaction,System.String,System.Object[])">
+            <summary>
+            执行自定义Sql语句
+            </summary>
+            <param name="trans"></param>
+            <param name="sql"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.Execute(System.String,System.Object[])">
+            <summary>
+            执行自定义Sql语句
+            </summary>
+            <param name="trans"></param>
+            <param name="sql"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Database.Execute(System.Data.Common.DbConnection,System.String,System.Object[])">
+            <summary>
+            执行自定义Sql语句
+            </summary>
+            <param name="conn"></param>
+            <param name="sql"></param>
+            <param name="parameters"></param>
+            <returns>返回影响的行数</returns>
+        </member>
+        <member name="M:Easpnet.Database.Execute(System.String,System.String,System.Object[])">
+            <summary>
+            执行自定义Sql语句
+            </summary>
+            <param name="connstr">连接字符串</param>
+            <param name="sql"></param>
+            <param name="parameters"></param>
+            <returns>返回影响的行数</returns>
+        </member>
+        <member name="T:Easpnet.TypeConvert">
+            <summary>
+            提供数据类型的转化
+            防止空值时转化错误
+            </summary>
+        </member>
+        <member name="M:Easpnet.TypeConvert.ToInt32(System.Object)">
+            <summary>
+            转化为Int型数据，为空时时返回0
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.TypeConvert.ToInt64(System.Object)">
+            <summary>
+            转化为Int型数据，为空时时返回0
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.TypeConvert.ToString(System.Object)">
+            <summary>
+            转化为字符串
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.TypeConvert.ToDateTime(System.Object)">
+            <summary>
+            转化为日期型
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.TypeConvert.ToBoolean(System.Object)">
+            <summary>
+            转化为逻辑性数据
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.TypeConvert.ToDouble(System.Object)">
+            <summary>
+            转化为实数类型
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.TypeConvert.IsDefaultTime(System.DateTime)">
+            <summary>
+            是否为默认时间
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.TypeConvert.ConvertIntToDateTime(System.Int32)">
+            <summary>
+            将Unix时间戳转换为DateTime类型时间
+            </summary>
+            <param name="date">int 时间戳</param>
+            <returns>DateTime</returns>
+        </member>
+        <member name="M:Easpnet.TypeConvert.ConvertDateTimeToInt(System.DateTime)">
+            <summary>
+            将c# DateTime时间格式转换为Unix时间戳格式
+            </summary>
+            <param name="time">时间</param>
+            <returns>double</returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.MakeConnection(System.String)">
+            <summary>
+            用给定的连接字符串创建连接
+            </summary>
+            <param name="connstr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Insert(System.String,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            根据指定的表和列插入数据
+            </summary>
+            <param name="tableName"></param>
+            <param name="columns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Insert(Easpnet.Transaction,System.String,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            在指定的事务中执行，根据指定的表和列插入数据
+            </summary>
+            <param name="trans"></param>
+            <param name="tableName"></param>
+            <param name="columns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Update(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            更新数据，条件根据主键列
+            </summary>
+            <param name="tableName"></param>
+            <param name="columns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Update(Easpnet.Transaction,System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            在指定的事务中，根据主键列，进行数据更新
+            </summary>
+            <param name="trans">事务</param> 
+            <param name="tableName">表名</param>
+            <param name="columns">列集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Update(System.String,System.Collections.Generic.List{Easpnet.TableColumn},Easpnet.Query)">
+            <summary>
+            更新数据，条件为Easpnet.Query查询结构
+            </summary>
+            <param name="tableName">表的名称</param>
+            <param name="updateColumns">要更新的字段名称</param>
+            <param name="query">更新的条件</param>
+            <returns>返回更新的数据条数</returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Update(Easpnet.Transaction,System.String,System.Collections.Generic.List{Easpnet.TableColumn},Easpnet.Query)">
+            <summary>
+            在指定的事务中更新数据，条件为Easpnet.Query查询结构
+            </summary>
+            <param name="trans">事务</param> 
+            <param name="tableName">表的名称</param>
+            <param name="updateColumns">要更新的字段名称</param>
+            <param name="query">更新的条件</param>
+            <returns>返回更新的数据条数</returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Cumulative(System.String,System.String,System.Double,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            将某个字段进行数字的累加
+            </summary>
+            <param name="tableName">表的名称</param>
+            <param name="fieldName">字段名称</param>
+            <param name="num">累加的数字，可为负数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Cumulative(Easpnet.Transaction,System.String,System.String,System.Double,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            在指定的事务中，将某个字段进行数字的累加
+            </summary>
+            <param name="trans">事务</param> 
+            <param name="tableName">表的名称</param>
+            <param name="fieldName">字段名称</param>
+            <param name="num">累加的数字，可为负数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Cumulative(System.String,System.String,System.Double,System.String)">
+            <summary>
+            将某个字段进行数字的累加
+            </summary>
+            <param name="tableName">表的名称</param>
+            <param name="fieldName">字段名称</param>
+            <param name="num">累加的数字，可为负数</param>
+            <param name="condition">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Cumulative(Easpnet.Transaction,System.String,System.String,System.Double,System.String)">
+            <summary>
+            在指定的事务中，将某个字段进行数字的累加
+            </summary>
+            <param name="trans">事务</param> 
+            <param name="tableName">表的名称</param>
+            <param name="fieldName">字段名称</param>
+            <param name="num">累加的数字，可为负数</param>
+            <param name="condition">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Delete(System.String,System.String)">
+            <summary>
+            删除数据
+            </summary>
+            <param name="tableName">要删除数据的表</param>
+            <param name="primaryKeyColumns">主键列</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Delete(Easpnet.Transaction,System.String,System.String)">
+            <summary>
+            在指定的事务中删除数据
+            </summary>
+            <param name="tableName">要删除数据的表</param>
+            <param name="primaryKeyColumns">主键列</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Delete(System.String,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            根据条件删除删除数据
+            </summary>
+            <param name="tableName">要删除数据的表</param>
+            <param name="primaryKeyColumns">主键列</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Delete(Easpnet.Transaction,System.String,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            根据条件删除删除数据
+            </summary>
+            <param name="tableName">要删除数据的表</param>
+            <param name="primaryKeyColumns">主键列</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.GetModelReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            获取单个的数据访问方法
+            </summary>
+            <param name="primaryKeyColumns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.GetModelReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.Collections.Generic.List{Easpnet.TableColumn},Easpnet.DbLock,Easpnet.Transaction)">
+            <summary>
+            获取单个的数据访问方法 - 指定锁方式
+            </summary>
+            <param name="primaryKeyColumns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.SelectReader(System.String,System.String,System.String,System.String,Easpnet.PageParam,System.Data.IDataParameter@,System.Data.IDataParameter@)">
+            <summary>
+            执行选择操作，使用通用存储过程
+            </summary>
+            <param name="condition"></param>
+            <param name="creator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.SelectReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.String,System.String,System.String,Easpnet.PageParam,System.Data.IDataParameter@,System.Data.IDataParameter@)">
+            <summary>
+            执行选择操作，使用通用存储过程
+            </summary>
+            <param name="condition"></param>
+            <param name="creator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.SelectReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.String,System.String,Easpnet.DbLock,Easpnet.Transaction)">
+            <summary>
+            执行选择操作
+            </summary>
+            <param name="tableName"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.SelectReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.String,System.String,System.Int32)">
+            <summary>
+            执行选中，值选中前count条记录
+            </summary>
+            <param name="tableName"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.SelectReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.String,System.String,System.Int32,Easpnet.DbLock,Easpnet.Transaction)">
+            <summary>
+            执行选中，值选中前count条记录
+            </summary>
+            <param name="tableName"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.SelectCount(System.String,System.String)">
+            <summary>
+            统计数量
+            </summary>
+            <param name="tableName"></param>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.SelectSum(System.String,System.String,System.String)">
+            <summary>
+            统计总数
+            </summary>
+            <param name="tableName">表名称</param>
+            <param name="fieldName">字段名称</param>
+            <param name="condition">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.SelectTable(System.String,Easpnet.Query,System.Int32)">
+            <summary>
+            根据查询条件查询表格
+            </summary>
+            <param name="tableName">表名称</param>
+            <param name="query">查询条件</param>
+            <param name="count">选择的数量，设为小于或者等于0的数表示查询全部</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.SelectTable(System.String,Easpnet.Query,System.Int32,Easpnet.DbLock,Easpnet.Transaction)">
+            <summary>
+            根据查询条件查询表格
+            </summary>
+            <param name="tableName">表名称</param>
+            <param name="query">查询条件</param>
+            <param name="count">选择的数量，设为小于或者等于0的数表示查询全部</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.SelectMax(System.String,System.String,Easpnet.Query)">
+            <summary>
+            查询最大值
+            </summary>
+            <param name="tableName"></param>
+            <param name="fieldName"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.SelectMin(System.String,System.String,Easpnet.Query)">
+            <summary>
+            查询最小值
+            </summary>
+            <param name="tableName"></param>
+            <param name="fieldName"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.ExecuteProcedureNonQuery(Easpnet.Procedure)">
+            <summary>
+            执行不返回记录集的存储过程
+            </summary>
+            <returns>影响的行数</returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.ExecuteProcedureDataTable(Easpnet.Procedure)">
+            <summary>
+            执行存储过程，返回DataTable
+            </summary>
+            <returns>影响的行数</returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.ExecuteProcedureRecordList(Easpnet.Procedure)">
+            <summary>
+            执行存储过程，返回DataReader
+            </summary>
+            <returns>影响的行数</returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Select(Easpnet.Db)">
+            <summary>
+            根据模型进行查询
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Update(Easpnet.Db,Easpnet.NameObject[])">
+            <summary>
+            执行更新操作
+            </summary>
+            <param name="m"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Insert(Easpnet.Db,Easpnet.NameObject[],System.Boolean)">
+            <summary>
+            执行插入操作
+            </summary>
+            <param name="m"></param>
+            <param name="data"></param>
+            <param name="isGetId">是否获取identity</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.Execute(Easpnet.Transaction,System.Data.Common.DbConnection,System.String,System.String,System.Object[])">
+            <summary>
+            执行原生的Sql
+            </summary>
+            <param name="trans"></param>
+            <param name="conn">数据库连接</param>
+            <param name="constr">连接字符串</param>
+            <param name="sql"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DbHelper.ExecuteSelect(Easpnet.Transaction,System.Data.Common.DbConnection,System.String,System.String,System.Object[])">
+            <summary>
+            执行原生的查询
+            </summary>
+            <param name="trans"></param>
+            <param name="conn">数据库连接</param>
+            <param name="constr">连接字符串</param>
+            <param name="sql"></param>
+            <param name="parameters"></param>
+        </member>
+        <member name="T:Easpnet.DbLock">
+            <summary>
+            数据库查询锁类型
+            </summary>
+        </member>
+        <member name="F:Easpnet.DbLock.None">
+            <summary>
+            无锁
+            </summary>
+        </member>
+        <member name="F:Easpnet.DbLock.UpdLock">
+            <summary>
+            更新锁 - 数据读取后，其他线程不能更新
+            </summary>
+        </member>
+        <member name="F:Easpnet.DbLock.RowLock">
+            <summary>
+            行锁
+            </summary>
+        </member>
+        <member name="F:Easpnet.DbLock.NoLock">
+            <summary>
+            不锁
+            </summary>
+        </member>
+        <member name="M:Easpnet.DynamicJson.Parse(System.String)">
+            <summary>from JsonSring to DynamicJson</summary>
+        </member>
+        <member name="M:Easpnet.DynamicJson.Parse(System.String,System.Text.Encoding)">
+            <summary>from JsonSring to DynamicJson</summary>
+        </member>
+        <member name="M:Easpnet.DynamicJson.Parse(System.IO.Stream)">
+            <summary>from JsonSringStream to DynamicJson</summary>
+        </member>
+        <member name="M:Easpnet.DynamicJson.Parse(System.IO.Stream,System.Text.Encoding)">
+            <summary>from JsonSringStream to DynamicJson</summary>
+        </member>
+        <member name="M:Easpnet.DynamicJson.Serialize(System.Object)">
+            <summary>create JsonSring from primitive or IEnumerable or Object({public property name:property value})</summary>
+        </member>
+        <member name="M:Easpnet.DynamicJson.#ctor">
+            <summary>create blank JSObject</summary>
+        </member>
+        <member name="M:Easpnet.DynamicJson.IsDefined(System.String)">
+            <summary>has property or not</summary>
+        </member>
+        <member name="M:Easpnet.DynamicJson.IsDefined(System.Int32)">
+            <summary>has property or not</summary>
+        </member>
+        <member name="M:Easpnet.DynamicJson.Delete(System.String)">
+            <summary>delete property</summary>
+        </member>
+        <member name="M:Easpnet.DynamicJson.Delete(System.Int32)">
+            <summary>delete property</summary>
+        </member>
+        <member name="M:Easpnet.DynamicJson.Deserialize``1">
+            <summary>mapping to Array or Class by Public PropertyName</summary>
+        </member>
+        <member name="M:Easpnet.DynamicJson.ToString">
+            <summary>Serialize to JsonString</summary>
+        </member>
+        <member name="T:Easpnet.JSONHelper">
+            <summary>
+            构造JSON数据通用类
+            </summary>
+        </member>
+        <member name="T:Easpnet.LanguageHelper">
+            <summary>
+            多语言操作助手
+            </summary>
+        </member>
+        <member name="M:Easpnet.LanguageHelper.ReadLanguages(System.Collections.Specialized.NameValueCollection,System.String)">
+            <summary>
+            读取语言配置
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.LanguageHelper.GetNodeText(System.Xml.XmlNode,System.String,System.Object)">
+            <summary>
+            获取节点Text内容
+            </summary>
+            <param name="parentNode"></param>
+            <param name="nodeName"></param>
+            <param name="defaultValue">若没有找到时的默认值</param>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.SelectCallback`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.JoinType">
+            <summary>
+            连接类型
+            </summary>
+        </member>
+        <member name="F:Easpnet.JoinType.Inner">
+            <summary>
+            内连接
+            </summary>
+        </member>
+        <member name="F:Easpnet.JoinType.Left">
+            <summary>
+            左连接
+            </summary>
+        </member>
+        <member name="F:Easpnet.JoinType.Right">
+            <summary>
+            右连接
+            </summary>
+        </member>
+        <member name="T:Easpnet.Join">
+            <summary>
+            关联
+            </summary>
+        </member>
+        <member name="P:Easpnet.Join.JoinType">
+            <summary>
+            连接方式
+            </summary>
+        </member>
+        <member name="P:Easpnet.Join.Table">
+            <summary>
+            连接到的表格
+            </summary>
+        </member>
+        <member name="P:Easpnet.Join.TableAs">
+            <summary>
+            表别名
+            </summary>
+        </member>
+        <member name="P:Easpnet.Join.On">
+            <summary>
+            连接条件
+            </summary>
+        </member>
+        <member name="T:Easpnet.Qy">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="M:Easpnet.Qy.#ctor(System.String)">
+            <summary>
+            构造Qy对象，比较符号默认为 = 
+            </summary>
+            <param name="field"></param>
+        </member>
+        <member name="M:Easpnet.Qy.#ctor(System.String,System.Object)">
+            <summary>
+            构造Qy对象，比较符号默认为 = 
+            </summary>
+            <param name="field"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Easpnet.Qy.#ctor(System.String,System.String,System.Object)">
+            <summary>
+            构造Qy对象，比较符号默认为 = 
+            </summary>
+            <param name="field"></param>
+            <param name="symbol"></param>
+            <param name="value"></param>
+        </member>
+        <member name="P:Easpnet.Qy.Field">
+            <summary>
+            字段名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Qy.Symbol">
+            <summary>
+            比较符号
+            </summary>
+        </member>
+        <member name="P:Easpnet.Qy.value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="T:Easpnet.QyList">
+            <summary>
+            查询条件列表
+            </summary>
+        </member>
+        <member name="M:Easpnet.QyList.Add(System.String,System.Object)">
+            <summary>
+            插入一条查询条件
+            </summary>
+            <param name="field"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.QyList.Add(System.String,System.String,System.Object)">
+            <summary>
+            插入一条查询条件
+            </summary>
+            <param name="field"></param>
+            <param name="symbol"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Db">
+            <summary>
+            数据库模型
+            </summary>
+        </member>
+        <member name="P:Easpnet.Db.DbTransaction">
+            <summary>
+            数据库事务
+            </summary>
+        </member>
+        <member name="P:Easpnet.Db.DbConnection">
+            <summary>
+            设定的数据库连接
+            </summary>
+        </member>
+        <member name="P:Easpnet.Db.DbConnectionString">
+            <summary>
+            连接字符串
+            </summary>
+        </member>
+        <member name="P:Easpnet.Db.m_TableName">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="P:Easpnet.Db.TableAs">
+            <summary>
+            表别名
+            </summary>
+        </member>
+        <member name="P:Easpnet.Db.SelectLimit">
+            <summary>
+            查询前N调数据
+            </summary>
+        </member>
+        <member name="P:Easpnet.Db.PageParam">
+            <summary>
+            分页参数
+            </summary>
+        </member>
+        <member name="P:Easpnet.Db.LockType">
+            <summary>
+            查询加锁方式
+            </summary>
+        </member>
+        <member name="P:Easpnet.Db.Joins">
+            <summary>
+            表连接
+            </summary>
+        </member>
+        <member name="P:Easpnet.Db.SelectFields">
+            <summary>
+            查询的字段列表
+            </summary>
+        </member>
+        <member name="P:Easpnet.Db.pWhereSql">
+            <summary>
+            查询条件-sql语句
+            </summary>
+        </member>
+        <member name="P:Easpnet.Db.WhereParams">
+            <summary>
+            查询条件-参数
+            </summary>
+        </member>
+        <member name="P:Easpnet.Db.OrderByField">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="P:Easpnet.Db.GroupByField">
+            <summary>
+            分组字段
+            </summary>
+        </member>
+        <member name="P:Easpnet.Db.RawSql">
+            <summary>
+            最终执行的原生SQL
+            </summary>
+        </member>
+        <member name="M:Easpnet.Db.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Easpnet.Db.splitTableName(System.String)">
+            <summary>
+            分割表名称
+            </summary>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="tableName"></param>
+        </member>
+        <member name="M:Easpnet.Db.Reset">
+            <summary>
+            重置各种条件
+            </summary>
+        </member>
+        <member name="M:Easpnet.Db.Table(System.String)">
+            <summary>
+            新建一个对象
+            </summary>
+            <param name="tableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Connect(System.String)">
+            <summary>
+            根据连接字符串创建对象
+            </summary>
+            <param name="connstr">连接字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Connect(System.Data.Common.DbConnection)">
+            <summary>
+            根据连接字符串创建对象
+            </summary>
+            <param name="conn">数据库连接</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.TableName(System.String)">
+            <summary>
+            设置表格名称
+            </summary>
+            <param name="tableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Join(Easpnet.JoinType,System.String,System.String)">
+            <summary>
+            新增一个表连接
+            </summary>
+            <param name="joinType"></param>
+            <param name="table"></param>
+            <param name="on"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Join(Easpnet.JoinType,System.String,System.String,System.String)">
+            <summary>
+            新增一个表连接
+            </summary>
+            <param name="joinType"></param>
+            <param name="table"></param>
+            <param name="tableAs"></param>
+            <param name="on"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.InnerJoin(System.String,System.String)">
+            <summary>
+            新增一个表连接 - Inner Join
+            </summary>
+            <param name="table"></param>
+            <param name="on"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.InnerJoin(System.String,System.String,System.String)">
+            <summary>
+            新增一个表连接 - Inner Join
+            </summary>
+            <param name="table"></param>
+            <param name="tableAs"></param>
+            <param name="on"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.LeftJoin(System.String,System.String)">
+            <summary>
+            新增一个表连接 - Left Join
+            </summary>
+            <param name="table"></param>
+            <param name="on"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.LeftJoin(System.String,System.String,System.String)">
+            <summary>
+            新增一个表连接 - Left Join
+            </summary>
+            <param name="table"></param>
+            <param name="tableAs"></param>
+            <param name="on"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.RightJoin(System.String,System.String)">
+            <summary>
+            新增一个表连接 - Right Join
+            </summary>
+            <param name="table"></param>
+            <param name="on"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.RightJoin(System.String,System.String,System.String)">
+            <summary>
+            新增一个表连接 - Right Join
+            </summary>
+            <param name="table"></param>
+            <param name="tableAs"></param>
+            <param name="on"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.WhereSql(System.String,System.Object[])">
+            <summary>
+            设置查询Where条件
+            </summary>
+            <param name="whereSql">
+            Sql语句
+            用?号作为参数占位
+            </param>
+            <param name="par">参数列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Where(Easpnet.QyList)">
+            <summary>
+            构造简单查询条件
+            </summary>
+            <param name="q"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Where(System.String,System.String,System.Object)">
+            <summary>
+            新增Where条件
+            </summary>
+            <param name="key"></param>
+            <param name="symbol"></param>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Where(System.String)">
+            <summary>
+            新增Where条件
+            </summary>
+            <param name="key"></param>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Where(System.String,System.Object)">
+            <summary>
+            新增Where条件
+            </summary>
+            <param name="key"></param>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.WhereIn(System.String,System.Object[])">
+            <summary>
+            增加In查询
+            </summary>
+            <param name="key">字段名称</param>
+            <param name="values">字段值列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.WhereNotIn(System.String,System.Object[])">
+            <summary>
+            增加Not In查询
+            </summary>
+            <param name="key">字段名称</param>
+            <param name="values">字段值列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.OrderBy(System.String)">
+            <summary>
+            设置排序方式
+            </summary>
+            <param name="orderBY"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.GroupBy(System.String)">
+            <summary>
+            设置分组字段
+            </summary>
+            <param name="groupBy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Lock(Easpnet.DbLock,Easpnet.Transaction)">
+            <summary>
+            设置Lock方式
+            </summary>
+            <param name="lockType"></param>
+            <param name="trans"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Transaction(Easpnet.Transaction)">
+            <summary>
+            设置事务
+            </summary>
+            <param name="trans"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Limit(System.Int32)">
+            <summary>
+            设置查询的条数
+            </summary>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.SelectFirst(System.String,Easpnet.SelectCallback{Easpnet.Record})">
+            <summary>
+            查找一条记录
+            </summary>
+            <param name="fields">查询的列，默认为 * </param>
+            <param name="callback">查询成功后对记录的回调处理函数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.SelectFirstField(System.String)">
+            <summary>
+            查询第一条记录的指定字段值
+            </summary>
+            <param name="field"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.SelectFirst``1(System.String,Easpnet.SelectCallback{``0})">
+            <summary>
+            查找一条记录
+            </summary>
+            <param name="fields">查询的列，默认为 * </param>
+            <param name="callback">查询成功后对记录的回调处理函数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Select(System.String,Easpnet.SelectCallback{Easpnet.Record})">
+            <summary>
+            查询结果集合（多条记录）
+            </summary>
+            <param name="fields">查询的列，默认为 * </param>
+            <param name="callback">查询成功后对记录的回调处理</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Select``1(System.String,Easpnet.SelectCallback{``0})">
+            <summary>
+            指定的类型
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="fields">要查询的字段</param>
+            <param name="callback">查询成功后对记录的回调处理</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.SelectPage``1(Easpnet.PageParam,System.String,Easpnet.SelectCallback{``0})">
+            <summary>
+            分页查询
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="page"></param>
+            <param name="fields"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.SelectPage(Easpnet.PageParam,System.String,Easpnet.SelectCallback{Easpnet.Record})">
+            <summary>
+            分页查询
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="page"></param>
+            <param name="fields"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.SelectPage``1(System.Int32,System.Int32,System.String,Easpnet.SelectCallback{``0})">
+            <summary>
+            简易分页查询
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="fields"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.SelectPage(System.Int32,System.Int32,System.String,Easpnet.SelectCallback{Easpnet.Record})">
+            <summary>
+            简易分页查询
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="fields"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Update(Easpnet.Transaction,Easpnet.NameObject[])">
+            <summary>
+            更新
+            </summary>
+            <param name="trans">关联的事务</param>
+            <param name="data">更新的数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Update(Easpnet.Transaction,System.Collections.Generic.List{Easpnet.NameObject})">
+            <summary>
+            更新
+            </summary>
+            <param name="trans">关联的事务</param>
+            <param name="data">更新的数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Update(Easpnet.NameObject[])">
+            <summary>
+            根据条件更新指定的字段
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Update(System.Collections.Generic.List{Easpnet.NameObject})">
+            <summary>
+            根据条件更新指定的字段
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.Insert(Easpnet.Transaction,Easpnet.NameObject[])">
+            <summary>
+            插入数据
+            </summary>
+            <param name="trans">事务</param>
+            <param name="data">插入的数据</param>
+            <returns>返回影响的行数</returns>
+        </member>
+        <member name="M:Easpnet.Db.Insert(Easpnet.NameObject[])">
+            <summary>
+            插入数据
+            </summary>
+            <param name="trans">事务</param>
+            <param name="data">插入的数据</param>
+            <returns>返回影响的行数</returns>
+        </member>
+        <member name="M:Easpnet.Db.InsertGetId(Easpnet.Transaction,Easpnet.NameObject[])">
+            <summary>
+            插入数据
+            </summary>
+            <param name="trans">事务</param>
+            <param name="data">插入的数据</param>
+            <returns>返回影响的行数</returns>
+        </member>
+        <member name="M:Easpnet.Db.InsertGetId(Easpnet.NameObject[])">
+            <summary>
+            插入数据
+            </summary>
+            <param name="trans">事务</param>
+            <param name="data">插入的数据</param>
+            <returns>返回影响的行数</returns>
+        </member>
+        <member name="M:Easpnet.Db.Execute(System.String,System.Object[])">
+            <summary>
+            执行自定义Sql语句
+            </summary>
+            <param name="sql"></param>
+            <param name="parameters"></param>
+            <returns>返回影响的行数</returns>
+        </member>
+        <member name="M:Easpnet.Db.ExecuteSelect(System.String,Easpnet.SelectCallback{Easpnet.Record},System.Object[])">
+            <summary>
+            执行自定义Sql语句
+            </summary>
+            <param name="sql">执行的sql语句</param>
+            <param name="callback">查询成功后执行的回调-若无则传null即可</param>
+            <param name="parameters">参数</param>
+            <returns>返回影响的行数</returns>
+        </member>
+        <member name="M:Easpnet.Db.ExecuteSelect(System.String,System.Object[])">
+            <summary>
+            执行自定义Sql查询语句
+            </summary>
+            <param name="sql"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.GetGetProperties(System.Type)">
+            <summary>
+            获取树形数组
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.MakeRecordFromDataReader(System.Data.IDataReader)">
+            <summary>
+            从DataReader构造Record
+            </summary>
+            <param name="dr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Db.MakeRecordFromDataReader``1(System.Data.IDataReader)">
+            <summary>
+            构造实体
+            </summary>
+            <param name="dr"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Record">
+            <summary>
+            数据库记录
+            </summary>
+        </member>
+        <member name="F:Easpnet.Record.Fields">
+            <summary>
+            字段列表
+            </summary>
+        </member>
+        <member name="M:Easpnet.Record.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Easpnet.Record.AddField(System.String,System.Object)">
+            <summary>
+            添加字段值
+            </summary>
+            <param name="name"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Easpnet.Record.RemoveField(System.String)">
+            <summary>
+            删除字段值
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:Easpnet.Record.Get(System.String)">
+            <summary>
+            获取字段值-返回字符串
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Record.GetStr(System.String)">
+            <summary>
+            获取字段值-返回字符串
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Record.GetInt32(System.String)">
+            <summary>
+            获取字段值-返回Int32
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Record.GetInt32(System.String,System.Int32)">
+            <summary>
+            获取字段值-返回Int32
+            </summary>
+            <param name="name">字段名称</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Record.ToJson">
+            <summary>
+            转化为Json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Modules.ModelBase">
+            <summary>
+            所有实体对象的基类
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.ModelBase.DbLockType">
+            <summary>
+            数据库锁定方式
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.ModelBase.DbTransaction">
+            <summary>
+            数据库事务
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.ModelBase.Dependency">
+            <summary>
+            获取缓存依赖
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.NotifyCache(System.String)">
+            <summary>
+            本框架对缓存进行文件缓存依赖，当表数据有改变时，需要通过写文件来通知缓存。
+            确保Cache文件夹可写
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Lock(Easpnet.Transaction,Easpnet.DbLock)">
+            <summary>
+            设置数据库锁定方式，只针对一次Sql语句有效
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Lock(Easpnet.DbLock)">
+            <summary>
+            设置数据库锁定方式，只针对一次Sql语句有效
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Lock">
+            <summary>
+            设置数据库锁定方式为 Uplock，只针对一次Sql语句有效: 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Create">
+            <summary>
+            新建数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Create(Easpnet.Transaction)">
+            <summary>
+            在指定的事务中执行新建数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Update">
+            <summary>
+            更新数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Update(Easpnet.Transaction)">
+            <summary>
+            在指定的事务中执行更新数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Update(System.String,System.Object)">
+            <summary>
+            根据条件将所有的数据进行更新数据
+            </summary>
+            <param name="fieldName">要更新的字段</param>
+            <param name="val">更新字段的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Update(Easpnet.Transaction,System.String,System.Object)">
+            <summary>
+            在指定的事务中，根据条件将所有的数据进行更新数据
+            </summary>
+            <param name="trans">指定事务</param>
+            <param name="fieldName">要更新的字段</param>
+            <param name="val">更新字段的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Update(System.String,System.Object,Easpnet.Query)">
+            <summary>
+            根据条件更新数据
+            </summary>
+            <param name="fieldName">要更新的字段</param>
+            <param name="val">更新字段的值</param>
+            <param name="q">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Update(Easpnet.Transaction,System.String,System.Object,Easpnet.Query)">
+            <summary>
+            在指定的事务中，根据条件更新字段值
+            </summary>
+            <param name="trans">指定事务</param>
+            <param name="fieldName">要更新的字段</param>
+            <param name="val">更新字段的值</param>
+            <param name="q">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Update(Easpnet.Query,Easpnet.NameObject[])">
+            <summary>
+            根据条件更新数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Update(Easpnet.Query,System.Collections.Generic.List{Easpnet.NameObject})">
+            <summary>
+            在指定的事务中，根据条件进行更新指定的列
+            </summary>
+            <param name="q">要更新的数据的条件</param>
+            <param name="list">要更新的字段集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Update(Easpnet.Transaction,Easpnet.Query,Easpnet.NameObject[])">
+            <summary>
+            在指定的事务中，根据条件进行更新指定的列
+            </summary>
+            <param name="trans">指定事务</param>
+            <param name="q">要更新的数据的条件</param>
+            <param name="fields">要更新的字段集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Update(Easpnet.Transaction,Easpnet.Query,System.Collections.Generic.List{Easpnet.NameObject})">
+            <summary>
+            在指定的事务中，根据条件进行更新指定的列
+            </summary>
+            <param name="trans">指定事务</param>
+            <param name="q">要更新的数据的条件</param>
+            <param name="list">要更新的字段集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Cumulative(System.String,System.Double,Easpnet.Query)">
+            <summary>
+            将某个字段进行数字的累加
+            </summary>
+            <param name="propertyName">属性名称</param>
+            <param name="num">累加的数字，可为负数</param>
+            <param name="query">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Cumulative(Easpnet.Transaction,System.String,System.Double,Easpnet.Query)">
+            <summary>
+            在指定的事务中，将某个字段进行数字的累加
+            </summary>
+            <param name="trans">指定事务</param>
+            <param name="propertyName">属性名称</param>
+            <param name="num">累加的数字，可为负数</param>
+            <param name="query">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Cumulative(System.String,System.Double)">
+            <summary>
+            将某个字段进行数字的累加，条件为主键给定的条件
+            </summary>
+            <param name="propertyName">字段名称</param>
+            <param name="num">累加的数字，可为负数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Cumulative(Easpnet.Transaction,System.String,System.Double)">
+            <summary>
+            在指定的事务中，将某个字段进行数字的累加，条件为给定的条件
+            </summary>
+            <param name="trans">指定事务</param>
+            <param name="propertyName">字段名称</param>
+            <param name="num">累加的数字，可为负数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Delete">
+            <summary>
+            删除数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Delete(Easpnet.Transaction)">
+            <summary>
+            在指定的事务中删除数据
+            </summary>
+            <param name="trans">指定事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Delete(Easpnet.Query)">
+            <summary>
+            删除query条件中指定的记录
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Delete(Easpnet.Transaction,Easpnet.Query)">
+            <summary>
+            在指定的事务中,根据query条件删除记录
+            </summary>
+            <param name="trans">指定事务</param>
+            <param name="query">查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetModel">
+            <summary>
+            获取一个实体模型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetModel(System.String,System.String[])">
+            <summary>
+            获取一个实体模型，置顶要选择的列
+            </summary>
+            <param name="field">要查询的第一个字段名称</param>
+            <param name="fields">要查询的多个字段集合</param>
+            <returns>若查询到数据返回true，否则返回false</returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetModel(Easpnet.Query)">
+            <summary>
+            根据查询条件获取实体模型
+            </summary>
+            <param name="query"></param>
+            <returns>若查询到数据返回true，否则返回false</returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetList``1">
+            <summary>
+            获取集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetList``1(System.String,System.String[])">
+            <summary>
+            获取集合，并制定查询的列的列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetList``1(Easpnet.Query)">
+            <summary>
+            获取集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetList``1(Easpnet.Query,System.Int32)">
+            <summary>
+            根据条件获取前cout条记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetList``1(Easpnet.Query,Easpnet.PageParam@)">
+            <summary>
+            根据查询对象和分页参数获取集合对象
+            </summary>
+            <param name="query">查询对象</param>
+            <param name="page">分页参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Count(Easpnet.Query)">
+            <summary>
+            根据条件进行统计
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Sum(Easpnet.Query,System.String)">
+            <summary>
+            根据条件统计总数
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Max(Easpnet.Query,System.String)">
+            <summary>
+            根据条件统计最大值
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Min(Easpnet.Query,System.String)">
+            <summary>
+            根据条件统计最小值
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.SelectTable(Easpnet.Query,System.Int32)">
+            <summary>
+            分组查询。
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.SelectTable(Easpnet.Query)">
+            <summary>
+            查询DataTable，可用于比较复杂的查询。
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetTableColumns">
+            <summary>
+            获取该实体对象的列的集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetTableColumnsWithoutValue">
+            <summary>
+            获取不含有值的列集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetTableName">
+            <summary>
+             获取表名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetTableAttribute">
+            <summary>
+             获取表相关信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetIdentifierColumnName">
+            <summary>
+            获取主键列
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetPrimaryKeyColumns">
+            <summary>
+            获取主键列集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetNotPrimaryKeyColumns">
+            <summary>
+            获取非主键列集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.MakeModelFromIDataReader``1(System.Data.IDataReader)">
+            <summary>
+            构造实体
+            </summary>
+            <param name="dr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.MakeSelfFromIDataReader(System.Data.IDataReader)">
+            <summary>
+            通过IDataReader构造实体对象本身
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.MakeOrderByString(Easpnet.Query)">
+            <summary>
+            构造排序的Sql字符串
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.ConvertPropertyNameToFieldName(System.String)">
+            <summary>
+            将属性字段名称转换为数据库的字段名称
+            </summary>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.ConvertNameObjectToFieldColumn(Easpnet.NameObject[])">
+            <summary>
+            转化为表格列集合
+            </summary>
+            <param name="nj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.FillDataFromObject(System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            从对象中将数据填充到给定的TableColumn集合中
+            </summary>
+            <param name="lst"></param>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.MakeSelectTableColumns(Easpnet.Query)">
+            <summary>
+            根据查询对象构造查询的列集合对象
+            </summary>
+            <param name="query">查询对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.MakeSelectTableColumns">
+            <summary>
+            根据查询对象构造查询的列集合对象(返回所有的列)
+            </summary>
+            <param name="query">查询对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetAllTableFieldList(System.Type)">
+            <summary>
+            获取所有的TableFieldAttribute
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.GetGetProperties(System.Type)">
+            <summary>
+            获取树形数组
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ModelBase.Clone">
+            <summary>
+            克隆一个对象的副本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Modules.TableAttribute">
+            <summary>
+            表属性
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.TableAttribute.TableName">
+            <summary>
+            表名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.TableAttribute.PrimaryKey">
+            <summary>
+            主键列，若多个列构成主键，则列以","号隔开
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.TableAttribute.EnableCacheDependency">
+            <summary>
+            是否启用缓存依赖
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.TableAttribute.#ctor(System.String,System.String)">
+            <summary>
+            默认不启用缓存依赖
+            </summary>
+            <param name="_TableName"></param>
+            <param name="_PrimaryKey"></param>
+        </member>
+        <member name="M:Easpnet.Modules.TableAttribute.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            构造实例
+            </summary>
+            <param name="_TableName"></param>
+            <param name="_PrimaryKey"></param>
+        </member>
+        <member name="M:Easpnet.Modules.TableAttribute.#ctor(System.String)">
+            <summary>
+            默认不启用缓存依赖
+            </summary>
+            <param name="_PrimaryKey"></param>
+        </member>
+        <member name="M:Easpnet.Modules.TableAttribute.#ctor(System.String,System.Boolean)">
+            <summary>
+            默认不启用缓存依赖
+            </summary>
+            <param name="_PrimaryKey"></param>
+        </member>
+        <member name="P:Easpnet.Modules.TableFieldAttribute.IsIdentifier">
+            <summary>
+            是否为标识列
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.TableFieldAttribute.Size">
+            <summary>
+            字段长度
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.TableFieldAttribute.#ctor(System.Boolean)">
+            <summary>
+            构造函数，指定是否为自增的标志。
+            </summary>
+            <param name="isIdentifier"></param>
+        </member>
+        <member name="M:Easpnet.Modules.TableFieldAttribute.#ctor(System.String)">
+            <summary>
+            构造属性
+            </summary>
+            <param name="_IsTableField">是否是表格的字段</param>
+            <param name="_TableFieldName">表格字段的名称</param>
+        </member>
+        <member name="M:Easpnet.Modules.TableFieldAttribute.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="_IsTableField"></param>
+        </member>
+        <member name="M:Easpnet.NameObject.New(System.String,System.Object)">
+            <summary>
+            新建对象
+            </summary>
+            <param name="name"></param>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.NameValue">
+            <summary>
+            键值对
+            </summary>
+        </member>
+        <member name="M:Easpnet.ObjectExtendMethod.ToInt32(System.Object)">
+            <summary>
+            转化为Int型数据，为空时时返回0
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.ObjectExtendMethod.ToInt64(System.Object)">
+            <summary>
+            转化为Int型数据，为空时时返回0
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.ObjectExtendMethod.ToDateTime(System.Object)">
+            <summary>
+            转化为日期型，发生异常时返回默认时间，而不报错
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.ObjectExtendMethod.IsDefaultTime(System.DateTime)">
+            <summary>
+            是否为默认时间
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.ObjectExtendMethod.ToBoolean(System.Object)">
+            <summary>
+            转化为逻辑型，发生异常时返回默认，而不报错
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.ObjectExtendMethod.ToDecimal(System.Object)">
+            <summary>
+            转化为浮点型，发生异常时返回默认，而不报错
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.ObjectExtendMethod.ToDouble(System.Object)">
+            <summary>
+            转化为实数类型，发生异常时返回默认，而不报错
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.ObjectExtendMethod.Deserialize(System.Object)">
+            <summary>
+            反序列化
+             先将数据库中取出的对象反序强制转化为byte数组，再反序列化为对象
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.ObjectExtendMethod.Serialize(System.Object)">
+            <summary>
+            序列话，将一个对象序列化为byte数组
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.ObjectExtendMethod.Md5(System.String)">
+            <summary>
+            Md5加密
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.PageParam">
+            <summary>
+            结构体Pager:封装分页查询的相关参数
+            </summary>
+            
+        </member>
+        <member name="M:Easpnet.PageParam.#ctor(System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+            <param name="size"></param>
+            <param name="statitics"></param>
+        </member>
+        <member name="F:Easpnet.PageParam.Index">
+            <summary>
+            当前页码
+            </summary>
+        </member>
+        <member name="F:Easpnet.PageParam.Size">
+            <summary>
+            页大小
+            </summary>
+        </member>
+        <member name="F:Easpnet.PageParam.Total">
+            <summary>
+            总记录数,作为传出参数
+            </summary>
+        </member>
+        <member name="F:Easpnet.PageParam.Count">
+            <summary>
+            总页数,作为传出参数
+            </summary>
+        </member>
+        <member name="P:Easpnet.PageParam.IsSimplePage">
+            <summary>
+            是否简单分页（设为此项，则不进行总记录数的统计）
+            </summary>
+        </member>
+        <member name="P:Easpnet.PageParam.StatisticFields">
+            <summary>
+            附加的统计列
+            </summary>
+        </member>
+        <member name="P:Easpnet.PageParam.StatisticResult">
+            <summary>
+            附加的统计结果
+            </summary>
+        </member>
+        <member name="T:Easpnet.Procedure">
+            <summary>
+            描述存储过程
+            </summary>
+        </member>
+        <member name="P:Easpnet.Procedure.DbTransaction">
+            <summary>
+            数据库事务
+            </summary>
+        </member>
+        <member name="P:Easpnet.Procedure.DbConnection">
+            <summary>
+            设定的数据库连接
+            </summary>
+        </member>
+        <member name="P:Easpnet.Procedure.DbConnectionString">
+            <summary>
+            连接字符串
+            </summary>
+        </member>
+        <member name="P:Easpnet.Procedure.ProcedureName">
+            <summary>
+            存储过程名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Procedure.InParameters">
+            <summary>
+            输入参数集合
+            </summary>
+        </member>
+        <member name="P:Easpnet.Procedure.OutParameters">
+            <summary>
+            输出参数集合
+            </summary>
+        </member>
+        <member name="P:Easpnet.Procedure.ReturnValue">
+            <summary>
+            返回值
+            </summary>
+        </member>
+        <member name="M:Easpnet.Procedure.#ctor(System.String)">
+            <summary>
+            用指定的存储过程名称构造存储过程的实例
+            </summary>
+            <param name="procName"></param>
+        </member>
+        <member name="M:Easpnet.Procedure.#ctor(System.String,Easpnet.Transaction)">
+            <summary>
+            用指定的存储过程名称构造存储过程的实例
+            </summary>
+            <param name="procName"></param>
+            <param name="trans"></param>
+        </member>
+        <member name="M:Easpnet.Procedure.#ctor(System.String,System.Data.Common.DbConnection)">
+            <summary>
+            用指定的存储过程名称构造存储过程的实例
+            </summary>
+            <param name="procName"></param>
+            <param name="conn"></param>
+        </member>
+        <member name="M:Easpnet.Procedure.#ctor(System.String,System.String)">
+            <summary>
+            用指定的存储过程名称构造存储过程的实例
+            </summary>
+            <param name="procName"></param>
+            <param name="connstr"></param>
+        </member>
+        <member name="M:Easpnet.Procedure.AddInParameter(System.String,System.Data.DbType,System.Int32,System.Object)">
+            <summary>
+            添加输入参数
+            </summary>
+            <param name="parameterName">参数的名称</param>
+            <param name="dbType">数据类型</param>
+            <param name="size">大小</param>
+            <param name="value">参数的值</param>
+        </member>
+        <member name="M:Easpnet.Procedure.AddOutParameter(System.String,System.Data.DbType,System.Int32)">
+            <summary>
+            添加输出参数
+            </summary>
+            <param name="parameterName">参数的名称</param>
+            <param name="dbType">数据类型</param>
+            <param name="size">大小</param>
+        </member>
+        <member name="M:Easpnet.Procedure.AddOutParameter(System.String,System.Data.DbType,System.Byte,System.Byte)">
+            <summary>
+            添加输出参数
+            </summary>
+            <param name="parameterName">参数的名称</param>
+            <param name="dbType">数据类型</param>
+            <param name="size">大小</param>
+            <param name="value">参数的值</param>
+        </member>
+        <member name="M:Easpnet.Procedure.GetOutParameterValue(System.String)">
+            <summary>
+            获取返回参数的值
+            </summary>
+            <param name="paramName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Procedure.ExecuteNonQuery">
+            <summary>
+            执行不带查询的存储过程
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Procedure.ExecuteDataTable">
+            <summary>
+            执行存储过程，返回表格
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Procedure.ExecuteRecordList">
+            <summary>
+            执行存储过程，返回RecordList
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Procedure.ExecuteRecord">
+            <summary>
+            执行存储过程，返回Record
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.ProcedureParameter">
+            <summary>
+            描述存储过程的参数
+            </summary>
+        </member>
+        <member name="P:Easpnet.ProcedureParameter.ParameterName">
+            <summary>
+            参数的名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.ProcedureParameter.DbType">
+            <summary>
+            数据类型
+            </summary>
+        </member>
+        <member name="P:Easpnet.ProcedureParameter.Size">
+            <summary>
+            大小
+            </summary>
+        </member>
+        <member name="P:Easpnet.ProcedureParameter.Precision">
+            <summary>
+            位数
+            </summary>
+        </member>
+        <member name="P:Easpnet.ProcedureParameter.Scale">
+            <summary>
+            精度
+            </summary>
+        </member>
+        <member name="P:Easpnet.ProcedureParameter.Value">
+            <summary>
+            参数的值
+            </summary>
+        </member>
+        <member name="M:Easpnet.ProcedureParameter.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Easpnet.ProcedureParameter.#ctor(System.String,System.Data.DbType,System.Int32,System.Object)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="parameterName">参数的名称</param>
+            <param name="dbType">数据类型</param>
+            <param name="size">大小</param>
+            <param name="value">参数的值</param>
+        </member>
+        <member name="M:Easpnet.ProcedureParameter.#ctor(System.String,System.Data.DbType,System.Int32)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="parameterName">参数的名称</param>
+            <param name="dbType">数据类型</param>
+            <param name="size">大小</param>
+            <param name="value">参数的值</param>
+        </member>
+        <member name="M:Easpnet.ProcedureParameter.#ctor(System.String,System.Data.DbType,System.Byte,System.Byte)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="parameterName">参数的名称</param>
+            <param name="dbType">数据类型</param>
+            <param name="size">大小</param>
+            <param name="value">参数的值</param>
+        </member>
+        <member name="T:Easpnet.ProcedureParameterCollection">
+            <summary>
+            存储过程参数的集合
+            </summary>
+        </member>
+        <member name="T:Easpnet.Query">
+            <summary>
+            查询生成器
+            </summary>
+        </member>
+        <member name="P:Easpnet.Query.OrderByType">
+            <summary>
+            排序顺序：
+            例如， AddTime desc, 为时间降序排列
+            </summary>
+        </member>
+        <member name="P:Easpnet.Query.GroupByColumns">
+            <summary>
+            分组方式
+            </summary>
+        </member>
+        <member name="P:Easpnet.Query.SelectColumns">
+            <summary>
+            要查询的列集合
+            </summary>
+        </member>
+        <member name="M:Easpnet.Query.#ctor">
+            <summary>
+            构造一个查询生成器实例
+            </summary>
+        </member>
+        <member name="M:Easpnet.Query.NewQuery">
+            <summary>
+            创建一个查询条件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Query.Clear">
+            <summary>
+            清空条件
+            </summary>
+        </member>
+        <member name="M:Easpnet.Query.Select(System.String,Easpnet.AggregateType,System.String)">
+            <summary>
+            构造查询列
+            </summary>
+            <param name="column_name">查询的列</param>
+            <param name="aggregate_type">聚合种类</param>
+        </member>
+        <member name="M:Easpnet.Query.Select(System.String)">
+            <summary>
+            构造查询列
+            </summary>
+            <param name="column_name">查询的列</param>
+        </member>
+        <member name="M:Easpnet.Query.Select(System.String,System.String[])">
+            <summary>
+            构造查询列，可构造多个
+            </summary>
+            <param name="column_name"></param>
+            <param name="columns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Query.Select(System.Int32,Easpnet.AggregateType,System.String)">
+            <summary>
+            构造查询列
+            </summary>
+            <param name="column_name">查询的列</param>
+            <param name="aggregate_type">聚合种类</param>
+        </member>
+        <member name="M:Easpnet.Query.GroupBy(System.String)">
+            <summary>
+            分组类型
+            </summary>
+            <param name="groupByType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Query.OrderBy(System.String,Easpnet.OrderType)">
+            <summary>
+            构造排序方式
+            </summary>
+            <param name="_fieldName">字段名称</param>
+            <param name="_orderType">排序方式</param>
+        </member>
+        <member name="M:Easpnet.Query.OrderBy(System.String)">
+            <summary>
+            构造排序方式-默认为升序
+            </summary>
+            <param name="_fieldName">字段名称</param>
+        </member>
+        <member name="M:Easpnet.Query.Where(System.String,Easpnet.Symbol,Easpnet.Ralation,System.Object[])">
+            <summary>
+            构造查询条件。
+            </summary>
+            <param name="pColumnName"></param>
+            <param name="pSymbol"></param>
+            <param name="pRalation"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Query.Where(System.String,System.String,Easpnet.Ralation,System.Object[])">
+            <summary>
+            构造查询条件。
+            </summary>
+            <param name="pColumnName"></param>
+            <param name="symbol"></param>
+            <param name="pRalation"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Query.In(System.String,Easpnet.Ralation,System.Object[])">
+            <summary>
+            添加查询条件“在……之中”
+            </summary>
+            <param name="pColumnName"></param>
+            <param name="pRalation"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Query.NotIn(System.String,Easpnet.Ralation,System.Object[])">
+            <summary>
+            添加查询条件“不在在……之中”
+            </summary>
+            <param name="pColumnName"></param>
+            <param name="pRalation"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Query.Between(System.String,Easpnet.Ralation,System.Object,System.Object)">
+            <summary>
+            添加查询条件“在……之间”
+            </summary>
+            <param name="pColumnName"></param>
+            <param name="pRalation"></param>
+            <param name="arg1"></param>
+            <param name="arg2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Query.CreateCondition(System.String,Easpnet.Symbol,Easpnet.Ralation,System.Object[])">
+            <summary>
+            根据指定的参数创建条件实例
+            </summary>
+            <param name="pColumnName"></param>
+            <param name="pSymbol"></param>
+            <param name="pRalation"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Query.CreateConditionValueAsArray(System.String,Easpnet.Symbol,Easpnet.Ralation,System.Object[])">
+            <summary>
+            根据指定的参数创建条件实例
+            </summary>
+            <param name="pColumnName"></param>
+            <param name="pSymbol"></param>
+            <param name="pRalation"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Query.CreateCondition(System.String,Easpnet.Symbol,Easpnet.Ralation,System.Object)">
+            <summary>
+            根据指定的参数创建条件实例
+            </summary>
+            <param name="pColumnName"></param>
+            <param name="pSymbol"></param>
+            <param name="pRalation"></param>
+            <param name="args0"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Query.CreateCondition(System.String,Easpnet.Symbol,Easpnet.Ralation,System.Object,System.Object)">
+            <summary>
+            根据指定的参数创建条件实例
+            </summary>
+            <param name="pColumnName"></param>
+            <param name="pSymbol"></param>
+            <param name="pRalation"></param>
+            <param name="args0"></param>
+            <param name="args1"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Query.GenerateSelectColumnString">
+            <summary>
+            获取查询列
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Query.GenerateGroupByString">
+            <summary>
+            获取分组依据字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Query.GenerateOrderByString">
+            <summary>
+            获取排序列字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Query.CreateCondition">
+            <summary>
+            创建条件实例
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.QueryCondition">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="P:Easpnet.QueryCondition.ColumnName">
+            <summary>
+            列名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.QueryCondition.Symbol">
+            <summary>
+            符号
+            </summary>
+        </member>
+        <member name="P:Easpnet.QueryCondition.Values">
+            <summary>
+            比较的值
+            </summary>
+        </member>
+        <member name="M:Easpnet.QueryCondition.#ctor">
+            <summary>
+            构造一个查询条件的实例
+            </summary>
+        </member>
+        <member name="M:Easpnet.QueryCondition.#ctor(System.String,Easpnet.Symbol,System.Collections.Generic.List{System.Object},Easpnet.Ralation)">
+            <summary>
+            构造实例,根据指定的参数
+            </summary>
+            <param name="pColumnName">数据库列名称</param>
+            <param name="pSymbol">比较关系</param>
+            <param name="pValues">值的集合</param>
+            <param name="pRalation">和下一组条件之间的关系</param>
+        </member>
+        <member name="M:Easpnet.QueryCondition.#ctor(System.String,Easpnet.Symbol,System.String,Easpnet.Ralation)">
+            <summary>
+            构造实例,根据指定的参数
+            </summary>
+            <param name="pColumnName">数据库列名称</param>
+            <param name="pSymbol">比较关系</param>
+            <param name="value">值</param>
+            <param name="pRalation">和下一组条件之间的关系</param>
+        </member>
+        <member name="M:Easpnet.QueryCondition.GenerateQueryString">
+            <summary>
+            转化为Sql查询字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Easpnet.QueryConditionBase.Ralation">
+            <summary>
+            该条件和下一个条件之间的关系
+            </summary>
+        </member>
+        <member name="M:Easpnet.QueryConditionBase.GenerateQueryString">
+            <summary>
+            转化为Sql查询字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Easpnet.Ralation.And">
+            <summary>
+            并且
+            </summary>
+        </member>
+        <member name="F:Easpnet.Ralation.Or">
+            <summary>
+            或者
+            </summary>
+        </member>
+        <member name="F:Easpnet.Ralation.End">
+            <summary>
+            结束
+            </summary>
+        </member>
+        <member name="F:Easpnet.Symbol.EqualTo">
+            <summary>
+            等于
+            </summary>
+        </member>
+        <member name="F:Easpnet.Symbol.NotEqualTo">
+            <summary>
+            不等于
+            </summary>
+        </member>
+        <member name="F:Easpnet.Symbol.LessThan">
+            <summary>
+            小于
+            </summary>
+        </member>
+        <member name="F:Easpnet.Symbol.LessThanOrEqualTo">
+            <summary>
+            小于等于
+            </summary>
+        </member>
+        <member name="F:Easpnet.Symbol.GreaterThan">
+            <summary>
+            大于
+            </summary>
+        </member>
+        <member name="F:Easpnet.Symbol.GreaterThanOrEqualTo">
+            <summary>
+            大于等于
+            </summary>
+        </member>
+        <member name="F:Easpnet.Symbol.Like">
+            <summary>
+            相似
+            </summary>
+        </member>
+        <member name="F:Easpnet.Symbol.NotLike">
+            <summary>
+            不相似
+            </summary>
+        </member>
+        <member name="F:Easpnet.Symbol.IsNull">
+            <summary>
+            为空
+            </summary>
+        </member>
+        <member name="F:Easpnet.Symbol.IsNotNull">
+            <summary>
+            不为空
+            </summary>
+        </member>
+        <member name="F:Easpnet.Symbol.Between">
+            <summary>
+            在...之间
+            </summary>
+        </member>
+        <member name="F:Easpnet.Symbol.NotBetween">
+            <summary>
+            不在...之间
+            </summary>
+        </member>
+        <member name="F:Easpnet.Symbol.In">
+            <summary>
+            在...之中
+            </summary>
+        </member>
+        <member name="F:Easpnet.Symbol.NotIn">
+            <summary>
+            不在...之中
+            </summary>
+        </member>
+        <member name="M:Easpnet.QueryConditionGroup.#ctor">
+            <summary>
+            构造一个条件组,初始化Conditon为空
+            </summary>
+        </member>
+        <member name="M:Easpnet.QueryConditionGroup.#ctor(Easpnet.Ralation)">
+            <summary>
+            构造一个条件组,初始化Conditon为空,给予指定和下一组条件的关系
+            </summary>
+            <param name="ralation">和下一组条件的关系</param>
+        </member>
+        <member name="M:Easpnet.QueryConditionGroup.AddCondition(Easpnet.QueryConditionBase)">
+            <summary>
+            增加条件
+            </summary>
+            <param name="condition"></param>
+        </member>
+        <member name="M:Easpnet.QueryConditionGroup.AddCondition(Easpnet.QueryCondition)">
+            <summary>
+            增加条件
+            </summary>
+            <param name="condition"></param>
+        </member>
+        <member name="M:Easpnet.QueryConditionGroup.AddConditionGroup(Easpnet.Ralation,Easpnet.QueryConditionBase[])">
+            <summary>
+            条件一个条件组,给定的数组将全部作为自条件
+            </summary>
+            <param name="conditions"></param>
+        </member>
+        <member name="M:Easpnet.QueryConditionGroup.AddRange(Easpnet.QueryCondition[])">
+            <summary>
+            一次性添加多个条件
+            </summary>
+            <param name="conditions"></param>
+        </member>
+        <member name="M:Easpnet.QueryConditionGroup.InsertCondition(System.Int32,Easpnet.QueryConditionBase)">
+            <summary>
+            插入条件
+            </summary>
+            <param name="condition"></param>
+        </member>
+        <member name="M:Easpnet.QueryConditionGroup.GenerateQueryString">
+            <summary>
+            转化为Sql查询字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.QueryOrder">
+            <summary>
+            查询排序
+            </summary>
+        </member>
+        <member name="M:Easpnet.QueryOrder.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Easpnet.QueryOrder.#ctor(Easpnet.QueryOrderField[])">
+            <summary>
+            构造方法
+            </summary>
+            <param name="fields"></param>
+        </member>
+        <member name="T:Easpnet.QueryOrderField">
+            <summary>
+            排序的字段
+            </summary>
+        </member>
+        <member name="P:Easpnet.QueryOrderField.FieldName">
+            <summary>
+            排序的字段
+            </summary>
+        </member>
+        <member name="M:Easpnet.QueryOrderField.#ctor(System.String,Easpnet.OrderType)">
+            <summary>
+            构造排序方式
+            </summary>
+            <param name="_fieldName">字段名称</param>
+            <param name="_orderType">排序方式</param>
+        </member>
+        <member name="M:Easpnet.QueryOrderField.#ctor(System.String)">
+            <summary>
+            构造排序方式，默认为升序排列
+            </summary>
+            <param name="_fieldName">字段名称</param>
+        </member>
+        <member name="T:Easpnet.OrderType">
+            <summary>
+            排序方式
+            </summary>
+        </member>
+        <member name="F:Easpnet.OrderType.ASC">
+            <summary>
+            升序排列
+            </summary>
+        </member>
+        <member name="F:Easpnet.OrderType.DESC">
+            <summary>
+            降序排列
+            </summary>
+        </member>
+        <member name="T:Easpnet.AggregateType">
+            <summary>
+            聚合类型。
+            </summary>
+        </member>
+        <member name="F:Easpnet.AggregateType.None">
+            <summary>
+            非聚合函数
+            </summary>
+        </member>
+        <member name="F:Easpnet.AggregateType.AVG">
+            <summary>
+            平均值
+            </summary>
+        </member>
+        <member name="F:Easpnet.AggregateType.COUNT">
+            <summary>
+            统计数量
+            </summary>
+        </member>
+        <member name="F:Easpnet.AggregateType.MAX">
+            <summary>
+            求最大值
+            </summary>
+        </member>
+        <member name="F:Easpnet.AggregateType.MIN">
+            <summary>
+            求最小值
+            </summary>
+        </member>
+        <member name="F:Easpnet.AggregateType.SUM">
+            <summary>
+            求和
+            </summary>
+        </member>
+        <member name="T:Easpnet.QuerySelectColumnType">
+            <summary>
+            列作为聚合函数的参数类型
+            </summary>
+        </member>
+        <member name="F:Easpnet.QuerySelectColumnType.ColumnIndex">
+            <summary>
+            以索引形式作为聚合函数的参数
+            </summary>
+        </member>
+        <member name="F:Easpnet.QuerySelectColumnType.ColumnName">
+            <summary>
+            以列名作为聚合函数的参数
+            </summary>
+        </member>
+        <member name="T:Easpnet.QuerySelectColumn">
+            <summary>
+            要查询的列
+            </summary>
+        </member>
+        <member name="P:Easpnet.QuerySelectColumn.ColumnType">
+            <summary>
+            列作为聚合函数的参数类型
+            </summary>
+        </member>
+        <member name="P:Easpnet.QuerySelectColumn.ColumnName">
+            <summary>
+            字段名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.QuerySelectColumn.ColumnAs">
+            <summary>
+            将选择的列进行的命名：转换为sql语句为： select count(0) as ColumnAs
+            </summary>
+        </member>
+        <member name="P:Easpnet.QuerySelectColumn.AggregateType">
+            <summary>
+            聚合类型。
+            </summary>
+        </member>
+        <member name="M:Easpnet.QuerySelectColumn.#ctor(System.String,Easpnet.AggregateType,System.String)">
+            <summary>
+            构造查询列
+            </summary>
+            <param name="column_name">查询的列</param>
+            <param name="aggregate_type">聚合种类</param>
+        </member>
+        <member name="M:Easpnet.QuerySelectColumn.#ctor(System.String)">
+            <summary>
+            构造查询列
+            </summary>
+            <param name="column_name">查询的列</param>
+            <param name="aggregate_type">聚合种类</param>
+        </member>
+        <member name="M:Easpnet.QuerySelectColumn.#ctor(System.Int32,Easpnet.AggregateType,System.String)">
+            <summary>
+            构造查询列
+            </summary>
+            <param name="column_name">查询的列</param>
+            <param name="aggregate_type">聚合种类</param>
+        </member>
+        <member name="T:Easpnet.RecordList`1">
+            <summary>
+            查询结果集合
+            </summary>
+        </member>
+        <member name="P:Easpnet.RecordList`1.PageParam">
+            <summary>
+            分页参数
+            </summary>
+        </member>
+        <member name="M:Easpnet.RecordList`1.ToJson">
+            <summary>
+            转化为Json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.RecordList`1.GetDataList">
+            <summary>
+            获取数据列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.RecordList`1.GetPagedDataList">
+            <summary>
+            获取分页+数据列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Security.DES.Encrypt(System.String)">
+            <summary>
+             DEC   加密过程 
+            </summary>
+            <param name="pToEncrypt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Security.DES.Decrypt(System.String)">
+            <summary>
+             DEC   解密过程
+            </summary>
+            <param name="pToDecrypt"></param>
+            <param name="sKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Security.MD5.MD5password(System.String)">
+            <summary>
+            MD5加密
+            </summary>
+            <param name="pass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Security.MD5.MD5passwordToLower(System.String)">
+            <summary>
+            MD5加密
+            </summary>
+            <param name="pass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.SerializeHelper.Serialize(System.Object)">
+            *****************************************
+             <summary>
+             序列化一个对象
+             </summary>
+             <param name="o">将要序列化的对象</param>
+             <returns>返回byte[]</returns>
+            *****************************************
+        </member>
+        <member name="M:Easpnet.SerializeHelper.Deserialize(System.Byte[])">
+            *****************************************
+             <summary>
+             反序列化
+             </summary>
+             <param name="b">返回一个对象</param>
+            *****************************************
+        </member>
+        <member name="M:Easpnet.Sql2K.SqlQuery.GenerateSelectColumnString">
+            <summary>
+            获取查询选择的列
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql2K.SqlQuery.GenerateGroupByString">
+            <summary>
+            获取分组依据字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql2K.SqlQuery.GenerateOrderByString">
+            <summary>
+            获取排序列字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Sql2K.SqlQueryCondition">
+            <summary>
+            SQL Server数据库查询构造
+            </summary>
+        </member>
+        <member name="F:Easpnet.Sql.SqlDbHelper.connectionString">
+            <summary>
+            连接字符串
+            </summary>
+        </member>
+        <member name="P:Easpnet.Sql.SqlDbHelper.Connection">
+            <summary>
+            创建数据库连接
+            </summary>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.MakeConnection(System.String)">
+            <summary>
+            用给定的连接字符串创建连接
+            </summary>
+            <param name="connstr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Insert(System.String,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            根据指定的表和列插入数据
+            </summary>
+            <param name="tableName"></param>
+            <param name="columns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Insert(Easpnet.Transaction,System.String,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            根据指定的表和列插入数据，在事务中执行
+            </summary>
+            <param name="trans"></param>
+            <param name="tableName"></param>
+            <param name="columns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Update(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            更新数据
+            </summary>
+            <param name="tableName"></param>
+            <param name="columns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Update(Easpnet.Transaction,System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            更新数据，条件根据主键列
+            </summary>
+            <param name="trans">事务</param> 
+            <param name="tableName">表名</param>
+            <param name="columns">列集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Update(System.String,System.Collections.Generic.List{Easpnet.TableColumn},Easpnet.Query)">
+            <summary>
+            更新数据，条件为Easpnet.Query查询结构
+            </summary>
+            <param name="tableName">表的名称</param>
+            <param name="updateColumns">要更新的字段名称</param>
+            <param name="query">更新的条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Update(Easpnet.Transaction,System.String,System.Collections.Generic.List{Easpnet.TableColumn},Easpnet.Query)">
+            <summary>
+            在指定的事务中更新数据，条件为Easpnet.Query查询结构
+            </summary>
+            <param name="trans">事务</param> 
+            <param name="tableName">表的名称</param>
+            <param name="updateColumns">要更新的字段名称</param>
+            <param name="query">更新的条件</param>
+            <returns>返回更新的数据条数</returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Cumulative(System.String,System.String,System.Double,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            将某个字段进行数字的累加
+            </summary>
+            <param name="tableName">表的名称</param>
+            <param name="fieldName">字段名称</param>
+            <param name="num">累加的数字，可为负数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Cumulative(Easpnet.Transaction,System.String,System.String,System.Double,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            在指定的事务中，将某个字段进行数字的累加
+            </summary>
+            <param name="trans">事务</param> 
+            <param name="tableName">表的名称</param>
+            <param name="fieldName">字段名称</param>
+            <param name="num">累加的数字，可为负数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Cumulative(System.String,System.String,System.Double,System.String)">
+            <summary>
+            将某个字段进行数字的累加
+            </summary>
+            <param name="tableName">表的名称</param>
+            <param name="fieldName">字段名称</param>
+            <param name="num">累加的数字，可为负数</param>
+            <param name="condition">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Cumulative(Easpnet.Transaction,System.String,System.String,System.Double,System.String)">
+            <summary>
+            在指定的事务中，将某个字段进行数字的累加
+            </summary>
+            <param name="trans">事务</param> 
+            <param name="tableName">表的名称</param>
+            <param name="fieldName">字段名称</param>
+            <param name="num">累加的数字，可为负数</param>
+            <param name="condition">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Delete(System.String,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            删除数据
+            </summary>
+            <param name="tableName">要删除数据的表</param>
+            <param name="primaryKeyColumns">主键列</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Delete(Easpnet.Transaction,System.String,System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            根据条件删除删除数据
+            </summary>
+            <param name="tableName">要删除数据的表</param>
+            <param name="primaryKeyColumns">主键列</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Delete(System.String,System.String)">
+            <summary>
+            删除数据，反悔删除的数据条数
+            </summary>
+            <param name="tableName">要删除数据的表</param>
+            <param name="primaryKeyColumns">主键列</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Delete(Easpnet.Transaction,System.String,System.String)">
+            <summary>
+            在指定的事务中删除数据
+            </summary>
+            <param name="tableName">要删除数据的表</param>
+            <param name="primaryKeyColumns">主键列</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.GetModelReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            获取单个的数据访问方法
+            </summary>
+            <param name="primaryKeyColumns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.GetModelReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.Collections.Generic.List{Easpnet.TableColumn},Easpnet.DbLock,Easpnet.Transaction)">
+            <summary>
+            获取单个的数据访问方法
+            </summary>
+            <param name="primaryKeyColumns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.SelectReader(System.String,System.String,System.String,System.String,Easpnet.PageParam,System.Data.IDataParameter@,System.Data.IDataParameter@)">
+            <summary>
+            执行选择操作，使用通用存储过程
+            </summary>
+            <param name="connectionString"></param>
+            <param name="condition"></param>
+            <param name="creator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.SelectReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.String,System.String,System.String,Easpnet.PageParam,System.Data.IDataParameter@,System.Data.IDataParameter@)">
+            <summary>
+            执行选择操作，使用通用存储过程
+            </summary>
+            <param name="condition"></param>
+            <param name="creator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.SelectReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.String,System.String,Easpnet.DbLock,Easpnet.Transaction)">
+            <summary>
+            执行选择操作
+            </summary>
+            <param name="tableName"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.SelectReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.String,System.String,System.Int32)">
+            <summary>
+            执行选中，值选中前count条记录
+            </summary>
+            <param name="tableName"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.SelectReader(System.String,System.Collections.Generic.List{Easpnet.TableColumn},System.String,System.String,System.Int32,Easpnet.DbLock,Easpnet.Transaction)">
+            <summary>
+            执行选中，值选中前count条记录
+            </summary>
+            <param name="tableName"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.SelectCount(System.String,System.String)">
+            <summary>
+            统计数量
+            </summary>
+            <param name="tableName"></param>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.SelectSum(System.String,System.String,System.String)">
+            <summary>
+            统计总数
+            </summary>
+            <param name="tableName">表名称</param>
+            <param name="fieldName">字段名称</param>
+            <param name="condition">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.SelectTable(System.String,Easpnet.Query,System.Int32)">
+            <summary>
+            根据查询条件查询表格
+            </summary>
+            <param name="tableName">表名称</param>
+            <param name="query">查询条件</param>
+            <param name="count">选择的数量，设为小于或者等于0的数表示查询全部</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.SelectTable(System.String,Easpnet.Query,System.Int32,Easpnet.DbLock,Easpnet.Transaction)">
+            <summary>
+            根据查询条件查询表格
+            </summary>
+            <param name="tableName">表名称</param>
+            <param name="query">查询条件</param>
+            <param name="count">选择的数量，设为小于或者等于0的数表示查询全部</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.SelectMax(System.String,System.String,Easpnet.Query)">
+            <summary>
+            查询最大值
+            </summary>
+            <param name="tableName"></param>
+            <param name="fieldName"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.SelectMin(System.String,System.String,Easpnet.Query)">
+            <summary>
+            查询最小值
+            </summary>
+            <param name="tableName"></param>
+            <param name="fieldName"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteProcedureNonQuery(Easpnet.Procedure)">
+            <summary>
+            执行不返回记录集的存储过程
+            </summary>
+            <returns>影响的行数</returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteProcedureDataTable(Easpnet.Procedure)">
+            <summary>
+            执行存储过程，返回DataTable
+            </summary>
+            <returns>影响的行数</returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteProcedureRecordList(Easpnet.Procedure)">
+            <summary>
+            执行存储过程，返回DataReader
+            </summary>
+            <returns>影响的行数</returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.GetProcedureParameters(Easpnet.Procedure)">
+            <summary>
+            构造存储过程的参数列表
+            </summary>
+            <param name="proc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ConvertDbType(System.Data.DbType)">
+            <summary>
+            转换数据类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteNonQuery(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行脚本
+            </summary>
+            <param name="connectionString"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteNonQuery(Easpnet.Transaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行脚本
+            </summary>
+            <param name="connectionString"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行脚本
+            </summary>
+            <param name="conn"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteNonQuery(Easpnet.Transaction,System.Data.Common.DbConnection,System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行脚本
+            </summary>
+            <param name="trans"></param>
+            <param name="conn"></param>
+            <param name="constr"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteReader(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand that returns a resultset against the database specified in the connection string 
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             SqlDataReader r = ExecuteReader(connString, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connectionString">a valid connection string for a SqlConnection</param>
+            <param name="commandType">the CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">the stored procedure name or T-SQL command</param>
+            <param name="commandParameters">an array of SqlParamters used to execute the command</param>
+            <returns>A SqlDataReader containing the results</returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteReader(Easpnet.Transaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行DataReader
+            </summary>
+            <param name="trans"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteReader(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行DataReader
+            </summary>
+            <param name="conn"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteReader(Easpnet.Transaction,System.Data.Common.DbConnection,System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行DataReader
+            </summary>
+            <param name="trans"></param>
+            <param name="conn"></param>
+            <param name="constr"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteScalar(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand that returns the first column of the first record against the database specified in the connection string 
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             Object obj = ExecuteScalar(connString, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connectionString">a valid connection string for a SqlConnection</param>
+            <param name="commandType">the CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">the stored procedure name or T-SQL command</param>
+            <param name="commandParameters">an array of SqlParamters used to execute the command</param>
+            <returns>An object that should be converted to the expected type using Convert.To{Type}</returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand that returns the first column of the first record against an existing database connection 
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             Object obj = ExecuteScalar(connString, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="conn">an existing database connection</param>
+            <param name="commandType">the CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">the stored procedure name or T-SQL command</param>
+            <param name="commandParameters">an array of SqlParamters used to execute the command</param>
+            <returns>An object that should be converted to the expected type using Convert.To{Type}</returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteDataTable(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行返回DataTable
+            </summary>
+            <param name="connection"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteDataTable(Easpnet.Transaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行返回DataTable
+            </summary>
+            <param name="connection"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteDataTable(Easpnet.Transaction,System.Data.Common.DbConnection,System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行返回DataTable
+            </summary>
+            <param name="connection"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.MakeInputParam(System.String,System.Data.SqlDbType,System.Int32,System.Object)">
+            <summary>
+            创建输入参数
+            </summary>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.MakeOutputParam(System.String,System.Data.SqlDbType,System.Int32)">
+            <summary>
+            创建输出参数
+            </summary>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.MakeOutputParam(System.String,System.Data.SqlDbType,System.Byte,System.Byte)">
+            <summary>
+            创建输出参数
+            </summary>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.MakeSelectColumnString(System.Collections.Generic.List{Easpnet.TableColumn})">
+            <summary>
+            构造查询的列的字符串
+            </summary>
+            <param name="columns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.GetDbLockString(Easpnet.DbLock)">
+            <summary>
+            根据数据库锁类型获取锁sql字符串
+            </summary>
+            <param name="lockType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.getJoinTypeSqlStr(Easpnet.JoinType)">
+            <summary>
+            根据Join获取sql字符串
+            </summary>
+            <param name="joinType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.makeWhereAndParams(Easpnet.Db,System.Data.SqlClient.SqlParameter[]@)">
+            <summary>
+            构造where语句于参数
+            </summary>
+            <param name="m"></param>
+            <param name="parArr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.makeWhereAndParams(System.String,System.Object[],System.Data.SqlClient.SqlParameter[]@)">
+            <summary>
+            构造where语句于参数
+            </summary>
+            <param name="sql"></param>
+            <param name="data"></param>
+            <param name="parArr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Select(Easpnet.Db)">
+            <summary>
+            根据模型进行查询
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Update(Easpnet.Db,Easpnet.NameObject[])">
+            <summary>
+            执行更新操作
+            </summary>
+            <param name="m"></param>
+            <param name="data">要修改的数据库列</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Insert(Easpnet.Db,Easpnet.NameObject[],System.Boolean)">
+            <summary>
+            执行插入操作
+            </summary>
+            <param name="m"></param>
+            <param name="data"></param>
+            <param name="isGetId">是否获取identity</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.Execute(Easpnet.Transaction,System.Data.Common.DbConnection,System.String,System.String,System.Object[])">
+            <summary>
+            执行原生的Sql
+            </summary>
+            <param name="trans"></param>
+            <param name="conn">数据库连接</param>
+            <param name="constr">连接字符串</param>
+            <param name="sql"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlDbHelper.ExecuteSelect(Easpnet.Transaction,System.Data.Common.DbConnection,System.String,System.String,System.Object[])">
+            <summary>
+            执行原生的查询
+            </summary>
+            <param name="trans"></param>
+            <param name="conn">数据库连接</param>
+            <param name="constr">连接字符串</param>
+            <param name="sql"></param>
+            <param name="parameters"></param>
+        </member>
+        <member name="M:Easpnet.Sql.SqlQuery.GenerateSelectColumnString">
+            <summary>
+            获取查询选择的列
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlQuery.GenerateGroupByString">
+            <summary>
+            获取分组依据字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Sql.SqlQuery.GenerateOrderByString">
+            <summary>
+            获取排序列字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Sql.SqlQueryCondition">
+            <summary>
+            SQL Server数据库查询构造
+            </summary>
+        </member>
+        <member name="M:Easpnet.StringHelper.GetSubstring(System.String,System.Int32,System.String)">
+            <summary>
+            获取前len个字符，超出部分以des来描述
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.StringHelper.IsEqual(System.String,System.String,System.Boolean)">
+            <summary>
+            判别两个字符串是否相等
+            </summary>
+            <param name="s1">字符串1</param>
+            <param name="s2">字符串2</param>
+            <param name="igloreCase">是否忽略大小写</param>
+            <returns></returns>
+        </member>
+        <member name="P:Easpnet.TableColumn.PropertyName">
+            <summary>
+            实体类中的字段名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.TableColumn.ColumnName">
+            <summary>
+            表中字段名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.TableColumn.DbType">
+            <summary>
+            字段类型
+            </summary>
+        </member>
+        <member name="P:Easpnet.TableColumn.Size">
+            <summary>
+            字段长度
+            </summary>
+        </member>
+        <member name="P:Easpnet.TableColumn.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:Easpnet.TableColumn.IsIdentifier">
+            <summary>
+            是否是标志字段
+            </summary>
+        </member>
+        <member name="M:Easpnet.Text.EncodingHelper.ConvertEncoding(System.String,System.Text.Encoding,System.Text.Encoding)">
+            <summary>
+            将字符串进行编码的转化
+            </summary>
+            <param name="content">转化的内容</param>
+            <param name="from">原始编码</param>
+            <param name="to">目标编码</param>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Text.MobilePhoneNumberType">
+            <summary>
+            移动电话类型
+            </summary>
+        </member>
+        <member name="M:Easpnet.Text.Telephone.GetMobilePhoneNumberType(System.String)">
+            <summary>
+            判别手机号码类型
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Transaction">
+            <summary>
+            Easpnet封装的事务类
+            </summary>
+        </member>
+        <member name="P:Easpnet.Transaction.DbTransaction">
+            <summary>
+            获取数据库事务
+            </summary>
+        </member>
+        <member name="P:Easpnet.Transaction.Connection">
+            <summary>
+            获取数据库链接
+            </summary>
+        </member>
+        <member name="M:Easpnet.Transaction.#ctor">
+            <summary>
+            开始事务
+            </summary>
+        </member>
+        <member name="M:Easpnet.Transaction.#ctor(System.Data.Common.DbConnection)">
+            <summary>
+            在指定的连接中开启事务
+            </summary>
+            <param name="conn"></param>
+        </member>
+        <member name="M:Easpnet.Transaction.#ctor(System.String)">
+            <summary>
+            用指定的连接字符串开启事务
+            </summary>
+            <param name="connstr">连接字符串</param>
+        </member>
+        <member name="M:Easpnet.Transaction.Commit">
+            <summary>
+            提交事务
+            </summary>
+        </member>
+        <member name="M:Easpnet.Transaction.Rollback">
+            <summary>
+            回滚事务
+            </summary>
+        </member>
+        <member name="M:Easpnet.DateTimeUtility.FullString(System.DateTime)">
+            <summary>
+            显示完整的日志
+            </summary>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DateTimeUtility.IsDefaultTime(System.DateTime)">
+            <summary>
+            是否为默认时间
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.DateTimeUtility.DisplayTime(System.DateTime)">
+            <summary>
+            显示时间
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Web.MsgBox.MsgBoxs(System.String,System.String)">
+            <summary>
+            显示“确定”，点击以后就转到预设网址的提示框
+            </summary>
+            <param name="Msg">提示信息</param>
+            <param name="URL">“确定”以后要转到预设网址，为空表示只提示不跳转</param>
+            <returns>提示框JS</returns>
+        </member>
+    </members>
+</doc>

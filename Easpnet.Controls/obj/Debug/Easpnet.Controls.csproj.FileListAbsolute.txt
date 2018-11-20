@@ -1,0 +1,18 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Controls\bin\Debug\Easpnet.Controls.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Controls\bin\Debug\Easpnet.Controls.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Controls\bin\Debug\Easpnet.Controls.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Controls\bin\Debug\AspNetPager.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Controls\obj\Debug\Easpnet.Controls.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Controls\obj\Debug\Easpnet.Controls.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Controls\obj\Debug\Easpnet.Controls.csproj.CopyComplete
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Controls\obj\Debug\Easpnet.Controls.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\Easpnet.Controls\obj\Debug\Easpnet.Controls.pdb
+E:\WYJ_GIT\SWSolution\Easpnet.Controls\bin\Debug\Easpnet.Controls.dll.config
+E:\WYJ_GIT\SWSolution\Easpnet.Controls\bin\Debug\Easpnet.Controls.dll
+E:\WYJ_GIT\SWSolution\Easpnet.Controls\bin\Debug\Easpnet.Controls.pdb
+E:\WYJ_GIT\SWSolution\Easpnet.Controls\bin\Debug\AspNetPager.dll
+E:\WYJ_GIT\SWSolution\Easpnet.Controls\obj\Debug\Easpnet.Controls.csprojAssemblyReference.cache
+E:\WYJ_GIT\SWSolution\Easpnet.Controls\obj\Debug\Easpnet.Controls.csproj.CoreCompileInputs.cache
+E:\WYJ_GIT\SWSolution\Easpnet.Controls\obj\Debug\Easpnet.Controls.csproj.CopyComplete
+E:\WYJ_GIT\SWSolution\Easpnet.Controls\obj\Debug\Easpnet.Controls.dll
+E:\WYJ_GIT\SWSolution\Easpnet.Controls\obj\Debug\Easpnet.Controls.pdb

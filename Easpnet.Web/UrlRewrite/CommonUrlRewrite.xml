@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rewriter>
+    <rewrite url="~/(.*)/(.*)\.(.*)" to="~/index.aspx?module=$1&amp;page=$2"  processing="stop" />
+    <rewrite url="~/(.*)\.(.*)?" to="~/index.aspx?page=$1"  processing="stop" />
+    <rewrite url="~/(.*)$" to="~/index.aspx"  processing="stop" />
+</rewriter>

@@ -1,0 +1,60 @@
+html{
+   height:99%;
+   }
+body{
+ background: none repeat scroll 0 0 #fff; overflow: auto;
+ height:100%; text-align: left;
+ }
+#column-center {
+    float: none;
+    margin: 3px auto;
+    width: 99%; height:100%;
+    border:1px solid #EDEDED;
+}
+
+#contentMainWrapper {
+    margin-top: 0px; height:100%;
+}
+
+table.list td {
+    border-bottom:1px solid #EDEDED; line-height: 20px; padding:5px; 
+}
+tr.trhead1 th{
+   text-align:center;
+    }
+tr.trhead2 th{
+    background-image:none;
+    background:#E8EDF3;
+    }
+    
+table.list td div.desc{
+    margin-top:3px; color:#666;
+}
+table.list a {
+    font-size: 12px;
+}
+
+.page .pageContent {
+    height:100%;
+}
+
+table.form th,td{
+   padding:5px; vertical-align:top;  line-height: 20px;
+    }
+table.form .desc{
+    color:#999; margin-left:10px;
+    }
+table.form tbody th{
+    padding-bottom: 3px;
+    padding-top: 7px;
+    text-align: right;
+    width: 120px;
+}
+
+table.form tbody tr.group td{
+    height:30px; font-weight:bold; padding:10px 0px 10px 10px;
+}
+
+.error-message{ 
+    background-color:Red; color:#fff; padding:5px;
+    }

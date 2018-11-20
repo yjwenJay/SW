@@ -1,0 +1,45 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\bin\Debug\SW.Business.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\bin\Debug\SW.Business.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\obj\Debug\SW.Business.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\obj\Debug\SW.Business.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\obj\Debug\SW.Business.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\bin\Debug\Easpnet.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\bin\Debug\Local.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\bin\Debug\Easpnet.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\bin\Debug\Easpnet.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\bin\Debug\Easpnet.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\bin\Debug\Local.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\bin\Debug\Local.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\obj\Debug\SW.Business.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW.Business\obj\Debug\SW.Business.csproj.CopyComplete
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\SW.Business.dll
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\SW.Business.pdb
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\Easpnet.dll
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\SW.Model.dll
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\Newtonsoft.Json.dll
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\Local.dll
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\Easpnet.pdb
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\Easpnet.xml
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\Easpnet.dll.config
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\SW.Model.pdb
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\Newtonsoft.Json.pdb
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\Newtonsoft.Json.xml
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\Local.pdb
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\Local.dll.config
+E:\WYJ_GIT\SWSolution\SW.Business\obj\Debug\SW.Business.csprojAssemblyReference.cache
+E:\WYJ_GIT\SWSolution\SW.Business\obj\Debug\SW.Business.csproj.CoreCompileInputs.cache
+E:\WYJ_GIT\SWSolution\SW.Business\obj\Debug\SW.Business.csproj.CopyComplete
+E:\WYJ_GIT\SWSolution\SW.Business\obj\Debug\SW.Business.dll
+E:\WYJ_GIT\SWSolution\SW.Business\obj\Debug\SW.Business.pdb
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\SW.Commons.dll
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\ThoughtWorks.QRCode.dll
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\log4net.dll
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\RabbitMQ.Client.dll
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\StackExchange.Redis.dll
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\SW.Commons.pdb
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\log4net.xml
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\RabbitMQ.Client.xml
+E:\WYJ_GIT\SWSolution\SW.Business\bin\Debug\StackExchange.Redis.xml

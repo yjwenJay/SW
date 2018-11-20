@@ -1,0 +1,9 @@
+﻿ul.alert-message
+{
+    border:1px solid red;
+    width:100%;
+}
+ul.alert-message li
+{
+    margin-left:10px; line-height:22px; width:95%;
+}

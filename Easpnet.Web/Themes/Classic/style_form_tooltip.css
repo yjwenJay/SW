@@ -1,0 +1,17 @@
+﻿#DHTMLgoodies_formTooltipDivBox{
+background: url("Images/pointer.gif") no-repeat scroll -10px 5px #FFFFCC;border:1px solid #CC9933; 
+}
+#DHTMLgoodies_formTooltipDiv{
+   padding: 8px; background:#FFFFCC; 
+  }
+#DHTMLgoodies_formTooltipDiv div{
+ background:#FFFFCC; 
+ }
+ .hint-pointer {
+    background: url("Images/pointer.gif") no-repeat scroll left top #FFFFCC;
+    height: 19px;
+    left: -10px;
+    position: absolute;
+    top: 5px;
+    width: 10px;
+}

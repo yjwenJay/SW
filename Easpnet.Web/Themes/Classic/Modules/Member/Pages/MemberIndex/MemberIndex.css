@@ -1,0 +1,98 @@
+﻿.basic {
+    background: none repeat scroll 0 0 #FBF9F7;
+    border: 1px solid #BDBCBD;
+    color: #000000;
+    padding: 15px;
+    width: 612px;
+}
+
+.tell {
+    border: 1px solid #CC0000;
+    height: 26px;
+    line-height: 26px;
+    width: 644px;
+}
+.tell li {
+    float: left;
+    margin: 0 10px;
+}
+.basic_userc .input {
+    border: 1px solid #999999;
+    color: #707070;
+    font-size: 12px;
+    height: 34px;
+    padding: 3px;
+    width: 344px;
+}
+.basic_user img {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #868685;
+    height: 90px;
+    padding: 3px;
+    width: 90px;
+}
+.cBlue, a.cBlue:link, a.cBlue:visited {
+    color: #00569D;
+}
+a.cBlue:hover {
+    color: #CC0000;
+    text-decoration: underline;
+}
+.basic_userc .input3 {
+    border: 1px solid #A09D9D;
+    color: #5D5C5C;
+    height: 14px;
+    padding: 2px;
+}
+.red2 {
+    color: #CC0000;
+}
+.basic_userc {
+    display: inline;
+    margin-left: 8px;
+}
+.basic_userc .bot tr td {
+    padding: 4px 0;
+}
+.cbox_sl {
+    background: url("../../../../images/index.gif") repeat scroll 0 -218px transparent;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 20px;
+    width: 244px;
+}
+.cbox_sr {
+    background: url("../../../../images/c_boxbg.gif") repeat-x scroll 0 0 transparent;
+    height: 28px;
+    width: 378px;
+}
+.cbox {
+    border-bottom: 1px solid #D9D9D9;
+    border-left: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+    overflow: hidden;
+    width: 642px;
+}
+.cbox01_con table {
+    line-height: 18px;
+    margin: 10px;
+}
+.cGray, a.cGray:link, a.cGray:visited {
+    color: #707070; font-size:12px; font-weight:normal;
+}
+.cbox_sr a {
+    float: right;
+    line-height: 26px;
+    margin-right: 10px;
+}
+
+.telrz_gray {
+    background: url("../../../../images/index.gif") repeat scroll -25px -403px transparent;
+    float: left;
+    height: 14px;
+    margin-right: 3px;
+    width: 9px;
+}

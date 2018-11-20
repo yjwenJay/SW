@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<translations>
+    <item>
+        <from>核心模块</from>
+        <to>Core Module</to>
+    </item>
+
+    <item>
+        <from>TextBox</from>
+        <to>文本框</to>
+    </item>
+    <item>
+        <from>TextArea</from>
+        <to>文本域</to>
+    </item>
+    <item>
+        <from>Radio</from>
+        <to>单选列表</to>
+    </item>
+    <item>
+        <from>CheckBox</from>
+        <to>复选框列表</to>
+    </item>
+    <item>
+        <from>YesOrNo</from>
+        <to>是/否</to>
+    </item>
+
+    <item>
+        <from>Required</from>
+        <to>必填</to>
+    </item>
+    <item>
+        <from>MustInteger</from>
+        <to>整数</to>
+    </item>
+
+    <item>
+        <from>确定删除吗？</from>
+        <to>确定删除吗？</to>
+    </item>
+    <item>
+        <from>删除</from>
+        <to>删除</to>
+    </item>
+</translations>

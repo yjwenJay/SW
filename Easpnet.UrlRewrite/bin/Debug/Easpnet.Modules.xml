@@ -1,0 +1,2079 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Easpnet.Modules</name>
+    </assembly>
+    <members>
+        <member name="T:Easpnet.Modules.AjaxJsonAction">
+            <summary>
+            执行结束后要执行的操作类型枚举
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.AjaxJsonAction.none">
+            <summary>
+            无操作
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.AjaxJsonAction.redirect">
+            <summary>
+            跳转
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.AjaxJsonAction.reload">
+            <summary>
+            重新加载页面
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.AjaxJsonData">
+            <summary>
+            通用的Ajax请求Json返回数据
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.AjaxJsonData.success">
+            <summary>
+            操作是否成功
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.AjaxJsonData.message">
+            <summary>
+            返回的文本消息
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.AjaxJsonData.action">
+            <summary>
+            执行结束后要执行的操作
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.AjaxJsonData.url">
+            <summary>
+            跳转到的页面Url
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.AjaxJsonData.data">
+            <summary>
+            附加数据
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.AjaxJsonData.ToString">
+            <summary>
+            转化为字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Easpnet.Modules.BlockImport.BlockName">
+            <summary>
+            区块名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.BlockImport.Module">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.BlockImport.UseDefaultFrame">
+            <summary>
+            是否使用默认的框架
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.BlockImport.Title">
+            <summary>
+            标题文字
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.BlockImport.AddBlockJsLoad(Easpnet.Modules.MainMaster,Easpnet.Modules.Models.BlockInfo)">
+            <summary>
+            加载页面的js.load中的文件
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.BlockOption">
+            <summary>
+            区块的属性，描述了一个网页区块在向用户呈现时，有哪些属性可供选择。
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.BlockOption.OptionName">
+            <summary>
+            属性的名称(文本描述)
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.BlockOption.OptionKey">
+            <summary>
+            属性的键
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.BlockOption.InputMethod">
+            <summary>
+            录入方式
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.BlockOption.Values">
+            <summary>
+            若录入方式为选择性质，则该项表示可供选择的值列表
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.BlockOption.InputCheck">
+            <summary>
+            录入时的数据检测
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.BlockOption.Description">
+            <summary>
+            对属性的描述
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.BlockOption.Equals(System.Object)">
+            <summary>
+            是否相等。
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Modules.InputMethod">
+            <summary>
+            选项录入方式枚举
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.InputMethod.TextBox">
+            <summary>
+            文本框录入方式
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.InputMethod.TextArea">
+            <summary>
+            文本域录入方式
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.InputMethod.Radio">
+            <summary>
+            单项选择
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.InputMethod.CheckBox">
+            <summary>
+            复选框多项选择
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.InputMethod.YesOrNo">
+            <summary>
+            是/否
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.InputMethod.Select">
+            <summary>
+            下拉列表选择框
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.InputMethod.HtmlEditor">
+            <summary>
+            Html编辑器
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.InputMethod.FileUpload">
+            <summary>
+            文件上传框
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.InputMethod.Password">
+            <summary>
+            密码框
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.InputCheck">
+            <summary>
+            输入检测
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.InputCheck.Required">
+            <summary>
+            必须的
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.InputCheck.MustInteger">
+            <summary>
+            必须为数字
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Configs.Get(System.String)">
+            <summary>
+            获取配置项的值
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Configs.GetDecimal(System.String)">
+            <summary>
+            获取配置项的值
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Configs.GetInt(System.String)">
+            <summary>
+            获取配置项的值
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Configs.GetBoolean(System.String)">
+            <summary>
+            获取配置项的值
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Easpnet.Modules.PageLayout.MiddleOnly">
+            <summary>
+            一栏
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.PageLayout.LeftMiddle">
+            <summary>
+            左栏和中栏两栏
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.PageLayout.LeftMiddleRight">
+            <summary>
+            左中右三栏
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.PageLayout.MiddleRight">
+            <summary>
+            中栏和右栏两栏
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.ErrorMessage">
+            <summary>
+            错误消息
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.ErrorMessage.Success">
+            <summary>
+            是否操作成功
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.ErrorMessage.RedirectUrl">
+            <summary>
+            跳转到的Url
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.ErrorMessage.Message">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.SuccessMessage">
+            <summary>
+            成功消息
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.SuccessMessage.RedirectUrl">
+            <summary>
+            跳转到的Url
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.SuccessMessage.Message">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.IAjaxHandler">
+            <summary>
+            Ajax处理基类
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.BlockBase">
+            <summary>
+            网页区块基类
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.BlockBase.display_block">
+            <summary>
+            是否显示区块
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.BlockBase.Block">
+            <summary>
+            获取或设置区块实体对象
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.BlockBase.InitBlock(Easpnet.Modules.Models.BlockInfo)">
+            <summary>
+            初始化区块
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.BlockBase.ImageUrl(System.String)">
+            <summary>
+            获取图片的路径
+            </summary>
+            <param name="img"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.BlockBase.AjaxLink(System.String)">
+            <summary>
+            获取ajax的链接
+            </summary>
+            <param name="action"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Modules.Html">
+            <summary>
+            Html输出类，包含诸如文本框、复选框、下拉列表框等表单元素的输出，以及超链接地址输出等方法
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Html.IndexPage">
+            <summary>
+            获取当前的执行的页面的IndexPage网页对象
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Html.Configs">
+            <summary>
+            获取配置集合对象
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.Html.Langs">
+            <summary>
+            语言内容
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Html.CurrentPage">
+            <summary>
+            获取当前的执行的页面对象
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Html.SetConfigValue(System.String,System.String)">
+            <summary>
+            设置值
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="P:Easpnet.Modules.Html.CurrentPageName">
+            <summary>
+            当前的页面信息
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Html.T(System.String)">
+            <summary>
+            翻译内容，若要实现多语言界面，请调用此方法
+            </summary>
+            <param name="s">翻以前的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="P:Easpnet.Modules.Html.CurrentThemeName">
+            <summary>
+            获取或者设置当前的模板
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Html.UrlRewriteExt">
+            <summary>
+            获取或设置静态化的网页扩展名
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Html.WebRootUrl">
+            <summary>
+            获取或设置网站根目录路径：如: http://www.xxx.com/
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Html.Url(System.Object)">
+            <summary>
+            将相对路径转化为绝对的url路径，从根目录开始
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.HrefLink(System.String,System.String,System.String[])">
+            <summary>
+            构造连接
+            </summary>
+            <param name="module">模块名称</param>
+            <param name="page_name">页面名称</param>
+            <param name="parameters">参数</param>
+            <returns>静态化后的URL链接</returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.HrefLink(System.String[])">
+            <summary>
+            构造连接
+            </summary>
+            <param name="page_name">页面名称</param>
+            <param name="parameters">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.AjaxLink(Easpnet.Modules.Models.BlockInfo,System.String)">
+            <summary>
+            构造ajax的链接
+            </summary>
+            <param name="page_name"></param>
+            <param name="action"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.Select(System.String,System.String,System.String,System.Collections.Specialized.NameValueCollection,System.String[])">
+            <summary>
+            构造Select
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="value"></param>
+            <param name="values"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.Select(System.String,System.String,System.Collections.Generic.List{Easpnet.NameValue},System.String,System.String[])">
+            <summary>
+            构造Select
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="value"></param>
+            <param name="values"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.SelectEnums(System.String,System.String,System.Type,System.String,System.String,System.String[])">
+            <summary>
+            对枚举类型输出Select选择框
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="tp"></param>
+            <param name="firstText"></param>
+            <param name="selectedValue"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.Radio(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            输出单个单选框
+            </summary>
+            <param name="name"></param>
+            <param name="id"></param>
+            <param name="value"></param>
+            <param name="selected"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.RadioList(System.String,System.Collections.Specialized.NameValueCollection,System.String,System.String[])">
+            <summary>
+            构造Radio
+            </summary>
+            <param name="name"></param>
+            <param name="value"></param>
+            <param name="values"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.RadioList(System.String,System.Collections.Generic.List{Easpnet.NameValue},System.String)">
+            <summary>
+            构造Radio
+            </summary>
+            <param name="name"></param>
+            <param name="value"></param>
+            <param name="values"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.RadioEnums(System.String,System.Type,System.String,System.String[])">
+            <summary>
+            对枚举类型输出radio选择框
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="tp"></param>
+            <param name="firstText"></param>
+            <param name="selectedValue"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.CheckBox(System.String,System.String,System.String,System.Boolean,System.String[])">
+            <summary>
+            输出单个复选框
+            </summary>
+            <param name="name"></param>
+            <param name="id"></param>
+            <param name="value"></param>
+            <param name="selected"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.CheckBoxList(System.String,System.Collections.Specialized.NameValueCollection,System.String)">
+            <summary>
+            构造复选框列表
+            </summary>
+            <param name="name"></param>
+            <param name="values"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.CheckBoxList(System.String,System.Collections.Generic.List{Easpnet.NameValue},System.String)">
+            <summary>
+            构造复选框列表
+            </summary>
+            <param name="name"></param>
+            <param name="values"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.InputHidden(System.String,System.String,System.String)">
+            <summary>
+            构造隐藏域表单元素
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.InputText(System.String,System.String,System.String,System.String,System.String[])">
+            <summary>
+            构造文本框
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="value"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.InputPassword(System.String,System.String,System.String,System.String,System.String[])">
+            <summary>
+            构造密码框
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="value"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.InputFile(System.String,System.String,System.String,System.String,System.String[])">
+            <summary>
+            文件选择输入框
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.TextArea(System.String,System.String,System.String,System.Int32,System.Int32,System.String[])">
+            <summary>
+            构造文本区域
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="value"></param>
+            <param name="cssclass"></param>
+            <param name="rows"></param>
+            <param name="cols"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.Submit(System.String,System.String,System.String,System.String[])">
+            <summary>
+            输出提交按钮
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="value"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.Image(System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            输出图片
+            </summary>
+            <param name="url"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+            <param name="alt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Html.Message(System.String)">
+            <summary>
+            提示消息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Modules.Models.Theme">
+            <summary>
+            网站外观主题
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Theme.ThemeId">
+            <summary>
+            配置id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Theme.ThemeName">
+            <summary>
+            主题名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Theme.Description">
+            <summary>
+            主题描述
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Theme.IsCurrentTheme">
+            <summary>
+            是否是当前主题
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Theme.Snapshot">
+            <summary>
+            效果图
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Theme.CoreVersion">
+            <summary>
+            核心框架
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Theme.Author">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Theme.DirectoryName">
+            <summary>
+            模板目录名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Theme.IsOpen">
+            <summary>
+            是否开放
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Theme.MerchantId">
+            <summary>
+            商户Id-指定为某一商户定制的模板
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Models.Theme.Exists">
+            <summary>
+            判断是否重复(目录名称唯一)
+            </summary>
+            <param name="dirname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.Theme.GetCurrentTheme">
+            <summary>
+            获取当前的模板
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Modules.Models.AdminMenu">
+            <summary>
+            管理员菜单
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.AdminMenu.AdminMenuId">
+            <summary>
+            管理员菜单id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.AdminMenu.MenuText">
+            <summary>
+            菜单文本描述
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.AdminMenu.MenuUrl">
+            <summary>
+            菜单链接，若该项不为空，则该链接生效
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.AdminMenu.Target">
+            <summary>
+            目标框架，若该字段值为空，则为默认框架navTab
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.AdminMenu.ParentId">
+            <summary>
+            父菜单Id，若为0，则为分组菜单
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.AdminMenu.SortOrder">
+            <summary>
+            菜单排序顺序
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.AdminMenu.Module">
+            <summary>
+            所属的模块
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.AdminMenu.Page">
+            <summary>
+            页面名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.AdminMenu.Parameters">
+            <summary>
+            包含的参数
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.AdminMenu.DisaplayMenu">
+            <summary>
+            是否显示菜单
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.AdminMenu.IsCoreManage">
+            <summary>
+            是否是核心管理(网站开发人员使用的功能)
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.AdminMenu.ChildMenus">
+            <summary>
+            子菜单列表
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Models.AdminMenu.GetMenuTree(System.Int64)">
+            <summary>
+            获取菜单树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.AdminMenu.GetMenuTree">
+            <summary>
+            获取菜单树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.AdminMenu.GetAllMenu">
+            <summary>
+            获取所有的菜单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Modules.Models.BlockInfo">
+            <summary>
+            区块，用于描述在网页上的一个特定区域。
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.Models.BlockInfo.Instance">
+            <summary>
+            全局实例
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.BlockInfo.BlockId">
+            <summary>
+            区块id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.BlockInfo.BlockName">
+            <summary>
+            区块名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.BlockInfo.Module">
+            <summary>
+            区块所属的模块
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.BlockInfo.DisplayStaticHtml">
+            <summary>
+            是否显示静态html内容
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.BlockInfo.StaticHtml">
+            <summary>
+            静态html内容
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.BlockInfo.Title">
+            <summary>
+            区块的标题
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.BlockInfo.UseDefaultFrame">
+            <summary>
+            是否使用默认的盒子框架
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.BlockInfo.Options">
+            <summary>
+            属性
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.BlockInfo.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.BlockInfo.MerchantId">
+            <summary>
+            商户Id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.BlockInfo.IsOpenToMerchant">
+            <summary>
+            是否是商户页面
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.BlockInfo.Attibutes">
+            <summary>
+            区块的附加属性
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.BlockInfo.BlockOptionList">
+            <summary>
+            属性列表
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Models.BlockInfo.GetBlockInfo(System.String)">
+            <summary>
+            根据区块名称获取区块
+            </summary>
+            <param name="blockName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.BlockInfo.GetBlockInfo(System.String,System.String)">
+            <summary>
+            根据模块名称和区块名称来获取区块信息
+            </summary>
+            <param name="module">模块名称</param>
+            <param name="blockName">区块名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.BlockInfo.Create">
+            <summary>
+            插入数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.BlockInfo.Update">
+            <summary>
+            更新数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.BlockInfo.MakeSelfFromIDataReader(System.Data.IDataReader)">
+            <summary>
+            通过IDataReader构造实体对象本身
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:Easpnet.Modules.Models.BlockInfo.GetBlockOptionList(System.String)">
+            <summary>
+            通过字符串来构造区块属性列表
+            </summary>
+            <param name="optionStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.BlockInfo.ReadBlockInfoFromFile(System.String)">
+            <summary>
+            从文件读取区块列表信息，调用请确保路径文件路径存在
+            </summary>
+            <param name="filepath">文件路径</param>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Modules.Models.Config">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.Models.Config.Instanse">
+            <summary>
+            操作类
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Config.ConfigId">
+            <summary>
+            配置id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Config.ConfigKey">
+            <summary>
+            配置键
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Config.ConfigValue">
+            <summary>
+            配置值
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Config.ConfigType">
+            <summary>
+            配置种类
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Config.ConfigName">
+            <summary>
+            配置名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Config.Remark">
+            <summary>
+            配置说明
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Config.SortOrder">
+            <summary>
+            配置排序
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Config.InputMethod">
+            <summary>
+            录入方式
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Config.OptionValues">
+            <summary>
+            若录入方式为选择性质，则该项表示可供选择的值字符串表示形式
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Config.ConfigTypeKey">
+            <summary>
+            类型Id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Config.OptionValueList">
+            <summary>
+            若录入方式为选择性质，则该项表示可供选择的值列表表示形式
+            不做为数据库字段存储
+            </summary>        
+        </member>
+        <member name="M:Easpnet.Modules.Models.Config.GetConfigs">
+            <summary>
+            获取配置集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.Config.MakeSelfFromIDataReader(System.Data.IDataReader)">
+            <summary>
+            通过IDataReader构造实体对象本身
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:Easpnet.Modules.Models.Config.Create">
+            <summary>
+            插入数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.Config.Update">
+            <summary>
+            更新数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.Config.GetConfigTypeList">
+            <summary>
+            获取所有的配置类型列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.Config.GetConfigValue(System.String)">
+            <summary>
+            获取配置
+            </summary>
+            <param name="config_key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Modules.Models.Module">
+            <summary>
+            模块实体
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Module.ModuleId">
+            <summary>
+            模块id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Module.ModuleName">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Module.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Module.AssemblyName">
+            <summary>
+            程序集名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Module.Version">
+            <summary>
+            版本号
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Module.Dependence">
+            <summary>
+            依赖项
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Module.PageCount">
+            <summary>
+            模块包含的页面数量
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Module.BlockCount">
+            <summary>
+            模块包含的区块数量
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Module.UrlRewriteFile">
+            <summary>
+            Url重写配置文件路径
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Module.IsCore">
+            <summary>
+            是否是核心模块，核心模块不能进行卸载
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.Module.NameSpace">
+            <summary>
+            命名空间
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Models.Module.GetAllModules">
+            <summary>
+            获取所有安装的模块
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.Module.GetModuleByName(System.String)">
+            <summary>
+            根据
+            </summary>
+            <param name="moduleName">模块名称</param>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Modules.Models.PageGroup">
+            <summary>
+            页面分组，同一页面分组的页面，若无特殊指定的话， 将共享页面分组指定的页面布局、SEO设置和样式表。
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.Models.PageGroup.Instance">
+            <summary>
+            全局实例，用户数据操作
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.PageGroupId">
+            <summary>
+            页面分组id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.PageGroupName">
+            <summary>
+            页面分组的名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.DisplayLeftBox">
+            <summary>
+            是否显示左侧栏目
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.DisplayRightBox">
+            <summary>
+            是否显示右侧栏目
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.DisplayTopBox">
+            <summary>
+            是否显示顶部栏目
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.DisplayBottomBox">
+            <summary>
+            是否显示底部栏目
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.LeftBoxes">
+            <summary>
+            左侧栏目字符串
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.RightBoxes">
+            <summary>
+            右侧栏目字符串
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.TopBoxes">
+            <summary>
+            顶部栏目字符串
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.BottomBoxes">
+            <summary>
+            底部栏目字符串
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.MetaTitle">
+            <summary>
+            网页标题
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.MetaKeywords">
+            <summary>
+            网页关键字
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.MetaDescription">
+            <summary>
+            网页描述
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.Style">
+            <summary>
+            样式表
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.Remark">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.LeftBoxesList">
+            <summary>
+            左侧栏目列表
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.RightBoxesList">
+            <summary>
+            右侧栏目列表
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.TopBoxesList">
+            <summary>
+            顶部栏目列表
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.BottomBoxesList">
+            <summary>
+            底部栏目列表
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.PageBlockListLeft">
+            <summary>
+            左侧栏目列表（仅仅是存储的数据结构）
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.PageBlockListRight">
+            <summary>
+            右侧栏目列表（仅仅是存储的数据结构）
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.PageBlockListTop">
+            <summary>
+            顶部栏目列表（仅仅是存储的数据结构）
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageGroup.PageBlockListBottom">
+            <summary>
+            底部栏目列表（仅仅是存储的数据结构）
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Models.PageGroup.MakeSelfFromIDataReader(System.Data.IDataReader)">
+            <summary>
+            构建实体类
+            </summary>
+            <param name="dr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.PageGroup.Create">
+            <summary>
+            插入
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.PageGroup.Update">
+            <summary>
+            更新
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.PageGroup.GetPageGroup(System.String)">
+            <summary>
+            获取页面分组
+            </summary>
+            <param name="pageGroupName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.PageGroup.SetPageBlockListId(Easpnet.Modules.PageBlockList)">
+            <summary>
+            设置区块列表中区块的Id
+            </summary>
+            <param name="lst"></param>
+        </member>
+        <member name="T:Easpnet.Modules.Models.PageInfo">
+            <summary>
+            页面
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.PageId">
+            <summary>
+            页面id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.PageName">
+            <summary>
+            页面名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.Module">
+            <summary>
+            页面所属的模块
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.PageGroupName">
+            <summary>
+            页面所属的分组
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.DisplayLeftBox">
+            <summary>
+            是否显示左侧栏目
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.DisplayRightBox">
+            <summary>
+            是否显示右侧栏目
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.DisplayTopBox">
+            <summary>
+            是否显示顶部栏目
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.DisplayBottomBox">
+            <summary>
+            是否显示底部栏目
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.LeftBoxes">
+            <summary>
+            左侧栏目字符串
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.RightBoxes">
+            <summary>
+            右侧栏目字符串
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.TopBoxes">
+            <summary>
+            顶部栏目字符串
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.BottomBoxes">
+            <summary>
+            底部栏目字符串
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.DisplayStaticHtml">
+            <summary>
+            是否只显示静态网页内容-若该选项为是，则显示static_html的内容
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.StaticHtml">
+            <summary>
+            网页静态内容
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.MetaTitle">
+            <summary>
+            网页标题
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.MetaKeywords">
+            <summary>
+            网页关键字
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.MetaDescription">
+            <summary>
+            网页描述
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.Style">
+            <summary>
+            样式表
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.Remark">
+            <summary>
+            页面说明
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.IsAdminPage">
+            <summary>
+            是否是后台管理页面
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.MerchantId">
+            <summary>
+            商户Id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.IsOpenToMerchant">
+            <summary>
+            是否是商户页面
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.Layout">
+            <summary>
+            页面布局
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.LayoutLeftWidth">
+            <summary>
+            左栏宽度
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.LayoutRightWidth">
+            <summary>
+            右栏宽度
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.LayoutMiddleWidth">
+            <summary>
+            中栏宽度
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.IsCustomPage">
+            <summary>
+            是否是用户自定义页面
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.LeftBoxesList">
+            <summary>
+            左侧栏目列表（最终使用的区块集合）
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.RightBoxesList">
+            <summary>
+            右侧栏目列表（最终使用的区块集合）
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.TopBoxesList">
+            <summary>
+            顶部栏目列表（最终使用的区块集合）
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.BottomBoxesList">
+            <summary>
+            底部栏目列表（最终使用的区块集合）
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.PageBlockListLeft">
+            <summary>
+            左侧栏目列表（仅仅是存储的数据结构）
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.PageBlockListRight">
+            <summary>
+            右侧栏目列表（仅仅是存储的数据结构）
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.PageBlockListTop">
+            <summary>
+            顶部栏目列表（仅仅是存储的数据结构）
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Models.PageInfo.PageBlockListBottom">
+            <summary>
+            底部栏目列表（仅仅是存储的数据结构）
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Models.PageInfo.MakeSelfFromIDataReader(System.Data.IDataReader)">
+            <summary>
+            构建实体类
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:Easpnet.Modules.Models.PageInfo.Create">
+            <summary>
+            插入
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.PageInfo.Update">
+            <summary>
+            更新
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.PageInfo.GetBlockInfoList(Easpnet.Modules.PageBlockList)">
+            <summary>
+            读取区块列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.PageInfo.GetPageInfo(System.String)">
+            <summary>
+            根据页面名称获取
+            </summary>
+            <param name="pageName">页面名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.PageInfo.GetPageInfo(System.String,System.String)">
+            <summary>
+            根据模块名称和页面名称获取页面信息
+            </summary>
+            <param name="module">模块名称</param>
+            <param name="pageName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Models.PageInfo.SetPageBlockListId(Easpnet.Modules.PageBlockList)">
+            <summary>
+            设置区块列表中区块的Id
+            </summary>
+            <param name="lst"></param>
+        </member>
+        <member name="M:Easpnet.Modules.Models.PageInfo.MakePageInfoByFileSystem(System.String,System.String)">
+            <summary>
+            通过文件系统来构造
+            </summary>
+            <param name="module">模块名称</param>
+            <param name="pageName">页面名称</param>
+            <returns></returns>
+        </member>
+        <member name="P:Easpnet.Modules.ModuleAttribute.ModuleName">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.ModuleAttribute.Description">
+            <summary>
+            模块说明
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.ModuleAttribute.Dependence">
+            <summary>
+            依赖项
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.ModuleBase">
+            <summary>
+            模块基类
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.ModuleBase.Install">
+            <summary>
+            安装模块
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.ModuleBase.UnInstall">
+            <summary>
+            卸载模块
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.IndexPage.CurrentPage">
+            <summary>
+            当前的页面信息
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.IndexPage.CurrentPageGroup">
+            <summary>
+            当前所属的页面分组，若没有指定，则为空
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.IndexPage.Configs">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.IndexPage.WebRootUrl">
+            <summary>
+            网站根目录地址
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.IndexPage.MasterPage">
+            <summary>
+            母版页
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.IndexPage.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.IndexPage.SetMasterPage">
+            <summary>
+            设置母版页
+            母版页加载优先级顺序
+            1、当前主题/Modules/页面所属模块名称/Pages/页面名称/MainMaster.Master
+            2、默认主题/Modules/页面所属模块名称/Pages/页面名称/MainMaster.Master
+            3、当前主题/Modules/页面所属模块名称/PageGroups/页面组名称/MainMaster.Master
+            4、默认主题/Modules/页面所属模块名称/PageGroups/页面组名称/MainMaster.Master
+            5、当前主题/PageGroups/页面组名称/MainMaster.Master
+            6、默认主题/PageGroups/页面组名称/MainMaster.Master
+            7、当前主题/Modules/页面所属模块名称/MainMaster.Master
+            8、默认主题/Modules/页面所属模块名称/MainMaster.Master
+            9、当前主题/MainMaster.Master
+            10、默认主题/MainMaster.Master
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.IndexPage.AddBlocks(System.Int32)">
+            <summary>
+            添加区块内容
+            </summary>
+            <param name="block_type">
+                区块类型：1、顶部栏目，2、左侧栏目，3、右侧栏目，4、底部栏目
+            </param>
+        </member>
+        <member name="M:Easpnet.Modules.IndexPage.AddMainContent">
+            <summary>
+            添加主要内容
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.m_PageTitle">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.CurrentPage">
+            <summary>
+            当前的页面信息
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.CurrentPageGroup">
+            <summary>
+            当前所属的页面分组，若没有指定，则为空
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.MainMaster.PageTitle">
+            <summary>
+            网页标题
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.MetaKeywords">
+            <summary>
+            网页关键字
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.MetaDescription">
+            <summary>
+            网页描述
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.WebRootUrl">
+            <summary>
+            网站根目录路径：如: http://www.kexinsoft.com/
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.CurrentTheme">
+            <summary>
+            当前的模板
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.Styles">
+            <summary>
+            样式表
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.StyleFileList">
+            <summary>
+            样式表文件列表
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.Scripts">
+            <summary>
+            脚本
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.ScriptsFileList">
+            <summary>
+            脚本文件列表
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.Configs">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.MainContext">
+            <summary>
+            存储值
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.MultiLanguageEnabled">
+            <summary>
+            获取或设置是否启用多语言
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.LanguageCode">
+            <summary>
+            获取或设置当前语言
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.MainWrapperId">
+            <summary>
+            主框架的Id
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.MainWrapperClass">
+            <summary>
+            主框架的Class
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.MainMaster.BodyId">
+            <summary>
+            网页主框架Div的Id
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.MainMaster.Page_Init(System.Object,System.EventArgs)">
+            <summary>
+            初始化
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Easpnet.Modules.MainMaster.AddCssStyle">
+            <summary>
+            添加CSS样式
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.MainMaster.AddJsFiles">
+            <summary>
+            添加js文件
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.MainMaster.ImageUrl(System.String)">
+            <summary>
+            获取图片的路径
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.MainMaster.UploadUrl(System.String)">
+            <summary>
+            获取上传文件的路径
+            </summary>
+            <param name="up"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.MainMaster.T(System.String)">
+            <summary>
+            翻译内容，若要实现多语言界面，请调用此方法
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Modules.OperateResult">
+            <summary>
+            操作结果
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.OperateResult.Success">
+            <summary>
+            是否操作成功
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.OperateResult.Message">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.PageBase">
+            <summary>
+            网页页面基类
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.PageBase.Configs">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.PageBase.WebRootUrl">
+            <summary>
+            网站根目录
+            </summary>
+        </member>
+        <member name="F:Easpnet.Modules.PageBase.ResponseText">
+            <summary>
+            输出的内容
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.PageBase.HasError">
+            <summary>
+            是否有页面错误信息
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.PageBase.ErrorMessage">
+            <summary>
+            错误消息
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.PageBase.SuccessMessage">
+            <summary>
+            成功消息
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.ImageUrl(System.String)">
+            <summary>
+            获取图片的路径
+            </summary>
+            <param name="img"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.SetPageTitle(System.String,System.String,System.String)">
+            <summary>
+            设置网页标题，关键字，描述。
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.AddJsFile(System.String)">
+            <summary>
+            添加Js文件
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.AddCssFile(System.String)">
+            <summary>
+            添加CSS文件
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.InsertCssFile(System.String)">
+            <summary>
+            插入CSS文件
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.AddContext(System.String,System.String)">
+            <summary>
+            想模板页中增加上下文数据值
+            </summary>
+            <param name="name"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.Get(System.String)">
+            <summary>
+            获取表单Get值
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.Post(System.String)">
+            <summary>
+            获取表单Post值
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.ExistGet(System.String)">
+            <summary>
+            是否存在Request.QueryString数据
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.ExistForm(System.String)">
+            <summary>
+            是否存在Request.Form数据
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.Die(System.String)">
+            <summary>
+            输出字符串，并停止执行
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.GetSeoUrl(System.String,System.String,System.String[])">
+            <summary>
+            获取静态化的url
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.AfterAdded">
+            <summary>
+            控件添加到页面后做的操作
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.T(System.String)">
+            <summary>
+            翻译内容，若要实现多语言界面，请调用此方法
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.AddErrorMessage(System.String)">
+            <summary>
+            添加错误消息
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.AddSuccessMessage(System.String)">
+            <summary>
+            添加成功消息
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.AddSuccessMessage">
+            <summary>
+            添加成功消息
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.AjaxSuccess(Easpnet.Modules.AjaxJsonAction,System.String,System.String)">
+            <summary>
+            Ajax返回成功
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.AjaxSuccess(Easpnet.Modules.AjaxJsonAction,System.String,System.String,System.Object)">
+            <summary>
+            Ajax返回成功
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.AjaxFail(Easpnet.Modules.AjaxJsonAction,System.String,System.String)">
+            <summary>
+            Ajax返回失败
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.PageBase.AjaxFail(System.String)">
+            <summary>
+            Ajax返回失败
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.PageBlock">
+            <summary>
+            页面区块
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.PageBlock.PageBlockId">
+            <summary>
+            唯一Id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.PageBlock.BlockId">
+            <summary>
+            区块id
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.PageBlock.BlockName">
+            <summary>
+            区块名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.PageBlock.UseDefaultFrame">
+            <summary>
+            是否使用默认区块框架
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.PageBlock.Title">
+            <summary>
+            区块标题
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.PageBlock.Options">
+            <summary>
+            选项值集合
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.PageBlockList">
+            <summary>
+            页面区块集合
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.TemplateHelper">
+            <summary>
+            模板相关处理
+            模板存放目录在：Templates目录下面
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.TemplateHelper.ReadTemplateContent(System.String,Easpnet.NameObject[])">
+            <summary>
+            给定模板的相对路径，获取模板的内容
+            </summary>
+            <param name="relativeTempDir">模板的相对路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.TemplateHelper.GetTemplateDirectory(System.String)">
+            <summary>
+            给定模板的相对路径，获取模板的路径：
+            按照如下的顺序查找，若文件存在，则立即返回，顺序为：
+            当前模板当前页面的 Templates目录 > 
+            默认模板当前页面的 Templates目录 > 
+            当前模板当前模块的页面分组的 Templates目录 > 
+            默认模板当前模块的页面分组的 Templates目录 >
+            当前模板公共页面分组的 Templates目录 >
+            默认模板公共页面分组的 Templates目录 >
+            当前模板的当前模块的 Templates目录 >
+            默认模板的当前模块的 Templates目录 >
+            当前模板的 Templates目录 >
+            默认模板的 Templates目录 > 
+            </summary>
+            <param name="tempDir">模板的相对路径</param>
+            <returns></returns>
+        </member>
+        <member name="P:Easpnet.Modules.ViewAttribute.ViewName">
+            <summary>
+            表名称
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.ViewAttribute.PrimaryKey">
+            <summary>
+            主键列，若多个列构成主键，则列以","号隔开
+            </summary>
+        </member>
+        <member name="T:Easpnet.Modules.ViewBase">
+            <summary>
+            所有视图对象的基类
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.GetModel">
+            <summary>
+            获取一个实体模型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.GetModel(System.String,System.String[])">
+            <summary>
+            获取一个实体模型，置顶要选择的列
+            </summary>
+            <param name="field">要查询的第一个字段名称</param>
+            <param name="fields">要查询的多个字段集合</param>
+            <returns>若查询到数据返回true，否则返回false</returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.GetModel(Easpnet.Query)">
+            <summary>
+            根据查询条件获取实体模型
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.GetList(Easpnet.Query)">
+            <summary>
+            获取集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.GetList(Easpnet.Query,System.Int32)">
+            <summary>
+            根据条件获取前cout条记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.GetList(Easpnet.Query,Easpnet.PageParam@)">
+            <summary>
+            根据查询对象和分页参数获取集合对象
+            </summary>
+            <param name="query">查询对象</param>
+            <param name="page">分页参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.Count(Easpnet.Query)">
+            <summary>
+            根据条件进行统计
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.Sum(Easpnet.Query,System.String)">
+            <summary>
+            根据条件统计总数
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.GetTableColumns">
+            <summary>
+            获取该实体对象的列的集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.GetTableColumnsWithoutValue">
+            <summary>
+            获取不含有值的列集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.GetTableName">
+            <summary>
+             获取表名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.GetIdentifierColumnName">
+            <summary>
+            获取标志列
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.GetPrimaryKeyColumns">
+            <summary>
+            获取主键列集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.GetNotPrimaryKeyColumns">
+            <summary>
+            获取非主键列集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.MakeModelFromIDataReader(System.Data.IDataReader)">
+            <summary>
+            构造实体
+            </summary>
+            <param name="dr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.PopulateSelfFromIDataReader(System.Data.IDataReader)">
+            <summary>
+            通过IDataReader构造实体对象本身
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.MakeOrderByString(Easpnet.Query)">
+            <summary>
+            构造排序的Sql字符串
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.ConvertPropertyNameToFieldName(System.String)">
+            <summary>
+            将属性字段名称转换为数据库的字段名称
+            </summary>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.MakeSelectTableColumns(Easpnet.Query)">
+            <summary>
+            根据查询对象构造查询的列集合对象
+            </summary>
+            <param name="query">查询对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.MakeSelectTableColumns">
+            <summary>
+            根据查询对象构造查询的列集合对象(返回所有的列)
+            </summary>
+            <param name="query">查询对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.ViewBase.GetAllTableFieldList(System.Type)">
+            <summary>
+            获取所有的TableFieldAttribute
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Easpnet.Modules.Views.ViewPageInfo">
+            <summary>
+            页面
+            </summary>
+        </member>
+        <member name="P:Easpnet.Modules.Views.ViewPageInfo.AssemblyName">
+            <summary>
+            程序集名称
+            </summary>
+        </member>
+        <member name="M:Easpnet.Modules.Views.ViewPageInfo.GetCachedList">
+            <summary>
+            获取所有的页面信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Web.Http.GetClientIP">
+            <summary>
+            获取客户端IP
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Easpnet.Modules.Web.Http.GetClientMac">
+            <summary>
+            获取客户端Mac地址
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

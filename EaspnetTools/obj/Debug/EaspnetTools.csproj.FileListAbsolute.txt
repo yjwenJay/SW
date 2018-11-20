@@ -1,0 +1,28 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\EaspnetTools\bin\Debug\DonetTools.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\EaspnetTools\bin\Debug\DonetTools.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\EaspnetTools\bin\Debug\DonetTools.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\EaspnetTools\bin\Debug\Local.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\EaspnetTools\bin\Debug\Local.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\EaspnetTools\bin\Debug\Local.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\EaspnetTools\obj\Debug\EaspnetTools.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\EaspnetTools\obj\Debug\EaspnetTools.DESTools.resources
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\EaspnetTools\obj\Debug\DonetTools.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\EaspnetTools\obj\Debug\EaspnetTools.csproj.GenerateResource.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\EaspnetTools\obj\Debug\EaspnetTools.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\EaspnetTools\obj\Debug\EaspnetTools.csproj.CopyComplete
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\EaspnetTools\obj\Debug\DonetTools.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\EaspnetTools\obj\Debug\DonetTools.pdb
+E:\WYJ_GIT\SWSolution\EaspnetTools\bin\Debug\DonetTools.exe.config
+E:\WYJ_GIT\SWSolution\EaspnetTools\bin\Debug\DonetTools.exe
+E:\WYJ_GIT\SWSolution\EaspnetTools\bin\Debug\DonetTools.pdb
+E:\WYJ_GIT\SWSolution\EaspnetTools\bin\Debug\Local.dll
+E:\WYJ_GIT\SWSolution\EaspnetTools\bin\Debug\Local.pdb
+E:\WYJ_GIT\SWSolution\EaspnetTools\bin\Debug\Local.dll.config
+E:\WYJ_GIT\SWSolution\EaspnetTools\obj\Debug\EaspnetTools.csprojAssemblyReference.cache
+E:\WYJ_GIT\SWSolution\EaspnetTools\obj\Debug\EaspnetTools.DESTools.resources
+E:\WYJ_GIT\SWSolution\EaspnetTools\obj\Debug\DonetTools.Properties.Resources.resources
+E:\WYJ_GIT\SWSolution\EaspnetTools\obj\Debug\EaspnetTools.csproj.GenerateResource.cache
+E:\WYJ_GIT\SWSolution\EaspnetTools\obj\Debug\EaspnetTools.csproj.CoreCompileInputs.cache
+E:\WYJ_GIT\SWSolution\EaspnetTools\obj\Debug\EaspnetTools.csproj.CopyComplete
+E:\WYJ_GIT\SWSolution\EaspnetTools\obj\Debug\DonetTools.exe
+E:\WYJ_GIT\SWSolution\EaspnetTools\obj\Debug\DonetTools.pdb
