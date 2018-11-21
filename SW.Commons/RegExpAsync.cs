@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 
-namespace SW.Commons
+namespace SW
 {
     /// <summary>
     /// 异步正则 4.5有matchTimeout属性

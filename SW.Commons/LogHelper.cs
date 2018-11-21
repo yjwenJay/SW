@@ -7,7 +7,7 @@ using System.IO;
 using System.Configuration;
 using System.Web;
 
-namespace SW.Commons
+namespace SW
 {
     /// <summary>
     /// 

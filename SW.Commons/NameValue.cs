@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SW.Commons
+namespace SW
 {
     [Serializable]
     public class NameValue

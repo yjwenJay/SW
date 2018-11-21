@@ -9,7 +9,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SW.Commons.SQLExpress
+namespace SW.SQLExpress
 {
      public static class SqlHelper
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SW.Commons
+namespace SW
 {
     /// <summary>
     /// 提供数据类型的转化

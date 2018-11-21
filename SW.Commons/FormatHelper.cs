@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SW.Commons.Http;
+using SW.Http;
 
-namespace SW.Commons
+namespace SW
 {
     public class FormatHelper
     {

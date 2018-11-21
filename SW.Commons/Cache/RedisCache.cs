@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using StackExchange.Redis;
 
 
-namespace SW.Commons.Cache
+namespace SW.Cache
 {
     class RedisCache : ICache
     {

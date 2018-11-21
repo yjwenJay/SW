@@ -6,7 +6,7 @@ using RabbitMQ.Client;
 using System.Collections.Specialized;
 using Newtonsoft.Json;
 
-namespace SW.Commons
+namespace SW
 {
     /// <summary>
     /// RabbitMQ辅助类

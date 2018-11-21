@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BEA62248-ABC3-429C-BEE4-CEBBFF70CE69}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SW</RootNamespace>
+    <AssemblyName>SW</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager">
+      <HintPath>..\SW.DLL\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonFunction">
+      <HintPath>..\SW.DLL\CommonFunction.dll</HintPath>
+    </Reference>
+    <Reference Include="Donet.Modules.Member">
+      <HintPath>..\SW.DLL\Donet.Modules.Member.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\SW.DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SW.DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RabbitMQ.Client">
+      <HintPath>..\SW.DLL\RabbitMQ.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis">
+      <HintPath>..\SW.DLL\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\SW.DLL\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheHelper.cs" />
+    <Compile Include="Cache\ICache.cs" />
+    <Compile Include="Cache\RedisCache.cs" />
+    <Compile Include="Condition.cs" />
+    <Compile Include="ConditionBase.cs" />
+    <Compile Include="ConditionGroup.cs" />
+    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="ConvertGB2312.cs" />
+    <Compile Include="DangerousTagsCheck.cs" />
+    <Compile Include="DataCache.cs" />
+    <Compile Include="DataHelper.cs" />
+    <Compile Include="Data\DataSetHelper.cs" />
+    <Compile Include="DbConvert.cs" />
+    <Compile Include="DESManager.cs" />
+    <Compile Include="DistanceHelper.cs" />
+    <Compile Include="DllInvoke.cs" />
+    <Compile Include="Drawing\ImageHelper.cs" />
+    <Compile Include="Enums\CheckGetEnum.cs" />
+    <Compile Include="Enums\EnumHelper.cs" />
+    <Compile Include="Enums\GetTypeEnum.cs" />
+    <Compile Include="Enums\MessageEnum.cs" />
+    <Compile Include="ExMD5.cs" />
+    <Compile Include="ExportHelper.cs" />
+    <Compile Include="FileHelper.cs" />
+    <Compile Include="FormatHelper.cs" />
+    <Compile Include="Http\AJAX.cs" />
+    <Compile Include="Http\CookieHelper.cs" />
+    <Compile Include="Http\Handler.cs" />
+    <Compile Include="Http\HttpClient.cs" />
+    <Compile Include="Http\MessageBox.cs" />
+    <Compile Include="Http\SessionState.cs" />
+    <Compile Include="ImageQR.cs" />
+    <Compile Include="ImgHelper.cs" />
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="Log4net.cs" />
+    <Compile Include="LogHelper.cs" />
+    <Compile Include="MoBaoPortEnums.cs" />
+    <Compile Include="NameId.cs" />
+    <Compile Include="NameValue.cs" />
+    <Compile Include="ObjectExtendMethod.cs" />
+    <Compile Include="PageParam.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query.cs" />
+    <Compile Include="RabbitMQHelper.cs" />
+    <Compile Include="Ralation.cs" />
+    <Compile Include="ReadVerfiyCode.cs" />
+    <Compile Include="RegExp.cs" />
+    <Compile Include="RegExpAsync.cs" />
+    <Compile Include="Result.cs" />
+    <Compile Include="RouteHelper.cs" />
+    <Compile Include="RowNumParam.cs" />
+    <Compile Include="SaveValueTemp.cs" />
+    <Compile Include="SecurityHelper.cs" />
+    <Compile Include="Security\AESHelper.cs" />
+    <Compile Include="Security\DES.cs" />
+    <Compile Include="Security\DES3.cs" />
+    <Compile Include="Security\EncryptUtil.cs" />
+    <Compile Include="Security\MD5Helper.cs" />
+    <Compile Include="Security\RSA.cs" />
+    <Compile Include="Security\RSACryptoServiceProviderExtension.cs" />
+    <Compile Include="Security\SHA1Helper.cs" />
+    <Compile Include="Security\SHA256RSA2Helper.cs" />
+    <Compile Include="SerializeHelper.cs" />
+    <Compile Include="SmsHelper.cs" />
+    <Compile Include="SocketHelper.cs" />
+    <Compile Include="SQLExpress\SQLHelper.cs" />
+    <Compile Include="StringExtendMethod.cs" />
+    <Compile Include="StringHelper.cs" />
+    <Compile Include="Symbol.cs" />
+    <Compile Include="Text.cs" />
+    <Compile Include="Xml\XmlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

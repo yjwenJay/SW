@@ -7,7 +7,7 @@ using System.Data;
 using System.Xml.Linq;
 using System.IO;
 
-namespace SW.Commons.Xml
+namespace SW.Xml
 {
     /// <summary>
     /// Xml的操作公共类

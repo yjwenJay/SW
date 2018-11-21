@@ -16,3 +16,11 @@ E:\WYJ_GIT\SWSolution\Easpnet.Controls\obj\Debug\Easpnet.Controls.csproj.CoreCom
 E:\WYJ_GIT\SWSolution\Easpnet.Controls\obj\Debug\Easpnet.Controls.csproj.CopyComplete
 E:\WYJ_GIT\SWSolution\Easpnet.Controls\obj\Debug\Easpnet.Controls.dll
 E:\WYJ_GIT\SWSolution\Easpnet.Controls\obj\Debug\Easpnet.Controls.pdb
+E:\WYJ_GIT\SW\Easpnet.Controls\bin\Debug\Easpnet.Controls.dll.config
+E:\WYJ_GIT\SW\Easpnet.Controls\bin\Debug\Easpnet.Controls.dll
+E:\WYJ_GIT\SW\Easpnet.Controls\bin\Debug\Easpnet.Controls.pdb
+E:\WYJ_GIT\SW\Easpnet.Controls\bin\Debug\AspNetPager.dll
+E:\WYJ_GIT\SW\Easpnet.Controls\obj\Debug\Easpnet.Controls.csproj.CoreCompileInputs.cache
+E:\WYJ_GIT\SW\Easpnet.Controls\obj\Debug\Easpnet.Controls.csproj.CopyComplete
+E:\WYJ_GIT\SW\Easpnet.Controls\obj\Debug\Easpnet.Controls.dll
+E:\WYJ_GIT\SW\Easpnet.Controls\obj\Debug\Easpnet.Controls.pdb

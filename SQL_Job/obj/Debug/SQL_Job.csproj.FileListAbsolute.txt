@@ -10,3 +10,8 @@ E:\WYJ_GIT\SWSolution\SQL_Job\obj\Debug\SQL_Job.csproj.CoreCompileInputs.cache
 E:\WYJ_GIT\SWSolution\SQL_Job\obj\Debug\SQL_Job.dll
 E:\WYJ_GIT\SWSolution\SQL_Job\obj\Debug\SQL_Job.pdb
 E:\WYJ_GIT\SWSolution\SQL_Job\obj\Debug\SQL_Job.csprojAssemblyReference.cache
+E:\WYJ_GIT\SW\SQL_Job\bin\Debug\SQL_Job.dll
+E:\WYJ_GIT\SW\SQL_Job\bin\Debug\SQL_Job.pdb
+E:\WYJ_GIT\SW\SQL_Job\obj\Debug\SQL_Job.csproj.CoreCompileInputs.cache
+E:\WYJ_GIT\SW\SQL_Job\obj\Debug\SQL_Job.dll
+E:\WYJ_GIT\SW\SQL_Job\obj\Debug\SQL_Job.pdb

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SW.Commons
+namespace SW
 {
     /// <summary>
     /// 结构体Pager:封装分页查询的相关参数

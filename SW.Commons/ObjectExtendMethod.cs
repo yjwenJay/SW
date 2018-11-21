@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 using System.Xml.Linq;
 using System.Security.Cryptography;
 using System.IO;
-using SW.Commons;
+using SW;
 
 namespace SW
 {
@@ -35,8 +35,8 @@ namespace SW
             try
             {
                 byte[] iv = new byte[] { 1, 2, 3, 4, 5, 6, 7, 8 };      //当模式为ECB时，IV无用
-                byte[] a =SW.Commons.Security.DES.Des3EncodeECB(System.Text.ASCIIEncoding.Default.GetBytes(encryptKey), iv, System.Text.ASCIIEncoding.Default.GetBytes(input));
-                return SW.Commons.Security.DES.byteToHexStr(a);
+                byte[] a =SW.Security.DES.Des3EncodeECB(System.Text.ASCIIEncoding.Default.GetBytes(encryptKey), iv, System.Text.ASCIIEncoding.Default.GetBytes(input));
+                return SW.Security.DES.byteToHexStr(a);
             }
             catch (Exception)
             {
@@ -55,9 +55,9 @@ namespace SW
             try
             {
                 string result = string.Empty;
-                byte[] m = SW.Commons.Security.DES.hexStrToStr(input);
+                byte[] m = SW.Security.DES.hexStrToStr(input);
                 byte[] iv = new byte[] { 1, 2, 3, 4, 5, 6, 7, 8 };      //当模式为ECB时，IV无用
-                byte[] p = SW.Commons.Security.DES.Des3DecodeECB(System.Text.ASCIIEncoding.Default.GetBytes(decryptKey), iv, m);
+                byte[] p = SW.Security.DES.Des3DecodeECB(System.Text.ASCIIEncoding.Default.GetBytes(decryptKey), iv, m);
                 result = System.Text.ASCIIEncoding.Default.GetString(p);
                 result = result.Replace("\0", "");
                 return result;

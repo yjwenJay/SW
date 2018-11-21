@@ -7,7 +7,7 @@ using System.Net;
 using System.IO;
 using System.Drawing;
 using System.Diagnostics;
-namespace SW.Commons
+namespace SW
 {
     /// <summary>
     /// 验证码识别
@@ -243,7 +243,7 @@ namespace SW.Commons
                     /*
                     ImageDeal.DeleteBianKuang(bp, BianKuanPixel);
                     */
-                    using (Bitmap bp2 = SW.Commons.Drawing.ImageHelper.RemoveBorder(bp, BianKuanPixel))
+                    using (Bitmap bp2 = SW.Drawing.ImageHelper.RemoveBorder(bp, BianKuanPixel))
                     {
                         bp2.Save(verfiycode_Img);
                     }                    

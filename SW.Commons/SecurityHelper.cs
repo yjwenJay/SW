@@ -14,7 +14,7 @@ using System.Security.Cryptography;
 using System.IO;
 using System.Text;
 
-namespace SW.Commons
+namespace SW
 {
 	/// <summary>
 	/// MySecurity 的摘要说明。

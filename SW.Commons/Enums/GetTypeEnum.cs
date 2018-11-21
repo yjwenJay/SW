@@ -1,4 +1,4 @@
-﻿namespace SW.Commons.Enums
+﻿namespace SW.Enums
 {
     using System;
 

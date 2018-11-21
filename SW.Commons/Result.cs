@@ -1,4 +1,4 @@
-﻿namespace SW.Commons
+﻿namespace SW
 {
     /// <summary>
     /// 操作结果类，用来返回操作的结果，以及返回消息和相关数据

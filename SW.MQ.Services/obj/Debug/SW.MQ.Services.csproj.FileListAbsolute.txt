@@ -1,0 +1,2 @@
+E:\WYJ_GIT\SW\SW.MQ.Services\obj\Debug\SW.MQ.Services.csprojAssemblyReference.cache
+E:\WYJ_GIT\SW\SW.MQ.Services\obj\Debug\SW.MQ.Services.csproj.CoreCompileInputs.cache

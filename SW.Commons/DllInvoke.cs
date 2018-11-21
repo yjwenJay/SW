@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Runtime.InteropServices;
 
-namespace SW.Commons
+namespace SW
 {
     /// <summary>
     /// 动态DLL调用类

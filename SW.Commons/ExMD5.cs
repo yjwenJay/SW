@@ -5,7 +5,7 @@ using System.Text;
 using System.Collections;
 using System.IO;
 
-namespace SW.Commons
+namespace SW
 {
     /// <summary>
     /// ASP的MD5加密算法，用于DH517会员的登录密码加密

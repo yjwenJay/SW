@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Web;
-using SW.Commons.Enums;
+using SW.Enums;
 
-namespace SW.Commons
+namespace SW
 {
     /// <summary>
     /// 数据操作类

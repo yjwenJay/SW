@@ -10,3 +10,9 @@ E:\WYJ_GIT\SWSolution\DLL\bin\Debug\DLL.pdb
 E:\WYJ_GIT\SWSolution\DLL\obj\Debug\DLL.csproj.CoreCompileInputs.cache
 E:\WYJ_GIT\SWSolution\DLL\obj\Debug\DLL.dll
 E:\WYJ_GIT\SWSolution\DLL\obj\Debug\DLL.pdb
+E:\WYJ_GIT\SW\DLL\bin\Debug\DLL.dll.config
+E:\WYJ_GIT\SW\DLL\bin\Debug\DLL.dll
+E:\WYJ_GIT\SW\DLL\bin\Debug\DLL.pdb
+E:\WYJ_GIT\SW\DLL\obj\Debug\DLL.csproj.CoreCompileInputs.cache
+E:\WYJ_GIT\SW\DLL\obj\Debug\DLL.dll
+E:\WYJ_GIT\SW\DLL\obj\Debug\DLL.pdb

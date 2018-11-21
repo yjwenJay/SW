@@ -6,7 +6,7 @@ using System.IO;
 using System.Net;
 using System.Net.Sockets;
 
-namespace SW.Commons
+namespace SW
 {
     public class SocketHelper
     {

@@ -3,7 +3,7 @@ using System.Security.Cryptography;
 using System.IO;
 using System.Text;
 
-namespace SW.Commons.Security
+namespace SW.Security
 {
     public class DES
     {

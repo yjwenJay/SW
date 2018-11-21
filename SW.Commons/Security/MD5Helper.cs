@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SW.Commons.Security
+namespace SW.Security
 {
     public class MD5Helper
     {

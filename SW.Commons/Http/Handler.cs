@@ -6,9 +6,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Web;
 using System.Net;
-using SW.Commons.Enums;
+using SW.Enums;
 
-namespace SW.Commons.Http
+namespace SW.Http
 {
 
     public class Handler

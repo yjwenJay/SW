@@ -14,7 +14,7 @@ using System.Text;
 using System.Security.Cryptography.X509Certificates;
 using System.Net.Security;
 
-namespace SW.Commons.Http
+namespace SW.Http
 {
     /// <summary>
     /// Http网络访问实用类

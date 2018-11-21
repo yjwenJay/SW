@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Drawing;
 
-namespace SW.Commons.Drawing
+namespace SW.Drawing
 {
     public class ImageHelper
     {

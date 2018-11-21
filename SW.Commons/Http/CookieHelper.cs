@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Web;
 
-namespace SW.Commons.Http
+namespace SW.Http
 {
     public class CookieHelper
     {

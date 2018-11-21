@@ -11,3 +11,9 @@ E:\WYJ_GIT\SWSolution\Local\obj\Debug\Local.csproj.CoreCompileInputs.cache
 E:\WYJ_GIT\SWSolution\Local\obj\Debug\Local.dll
 E:\WYJ_GIT\SWSolution\Local\obj\Debug\Local.pdb
 E:\WYJ_GIT\SWSolution\Local\obj\Debug\Local.csprojAssemblyReference.cache
+E:\WYJ_GIT\SW\Local\bin\Debug\Local.dll.config
+E:\WYJ_GIT\SW\Local\bin\Debug\Local.dll
+E:\WYJ_GIT\SW\Local\bin\Debug\Local.pdb
+E:\WYJ_GIT\SW\Local\obj\Debug\Local.csproj.CoreCompileInputs.cache
+E:\WYJ_GIT\SW\Local\obj\Debug\Local.dll
+E:\WYJ_GIT\SW\Local\obj\Debug\Local.pdb

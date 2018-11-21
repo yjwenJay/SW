@@ -8,7 +8,7 @@ using System.Web;
 using System.Data;
 using System.IO;
 
-namespace SW.Commons
+namespace SW
 {
     /// <summary>
     /// ≥£”√Helper

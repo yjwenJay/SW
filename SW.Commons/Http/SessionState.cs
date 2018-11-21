@@ -1,7 +1,7 @@
 ﻿
 using System;
 using System.Web;
-namespace SW.Commons.Http
+namespace SW.Http
 {
 
     public class SessionState

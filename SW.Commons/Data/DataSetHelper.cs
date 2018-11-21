@@ -5,7 +5,7 @@ using System.Text;
 using System.Data;
 using System.Collections;
 
-namespace SW.Commons.Data
+namespace SW.Data
 {
     public class DataSetHelper
     {

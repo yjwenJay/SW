@@ -1,4 +1,4 @@
-﻿namespace SW.Commons.Port
+﻿namespace SW.Port
 {
     /// <summary>
     /// 订单消费类型

@@ -5,7 +5,7 @@ using System.Text;
 using System.Reflection;
 using System.ComponentModel;
 
-namespace SW.Commons.Enums
+namespace SW.Enums
 {
 
     /// <summary>
@@ -147,7 +147,7 @@ namespace SW.Commons.Enums
         //        return "";
         //    try
         //    {
-        //        Type type = Type.GetType("SW.Commons.Enums." + enStr);
+        //        Type type = Type.GetType("SW.Enums." + enStr);
         //        MemberInfo[] memInfo = type.GetMember(value);
         //        if (memInfo != null && memInfo.Length > 0)
         //        {
@@ -359,7 +359,7 @@ namespace SW.Commons.Enums
         //{
         //    if (string.IsNullOrEmpty(enumString))
         //        return "";
-        //    Type type = Type.GetType("SW.Commons.Enums." + enumString);
+        //    Type type = Type.GetType("SW.Enums." + enumString);
         //    if (type == null)
         //        return "";
         //    return GetEnumToDropDownList(type, listId, selectedValue, firstOptionHtml, attr, excludeInt);

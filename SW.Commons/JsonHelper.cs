@@ -8,7 +8,7 @@ using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Linq;
 
 
-namespace SW.Commons
+namespace SW
 {
     public class JsonHelper
     {

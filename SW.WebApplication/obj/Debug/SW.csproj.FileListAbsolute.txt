@@ -1,0 +1,356 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\ApplicationInsights.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\SW.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\SW.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\SW.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\csc.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\csc.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\csc.rsp
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\csi.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\csi.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\csi.rsp
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.AppContext.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Console.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.IO.Compression.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Security.Claims.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.ValueTuple.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\vbc.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\vbc.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\vbc.rsp
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Microsoft.AI.Web.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\WebGrease.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Microsoft.AI.Web.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\obj\Debug\SW.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\obj\Debug\SW.csproj.CopyComplete
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\obj\Debug\SW.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\obj\Debug\SW.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.Http.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.Http.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\obj\Debug\SW.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\SW.Business.dll
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\SW\SW\bin\SW.Business.pdb
+E:\WYJ_GIT\SWSolution\SW\bin\ApplicationInsights.config
+E:\WYJ_GIT\SWSolution\SW\bin\SW.dll.config
+E:\WYJ_GIT\SWSolution\SW\bin\SW.dll
+E:\WYJ_GIT\SWSolution\SW\bin\SW.pdb
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\csc.exe
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\csc.exe.config
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\csc.rsp
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\csi.exe
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\csi.exe.config
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\csi.rsp
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\Microsoft.Managed.Core.targets
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.AppContext.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Collections.Immutable.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Console.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.IO.Compression.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.IO.FileSystem.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.IO.Pipes.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Reflection.Metadata.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Security.AccessControl.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Security.Claims.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Security.Principal.Windows.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.ValueTuple.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Xml.XmlDocument.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Xml.XPath.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\vbc.exe
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\vbc.exe.config
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\vbc.rsp
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\VBCSCompiler.exe
+E:\WYJ_GIT\SWSolution\SW\bin\roslyn\VBCSCompiler.exe.config
+E:\WYJ_GIT\SWSolution\SW\bin\Antlr3.Runtime.dll
+E:\WYJ_GIT\SWSolution\SW\bin\Microsoft.AI.Agent.Intercept.dll
+E:\WYJ_GIT\SWSolution\SW\bin\Microsoft.AI.DependencyCollector.dll
+E:\WYJ_GIT\SWSolution\SW\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\WYJ_GIT\SWSolution\SW\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\WYJ_GIT\SWSolution\SW\bin\Microsoft.AI.Web.dll
+E:\WYJ_GIT\SWSolution\SW\bin\Microsoft.AI.WindowsServer.dll
+E:\WYJ_GIT\SWSolution\SW\bin\Microsoft.ApplicationInsights.dll
+E:\WYJ_GIT\SWSolution\SW\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\WYJ_GIT\SWSolution\SW\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\WYJ_GIT\SWSolution\SW\bin\Microsoft.Web.Infrastructure.dll
+E:\WYJ_GIT\SWSolution\SW\bin\Newtonsoft.Json.dll
+E:\WYJ_GIT\SWSolution\SW\bin\SW.Business.dll
+E:\WYJ_GIT\SWSolution\SW\bin\SW.Commons.dll
+E:\WYJ_GIT\SWSolution\SW\bin\SW.Model.dll
+E:\WYJ_GIT\SWSolution\SW\bin\System.Diagnostics.DiagnosticSource.dll
+E:\WYJ_GIT\SWSolution\SW\bin\System.Net.Http.Formatting.dll
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.Helpers.dll
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.Http.dll
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.Http.WebHost.dll
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.Mvc.dll
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.Optimization.dll
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.Razor.dll
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.WebPages.Deployment.dll
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.WebPages.dll
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.WebPages.Razor.dll
+E:\WYJ_GIT\SWSolution\SW\bin\WebGrease.dll
+E:\WYJ_GIT\SWSolution\SW\bin\Easpnet.dll
+E:\WYJ_GIT\SWSolution\SW\bin\ThoughtWorks.QRCode.dll
+E:\WYJ_GIT\SWSolution\SW\bin\log4net.dll
+E:\WYJ_GIT\SWSolution\SW\bin\RabbitMQ.Client.dll
+E:\WYJ_GIT\SWSolution\SW\bin\StackExchange.Redis.dll
+E:\WYJ_GIT\SWSolution\SW\bin\Local.dll
+E:\WYJ_GIT\SWSolution\SW\bin\SW.Business.pdb
+E:\WYJ_GIT\SWSolution\SW\bin\SW.Commons.pdb
+E:\WYJ_GIT\SWSolution\SW\bin\SW.Model.pdb
+E:\WYJ_GIT\SWSolution\SW\bin\System.Net.Http.Formatting.xml
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.Http.xml
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.Http.WebHost.xml
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.Helpers.xml
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.Mvc.xml
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.Optimization.xml
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.Razor.xml
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.WebPages.xml
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.WebPages.Deployment.xml
+E:\WYJ_GIT\SWSolution\SW\bin\System.Web.WebPages.Razor.xml
+E:\WYJ_GIT\SWSolution\SW\bin\Newtonsoft.Json.xml
+E:\WYJ_GIT\SWSolution\SW\bin\Antlr3.Runtime.pdb
+E:\WYJ_GIT\SWSolution\SW\bin\System.Diagnostics.DiagnosticSource.xml
+E:\WYJ_GIT\SWSolution\SW\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\WYJ_GIT\SWSolution\SW\bin\Microsoft.AI.DependencyCollector.xml
+E:\WYJ_GIT\SWSolution\SW\bin\Microsoft.AI.WindowsServer.xml
+E:\WYJ_GIT\SWSolution\SW\bin\Microsoft.AI.Web.xml
+E:\WYJ_GIT\SWSolution\SW\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\WYJ_GIT\SWSolution\SW\bin\Easpnet.pdb
+E:\WYJ_GIT\SWSolution\SW\bin\Easpnet.xml
+E:\WYJ_GIT\SWSolution\SW\bin\Easpnet.dll.config
+E:\WYJ_GIT\SWSolution\SW\bin\log4net.xml
+E:\WYJ_GIT\SWSolution\SW\bin\RabbitMQ.Client.xml
+E:\WYJ_GIT\SWSolution\SW\bin\StackExchange.Redis.xml
+E:\WYJ_GIT\SWSolution\SW\bin\Local.pdb
+E:\WYJ_GIT\SWSolution\SW\bin\Local.dll.config
+E:\WYJ_GIT\SWSolution\SW\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\WYJ_GIT\SWSolution\SW\bin\zh-Hans\System.Web.Mvc.resources.dll
+E:\WYJ_GIT\SWSolution\SW\bin\zh-Hans\System.Web.Optimization.resources.dll
+E:\WYJ_GIT\SWSolution\SW\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\WYJ_GIT\SWSolution\SW\bin\zh-Hans\System.Web.WebPages.resources.dll
+E:\WYJ_GIT\SWSolution\SW\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+E:\WYJ_GIT\SWSolution\SW\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+E:\WYJ_GIT\SWSolution\SW\obj\Debug\SW.csprojAssemblyReference.cache
+E:\WYJ_GIT\SWSolution\SW\obj\Debug\SW.csproj.CoreCompileInputs.cache
+E:\WYJ_GIT\SWSolution\SW\obj\Debug\SW.csproj.CopyComplete
+E:\WYJ_GIT\SWSolution\SW\obj\Debug\SW.dll
+E:\WYJ_GIT\SWSolution\SW\obj\Debug\SW.pdb
+E:\WYJ_GIT\SW\SW\bin\ApplicationInsights.config
+E:\WYJ_GIT\SW\SW\bin\SW.dll.config
+E:\WYJ_GIT\SW\SW\bin\SW.dll
+E:\WYJ_GIT\SW\SW\bin\SW.pdb
+E:\WYJ_GIT\SW\SW\bin\roslyn\csc.exe
+E:\WYJ_GIT\SW\SW\bin\roslyn\csc.exe.config
+E:\WYJ_GIT\SW\SW\bin\roslyn\csc.rsp
+E:\WYJ_GIT\SW\SW\bin\roslyn\csi.exe
+E:\WYJ_GIT\SW\SW\bin\roslyn\csi.exe.config
+E:\WYJ_GIT\SW\SW\bin\roslyn\csi.rsp
+E:\WYJ_GIT\SW\SW\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\WYJ_GIT\SW\SW\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\Microsoft.Managed.Core.targets
+E:\WYJ_GIT\SW\SW\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.AppContext.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Collections.Immutable.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Console.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.IO.Compression.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.IO.FileSystem.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.IO.Pipes.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Reflection.Metadata.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Security.AccessControl.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Security.Claims.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Security.Principal.Windows.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.ValueTuple.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Xml.XmlDocument.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Xml.XPath.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\WYJ_GIT\SW\SW\bin\roslyn\vbc.exe
+E:\WYJ_GIT\SW\SW\bin\roslyn\vbc.exe.config
+E:\WYJ_GIT\SW\SW\bin\roslyn\vbc.rsp
+E:\WYJ_GIT\SW\SW\bin\roslyn\VBCSCompiler.exe
+E:\WYJ_GIT\SW\SW\bin\roslyn\VBCSCompiler.exe.config
+E:\WYJ_GIT\SW\SW\bin\Antlr3.Runtime.dll
+E:\WYJ_GIT\SW\SW\bin\Microsoft.AI.Agent.Intercept.dll
+E:\WYJ_GIT\SW\SW\bin\Microsoft.AI.DependencyCollector.dll
+E:\WYJ_GIT\SW\SW\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\WYJ_GIT\SW\SW\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\WYJ_GIT\SW\SW\bin\Microsoft.AI.Web.dll
+E:\WYJ_GIT\SW\SW\bin\Microsoft.AI.WindowsServer.dll
+E:\WYJ_GIT\SW\SW\bin\Microsoft.ApplicationInsights.dll
+E:\WYJ_GIT\SW\SW\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\WYJ_GIT\SW\SW\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\WYJ_GIT\SW\SW\bin\Microsoft.Web.Infrastructure.dll
+E:\WYJ_GIT\SW\SW\bin\Newtonsoft.Json.dll
+E:\WYJ_GIT\SW\SW\bin\SW.Business.dll
+E:\WYJ_GIT\SW\SW\bin\SW.Commons.dll
+E:\WYJ_GIT\SW\SW\bin\SW.Model.dll
+E:\WYJ_GIT\SW\SW\bin\System.Diagnostics.DiagnosticSource.dll
+E:\WYJ_GIT\SW\SW\bin\System.Net.Http.Formatting.dll
+E:\WYJ_GIT\SW\SW\bin\System.Web.Helpers.dll
+E:\WYJ_GIT\SW\SW\bin\System.Web.Http.dll
+E:\WYJ_GIT\SW\SW\bin\System.Web.Http.WebHost.dll
+E:\WYJ_GIT\SW\SW\bin\System.Web.Mvc.dll
+E:\WYJ_GIT\SW\SW\bin\System.Web.Optimization.dll
+E:\WYJ_GIT\SW\SW\bin\System.Web.Razor.dll
+E:\WYJ_GIT\SW\SW\bin\System.Web.WebPages.Deployment.dll
+E:\WYJ_GIT\SW\SW\bin\System.Web.WebPages.dll
+E:\WYJ_GIT\SW\SW\bin\System.Web.WebPages.Razor.dll
+E:\WYJ_GIT\SW\SW\bin\WebGrease.dll
+E:\WYJ_GIT\SW\SW\bin\Easpnet.dll
+E:\WYJ_GIT\SW\SW\bin\JWT.dll
+E:\WYJ_GIT\SW\SW\bin\ThoughtWorks.QRCode.dll
+E:\WYJ_GIT\SW\SW\bin\log4net.dll
+E:\WYJ_GIT\SW\SW\bin\RabbitMQ.Client.dll
+E:\WYJ_GIT\SW\SW\bin\StackExchange.Redis.dll
+E:\WYJ_GIT\SW\SW\bin\Local.dll
+E:\WYJ_GIT\SW\SW\bin\SW.Business.pdb
+E:\WYJ_GIT\SW\SW\bin\SW.Business.dll.config
+E:\WYJ_GIT\SW\SW\bin\SW.Commons.pdb
+E:\WYJ_GIT\SW\SW\bin\SW.Model.pdb
+E:\WYJ_GIT\SW\SW\bin\System.Net.Http.Formatting.xml
+E:\WYJ_GIT\SW\SW\bin\System.Web.Http.xml
+E:\WYJ_GIT\SW\SW\bin\System.Web.Http.WebHost.xml
+E:\WYJ_GIT\SW\SW\bin\System.Web.Helpers.xml
+E:\WYJ_GIT\SW\SW\bin\System.Web.Mvc.xml
+E:\WYJ_GIT\SW\SW\bin\System.Web.Optimization.xml
+E:\WYJ_GIT\SW\SW\bin\System.Web.Razor.xml
+E:\WYJ_GIT\SW\SW\bin\System.Web.WebPages.xml
+E:\WYJ_GIT\SW\SW\bin\System.Web.WebPages.Deployment.xml
+E:\WYJ_GIT\SW\SW\bin\System.Web.WebPages.Razor.xml
+E:\WYJ_GIT\SW\SW\bin\Newtonsoft.Json.xml
+E:\WYJ_GIT\SW\SW\bin\Antlr3.Runtime.pdb
+E:\WYJ_GIT\SW\SW\bin\System.Diagnostics.DiagnosticSource.xml
+E:\WYJ_GIT\SW\SW\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\WYJ_GIT\SW\SW\bin\Microsoft.AI.DependencyCollector.xml
+E:\WYJ_GIT\SW\SW\bin\Microsoft.AI.WindowsServer.xml
+E:\WYJ_GIT\SW\SW\bin\Microsoft.AI.Web.xml
+E:\WYJ_GIT\SW\SW\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\WYJ_GIT\SW\SW\bin\Easpnet.pdb
+E:\WYJ_GIT\SW\SW\bin\Easpnet.xml
+E:\WYJ_GIT\SW\SW\bin\Easpnet.dll.config
+E:\WYJ_GIT\SW\SW\bin\log4net.xml
+E:\WYJ_GIT\SW\SW\bin\RabbitMQ.Client.xml
+E:\WYJ_GIT\SW\SW\bin\StackExchange.Redis.xml
+E:\WYJ_GIT\SW\SW\bin\Local.pdb
+E:\WYJ_GIT\SW\SW\bin\Local.dll.config
+E:\WYJ_GIT\SW\SW\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\WYJ_GIT\SW\SW\bin\zh-Hans\System.Web.Mvc.resources.dll
+E:\WYJ_GIT\SW\SW\bin\zh-Hans\System.Web.Optimization.resources.dll
+E:\WYJ_GIT\SW\SW\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\WYJ_GIT\SW\SW\bin\zh-Hans\System.Web.WebPages.resources.dll
+E:\WYJ_GIT\SW\SW\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+E:\WYJ_GIT\SW\SW\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+E:\WYJ_GIT\SW\SW\obj\Debug\SW.csprojAssemblyReference.cache
+E:\WYJ_GIT\SW\SW\obj\Debug\SW.csproj.CoreCompileInputs.cache
+E:\WYJ_GIT\SW\SW\obj\Debug\SW.csproj.CopyComplete
+E:\WYJ_GIT\SW\SW\obj\Debug\SW.dll
+E:\WYJ_GIT\SW\SW\obj\Debug\SW.pdb

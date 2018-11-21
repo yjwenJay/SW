@@ -5,7 +5,7 @@ using System.Text;
 using System.IO;
 using System.Security.Cryptography;
 
-namespace SW.Commons.Security
+namespace SW.Security
 {
     ///  <summary> 
     /// DES3加密解密 

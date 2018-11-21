@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web;
-using SW.Commons.Http;
+using SW.Http;
 
-namespace SW.Commons
+namespace SW
 {
     /// <summary>
     /// 使用session,cookie保存用户临时数据，

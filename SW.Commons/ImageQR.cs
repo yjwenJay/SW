@@ -8,7 +8,7 @@ using System.IO;
 using System.Collections;
 using ThoughtWorks.QRCode.Codec;
 
-namespace SW.Commons
+namespace SW
 {
     /// <summary>
     /// 二维码生成

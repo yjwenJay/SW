@@ -1,4 +1,4 @@
-﻿namespace SW.Commons
+﻿namespace SW
 {
     using System;
     using System.Collections.Generic;

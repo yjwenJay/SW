@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SW.Commons.Cache
+namespace SW.Cache
 {
     public interface ICache
     {

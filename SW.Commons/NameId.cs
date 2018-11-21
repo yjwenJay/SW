@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections;
-namespace SW.Commons
+namespace SW
 {
     [Serializable]
     /// <summary>

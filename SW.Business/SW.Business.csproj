@@ -58,9 +58,9 @@
       <Project>{a34e6237-cb73-4b9c-a5de-4d78aeaa8e7c}</Project>
       <Name>Easpnet</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SW.Commons\SW.Commons.csproj">
+    <ProjectReference Include="..\SW.Commons\SW.csproj">
       <Project>{BEA62248-ABC3-429C-BEE4-CEBBFF70CE69}</Project>
-      <Name>SW.Commons</Name>
+      <Name>SW</Name>
     </ProjectReference>
     <ProjectReference Include="..\SW.Model\SW.Model.csproj">
       <Project>{4a7699b2-ec95-44c4-884a-981d37fee78a}</Project>

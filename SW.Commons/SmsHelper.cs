@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SW.Commons.Http;
+using SW.Http;
 using System.Xml;
 
-namespace SW.Commons
+namespace SW
 {
     public class SmsHelper
     {

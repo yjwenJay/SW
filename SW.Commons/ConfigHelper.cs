@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Web;
 using System.Xml;
 
-namespace SW.Commons
+namespace SW
 {
     public enum ConfigFileType
     {

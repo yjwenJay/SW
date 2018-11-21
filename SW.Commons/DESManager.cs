@@ -4,7 +4,7 @@ using System.Text;
 using System.Security.Cryptography;
 using System.IO;
 
-namespace SW.Commons
+namespace SW
 {
     public class DESManager
     {

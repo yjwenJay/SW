@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace SW.Commons
+namespace SW
 {
     public class Log4net
     {

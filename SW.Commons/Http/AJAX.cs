@@ -7,7 +7,7 @@ using System.IO;
 using System.Collections.Specialized;
 using System.Threading;
 
-namespace SW.Commons.Http
+namespace SW.Http
 {
     public class AJAX
     {

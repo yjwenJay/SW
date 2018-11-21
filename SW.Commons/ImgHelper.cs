@@ -9,7 +9,7 @@ using System.IO;
 using System.Drawing.Text;
 using System.Collections;
 
-namespace SW.Commons
+namespace SW
 {
     #region 水印
 
